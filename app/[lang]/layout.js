@@ -1,3 +1,4 @@
+import "./globals.css";
 import { getDictionary } from '@/app/[lang]/dictionaries/dictionaries.js';
 
 export async function generateMetadata({ params }) {
