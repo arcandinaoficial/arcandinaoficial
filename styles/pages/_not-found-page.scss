@@ -1,0 +1,9 @@
+.not-found-page {
+  height: 100%;
+  background-color: $primary-color;
+  text-align: center;
+  padding: 50px;
+
+  @include titleFont();
+  color: $white-color;
+}

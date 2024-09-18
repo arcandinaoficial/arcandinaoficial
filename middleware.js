@@ -20,6 +20,7 @@ function isValidLocale(locale) {
 }
 
 export function middleware(request) {
+  console.log('Running middleware...');
   const { pathname } = request.nextUrl;
   const lang = pathname.split('/')[1]; // Extract the language part from the path
 
@@ -35,7 +36,7 @@ export function middleware(request) {
     if (lang.length === 2 && isValidLocale(lang)) {
       return NextResponse.redirect(new URL(`/en${pathname.slice(lang.length + 1)}`, request.url));
     }
-     // Rewrite to a non-existent page to trigger the built-in 404
+
      return NextResponse.next();
   }
 

@@ -1,0 +1,24 @@
+// Mixin for titleFont (Poppins)
+@mixin titleFont($weight: 400) {
+  font-family: "Poppins", sans-serif;
+  font-weight: map-get($font-weights, $weight);
+}
+
+// Mixin for bodyFont (Open Sans)
+@mixin bodyFont($weight: 400) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: map-get($font-weights, $weight);
+}
+
+// Font weight map for both fonts
+$font-weights: (
+  "Thin": 100,
+  "ExtraLight": 200,
+  "Light": 300,
+  "Regular": 400,
+  "Medium": 500,
+  "SemiBold": 600,
+  "Bold": 700,
+  "ExtraBold": 800,
+  "Black": 900,
+);
