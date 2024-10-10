@@ -1,0 +1,7 @@
+.landing-page{
+
+    &__main{
+        @include flex-center($gap: 0px, $direction: column);
+        position: relative;
+    }
+}

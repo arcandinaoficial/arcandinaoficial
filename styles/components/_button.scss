@@ -1,0 +1,53 @@
+.button{
+
+    $button-height: 30px;
+
+    @include flex-center($gap: 8px);
+    @include titleFont($weight: Medium);
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    height: $button-height;
+    border-radius: calc($button-height/2);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: color 0.3s ease; 
+    text-wrap: nowrap;
+
+    svg {
+        transition: transform 0.3s ease; // Smooth transition for the icon
+      }
+    
+    &:hover svg {
+        animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
+    }
+    
+    &--primary{
+        background-color: $primary-color;
+        color: $white-color;
+
+        &:hover{
+            background-color: $primary-color-lt;
+        }
+    }
+
+    &--secondary{
+        background-color: $secondary-color;
+        color: $white-color;
+
+        &:hover{
+            background-color: $secondary-color-lt;
+        }
+    }
+}
+
+// Keyframes for the ringing bell animation
+@keyframes ring-bell {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-15deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}

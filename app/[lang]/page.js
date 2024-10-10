@@ -1,6 +1,7 @@
 import { getDictionary } from '@/dictionaries/dictionaries.js';
-import { Button } from 'primereact/button';
 import Navbar from '@/components/Navbar';  
+import BannerSection from '@/sections/BannerSection';
+import AboutUsSection from '@/sections/AboutUsSection';
 
 export const dynamicParams = false;
 
@@ -17,12 +18,10 @@ export default async function Home({ params }) {
 
   return (
     <div>
-      <nav>
-        <Navbar />
-      </nav>
-      <main>
-        <h1>{dict.title}</h1>
-        <Button label="Submit"/>
+      <Navbar dict={dict}/>
+      <main className='landing-page__main'>
+        <BannerSection dict={dict}/>
+        <AboutUsSection dict={dict}/>
       </main>
       <footer className='footer'>
         <p>{dict.description}</p>

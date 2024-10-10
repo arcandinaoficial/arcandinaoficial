@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "embla-carousel-react": "^8.3.0",
     "framer-motion": "^11.5.4",
+    "lucide-react": "^0.447.0",
     "negotiator": "^0.6.3",
     "next": "14.2.11",
     "primeflex": "^3.3.1",

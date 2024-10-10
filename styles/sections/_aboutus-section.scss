@@ -1,0 +1,78 @@
+.aboutus-section{
+
+    @include flex-center($direction: column, $gap: 20px, $justify: flex-start);
+    position: relative;
+    z-index: 500;
+    height: fit-content;
+
+    background-image: url('/ark-base.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-position-y: -65px;
+    
+
+    &__title{
+        @include flex-center($direction: column);
+
+        span:nth-child(1){
+            @include titleFont();
+            color: $white-color;
+            font-size: 4rem;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        span:nth-child(2){
+            @include fancyFont($weight: Regular);
+            color: $primary-color;
+            font-size: 2.5rem;
+            display: inline-block;
+            transition: font-size 0.3s ease-in-out;
+            transform: rotate(-10deg) translateX(7vw) translateY(-10px);
+        }
+    }
+
+    &__description{
+        width: clamp(200px, 70%, 900px);
+        @include bodyFont();
+        color: $white-color;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+        user-select: auto;
+    }
+
+    &__content-title{
+        @include bodyFont($weight: ExtraBold);
+        background-color: $white-color;
+        color: $primary-color;
+        width: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+
+    @include respond-to(laptop){
+        
+    }
+
+    @include respond-to(tablet){
+        
+    }
+
+    @include respond-to(mobile){
+        &__title{
+
+            span:nth-child(1){
+                font-size: 3rem;
+            }
+
+            span:nth-child(2){
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+}
