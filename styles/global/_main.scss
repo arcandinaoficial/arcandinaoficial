@@ -52,6 +52,10 @@ a {
   background-color: #555; /* Darker color on hover */
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 /* Scrollbar Styles for Firefox */
 * {
   scrollbar-width: thin; /* Makes the scrollbar thin */
