@@ -97,7 +97,7 @@
 
     &__slide-details{
         margin-top: 10px;
-        @include flex-center($direction: column);
+        @include flex-center($direction: column, $gap: 5px);
 
         h4 {
             @include titleFont($weight: Bold);
@@ -105,6 +105,19 @@
             color: $white-color;
             text-align: center;
             line-height: 1.5;
+
+            height: 2.25rem;
+
+            display: -webkit-box;             /* Required for the ellipsis effect */
+            -webkit-line-clamp: 1;            /* Limits the text to 4 lines */
+            -webkit-box-orient: vertical;     /* Specifies the box layout as vertical */
+            overflow: hidden;                 /* Hides the overflowing content */
+            text-overflow: ellipsis; 
+
+            /* Standard property for better compatibility */
+            display: box;                     /* Box display for older browsers */
+            line-clamp: 1;                    /* Non-prefixed line-clamp */
+            box-orient: vertical;  
         }
 
         p {

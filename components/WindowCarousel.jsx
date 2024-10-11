@@ -135,32 +135,63 @@ const WindowCarousel = () => {
         onNextButtonClick
     } = usePrevNextButtons(emblaApi, onNavButtonClick)
 
+    const renderSlides = () => {
+        if (slides.length === 0) {
+            return Array.from({ length: 5 }).map((_, index) => (
+                <div className="carousel__slide" key={`placeholder-${index}`}>
+                    <Image
+                        className='carousel__slide__window'
+                        src={'/window-carousel/boat-window.png'}
+                        alt={'Marco de imagen con forma de ventana de bote'}
+                        width={450}
+                        height={450}
+                        priority 
+                    />
+                    <div className="carousel__parallax">
+                        <div className="carousel__parallax__layer">
+                            <Image
+                                className='carousel__slide__img carousel__parallax__img'
+                                src={'/window-carousel/placeholder-img.png'}
+                                alt={'Marcador de posición de Arcandina'}
+                                width={500}
+                                height={500}
+                                priority 
+                            />
+                        </div>
+                    </div>
+                </div>
+            ));
+        }
+
+        return slides.map((slide, index) => (
+            <div className="carousel__slide" key={index}>
+                <Image
+                    className='carousel__slide__window'
+                    src={'/window-carousel/boat-window.png'}
+                    alt={'Marco de imagen con forma de ventana de bote'}
+                    width={450}
+                    height={450}
+                    priority 
+                />
+                <div className="carousel__parallax">
+                    <div className="carousel__parallax__layer">
+                        <img
+                            className="carousel__slide__img carousel__parallax__img"
+                            src={slide.src}  
+                            alt={slide.title} 
+                        />
+                    </div>
+                </div>
+            </div>
+        ));
+    };
+
   return (
     <div className="carousel">
         <div className='carousel__image-section'>
             <div className="carousel__viewport" ref={emblaRef}>
                 <div className="carousel__container">
-                    {slides.map((slide, index) => (
-                        <div className="carousel__slide" key={index}>
-                            <Image
-                                className='carousel__slide__window'
-                                src={'/window-carousel/boat-window.png'}
-                                alt={'Marco de imagen con forma de ventana de bote'}
-                                width={450}
-                                height={450}
-                                priority 
-                            />
-                            <div className="carousel__parallax">
-                                <div className="carousel__parallax__layer">
-                                <img
-                                    className="carousel__slide__img carousel__parallax__img"
-                                    src={slide.src}  
-                                    alt={slide.title} 
-                                />
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                    {renderSlides()}
                 </div>
             </div>
 
