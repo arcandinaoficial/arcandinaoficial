@@ -1,0 +1,86 @@
+{
+    "en": [
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": " (Inglés) Vivamus Facilisis Nulla Vitae",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula felis vitae odio volutpat."
+        },
+        {
+            "src": "/window-carousel/carousel-img-2.png",
+            "title": " (Inglés) Aenean Ultricies Vehicula",
+            "description": "Proin gravida ex ut libero euismod, quis fringilla dolor sollicitudin. Fusce cursus justo vel turpis."
+        },
+        {
+            "src": "/window-carousel/carousel-img-3.png",
+            "title": " (Inglés) Curabitur Efficitur Nisl In",
+            "description": "Phasellus nec nisi dapibus, tempor erat in, fermentum purus. In lacinia, velit ac commodo blandit."
+        },
+        {
+            "src": "/window-carousel/carousel-img-4.png",
+            "title": "(Inglés) Suspendisse Potenti Tempus",
+            "description": "Maecenas eget tortor eu urna luctus aliquet. Cras bibendum, lacus sit amet commodo euismod."
+        },
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": " (Inglés) Vivamus Facilisis Nulla Vitae",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula felis vitae odio volutpat."
+        },
+        {
+            "src": "/window-carousel/carousel-img-2.png",
+            "title": " (Inglés) Aenean Ultricies Vehicula",
+            "description": "Proin gravida ex ut libero euismod, quis fringilla dolor sollicitudin. Fusce cursus justo vel turpis."
+        },
+        {
+            "src": "/window-carousel/carousel-img-3.png",
+            "title": " (Inglés) Curabitur Efficitur Nisl In",
+            "description": "Phasellus nec nisi dapibus, tempor erat in, fermentum purus. In lacinia, velit ac commodo blandit."
+        },
+        {
+            "src": "/window-carousel/carousel-img-4.png",
+            "title": "(Inglés) Suspendisse Potenti Tempus",
+            "description": "Maecenas eget tortor eu urna luctus aliquet. Cras bibendum, lacus sit amet commodo euismod."
+        }
+    ],
+    "es": [
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": " (Español) Vivamus Facilisis Nulla Vitae",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula felis vitae odio volutpat."
+        },
+        {
+            "src": "/window-carousel/carousel-img-2.png",
+            "title": " (Español) Aenean Ultricies Vehicula",
+            "description": "Proin gravida ex ut libero euismod, quis fringilla dolor sollicitudin. Fusce cursus justo vel turpis."
+        },
+        {
+            "src": "/window-carousel/carousel-img-3.png",
+            "title": " (Español) Curabitur Efficitur Nisl In",
+            "description": "Phasellus nec nisi dapibus, tempor erat in, fermentum purus. In lacinia, velit ac commodo blandit."
+        },
+        {
+            "src": "/window-carousel/carousel-img-4.png",
+            "title": "(Español) Suspendisse Potenti Tempus",
+            "description": "Maecenas eget tortor eu urna luctus aliquet. Cras bibendum, lacus sit amet commodo euismod."
+        },
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": " (Español) Vivamus Facilisis Nulla Vitae",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula felis vitae odio volutpat."
+        },
+        {
+            "src": "/window-carousel/carousel-img-2.png",
+            "title": " (Español) Aenean Ultricies Vehicula",
+            "description": "Proin gravida ex ut libero euismod, quis fringilla dolor sollicitudin. Fusce cursus justo vel turpis."
+        },
+        {
+            "src": "/window-carousel/carousel-img-3.png",
+            "title": " (Español) Curabitur Efficitur Nisl In",
+            "description": "Phasellus nec nisi dapibus, tempor erat in, fermentum purus. In lacinia, velit ac commodo blandit."
+        },
+        {
+            "src": "/window-carousel/carousel-img-4.png",
+            "title": "(Español) Suspendisse Potenti Tempus",
+            "description": "Maecenas eget tortor eu urna luctus aliquet. Cras bibendum, lacus sit amet commodo euismod."
+        }
+    ]
+}

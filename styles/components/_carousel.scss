@@ -1,0 +1,149 @@
+.carousel{
+    width: clamp(80px, 90%, 1000px);
+    margin: auto;
+    position: relative;
+    --slide-height: 19rem;
+    --slide-spacing: 1rem;
+    --slide-size: 33%;
+
+    &__image-section{
+        position: relative;
+    }
+
+    &__viewport{
+        overflow: hidden;
+    }
+
+    &__container{
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+    }
+
+    &__slide{
+        transform: translate3d(0, 0, 0);
+        flex: 0 0 var(--slide-size);
+        min-width: 0;
+        padding-left: var(--slide-spacing);
+    
+        position: relative;
+        @include flex-center($gap: 0px);
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__slide__window{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        height: auto;
+        width: 80%;
+        filter: drop-shadow(-5px 8px 5px rgba(0, 0, 0, 0.6));
+        object-fit: cover;
+    }
+
+    &__slide__img{
+        border-radius: 1.8rem;
+        display: block;
+        height: var(--slide-height);
+        object-fit: cover;
+        user-select: none;
+    }
+
+    &__parallax{
+        border-radius: 1.8rem;
+        height: 60%;
+        overflow: hidden;
+
+        width: 60%;
+        @include flex-center();
+    }
+
+    &__parallax__layer{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__parallax__img{
+        max-width: none;
+        flex: 0 0 calc(115% + (var(--slide-spacing) * 2));
+        object-fit: cover;
+
+        width: 60%;
+    }
+
+    &__buttons{
+        @include flex-center($justify: space-between, $gap: 0px);
+        position: absolute;
+        top: 50%;
+        width: calc(100% + 100px);
+        margin: 0px auto;
+        transform: translateY(-50%) translateX(-50px);
+    }
+
+    &__button{
+        @include flex-center($gap: 0px);
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__slide-details{
+        margin-top: 10px;
+        @include flex-center($direction: column);
+
+        h4 {
+            @include titleFont($weight: Bold);
+            font-size: 1.5rem;
+            color: $white-color;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        p {
+            @include bodyFont($weight: Regular);
+            color: $white-color;
+            width: 33%;
+            text-align: center;
+            line-height: 1.5;
+            height: 6rem;
+
+            display: -webkit-box;             /* Required for the ellipsis effect */
+            -webkit-line-clamp: 4;            /* Limits the text to 4 lines */
+            -webkit-box-orient: vertical;     /* Specifies the box layout as vertical */
+            overflow: hidden;                 /* Hides the overflowing content */
+            text-overflow: ellipsis; 
+
+            /* Standard property for better compatibility */
+            display: box;                     /* Box display for older browsers */
+            line-clamp: 4;                    /* Non-prefixed line-clamp */
+            box-orient: vertical;  
+        }
+    }
+
+    @include respond-to(laptop){
+        width: clamp(80px, 80%, 900px);
+    }
+
+    @include respond-to(mobile){
+        width: clamp(80px, 60%, 900px);
+
+        --slide-size: 90%;
+        --slide-spacing: 40px;
+        --slide-height: 22rem;
+
+        &__slide-details{
+            p{
+                width: 90%;
+            }
+        }
+    
+    }
+}

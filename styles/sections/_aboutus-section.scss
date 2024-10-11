@@ -10,6 +10,10 @@
     background-repeat: repeat-y;
     background-position: top center;
     background-position-y: -65px;
+
+    padding: 50px 0px;
+
+    box-shadow: inset 0px -65px 198.8px 0px rgba(0, 0, 0, 0.77);
     
 
     &__title{
@@ -54,12 +58,16 @@
         margin-top: 30px;
     }
 
-    @include respond-to(laptop){
-        
-    }
+    &__arca-redirect{
+        margin-top: 20px;
+        @include flex-center($direction: column, $gap: 0px);
+        @include bodyFont();
+        color: $white-color;
 
-    @include respond-to(tablet){
-        
+        a{
+            text-align: center;
+            line-height: 1.8;
+        }
     }
 
     @include respond-to(mobile){
