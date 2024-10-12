@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import { 
     Ship, 
     CircleDashed, 
-    HeartHandshake 
+    HeartHandshake,
+    Menu 
 } from 'lucide-react';
 
 const Button = ({ 
@@ -16,14 +17,14 @@ const Button = ({
     variable = 'primary',
     disabled = false,
     icon,
-    iconColor = '#faf9f6' 
+    iconColor = '#faf9f6', 
+    iconSize = 18
 }) => {
-
-    const iconSize = 18;
 
     const iconsMap = {
         Ship: <Ship color={iconColor} size={iconSize} />,
         HeartHandshake: <HeartHandshake color={iconColor} size={iconSize} />,
+        Menu: <Menu color={iconColor} size={iconSize} />,
     };
 
     return (

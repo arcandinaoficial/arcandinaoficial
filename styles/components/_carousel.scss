@@ -161,6 +161,9 @@
             background-position: top center;
             border-radius: var(--border-radius) var(--border-radius) 0px 0px;
             z-index: 3;
+            box-sizing: border-box;
+            padding-right: 10px;
+            height: 30px;
         }
 
         .p-dialog-content{
@@ -180,12 +183,18 @@
 
         .p-dialog-header-icon{
             color: $white-color;
-            margin-right: 10px;
+            margin-top: 50%;
+            height: 15px;
+            width: 15px;
+
+            svg{
+                height: 15px;
+                width: 15px;
+            }
 
             &:hover{
                 background-color: transparent;
-                transform: scale(1.3);
-                transition: all 0.2s ease-in-out;
+                animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
             }
         }
 
@@ -226,7 +235,7 @@
             top: 15%;
 
             @include respond-to(mobile){
-                top: 10%;
+                top: 12%;
             }
         }
 
@@ -274,4 +283,14 @@
         }
     
     }
+}
+
+// Keyframes for the ringing bell animation
+@keyframes ring-bell {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-15deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
 }

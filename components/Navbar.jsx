@@ -2,26 +2,31 @@ import React from 'react';
 import NavbarItem from './NavbarItem';
 import Button from './Button';
 import Image from 'next/image';
+import MenuButton from './MenuButton';
 
 const Navbar = ({dict}) => {
 
   const navbarItems = [
-    {
-      'text': dict.navbarItem1,
-      'scrollTo': '50px'
-    },
-    {
-      'text': dict.navbarItem2,
-      'scrollTo': '150px'
-    },
-    {
-      'text': dict.navbarItem3,
-      'scrollTo': '250px'
-    },
-    {
-      'text': dict.navbarItem4,
-      'scrollTo': '350px'
-    }
+      {
+        'text': dict.navbarItem1,
+        'scrollTo': '50px',
+        'icon': 'Info'
+      },
+      {
+        'text': dict.navbarItem2,
+        'scrollTo': '150px',
+        'icon': 'Handshake'
+      },
+      {
+        'text': dict.navbarItem3,
+        'scrollTo': '250px',
+        'icon': 'Clapperboard'
+      },
+      {
+        'text': dict.navbarItem4,
+        'scrollTo': '350px',
+        'icon': 'Compass'
+      }
   ]
 
   return (
@@ -45,6 +50,9 @@ const Navbar = ({dict}) => {
       <div className='navbar__buttons'>
         <Button label={dict.navbarButtonVisita} icon={'Ship'}/>
         <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'}/>
+      </div>
+      <div className='navbar__burger-menu'>
+        <MenuButton navbarItems={navbarItems} dict={dict}/>
       </div>
     </nav>
   );
