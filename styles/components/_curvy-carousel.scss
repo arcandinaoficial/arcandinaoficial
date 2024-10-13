@@ -1,0 +1,68 @@
+.curvy-carousel{
+    width: clamp(80px, 90%, 1000px);
+    margin: auto;
+    position: relative;
+    --slide-height: 19rem;
+    --slide-spacing: 10px;
+    --slide-size: 20%;
+
+    &__image-section{
+        position: relative;
+    }
+
+    &__viewport{
+        overflow: hidden;
+    }
+
+    &__container{
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+    }
+
+    &__slide{
+        transform: translate3d(0, 0, 0);
+        flex: 0 0 var(--slide-size);
+        min-width: 0;
+        padding-left: var(--slide-spacing);
+    
+        position: relative;
+        @include flex-center($gap: 0px);
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__slide__img{
+        border-radius: 1.8rem;
+        display: block;
+        height: var(--slide-height);
+        object-fit: cover;
+        user-select: none;
+    }
+
+    &__parallax{
+        border-radius: 1.8rem;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        @include flex-center();
+    }
+
+    &__parallax__layer{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__parallax__img{
+        max-width: none;
+        flex: 0 0 calc(115% + (var(--slide-spacing) * 2));
+        object-fit: cover;
+        cursor: pointer;
+        width: 100%;
+    }
+}

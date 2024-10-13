@@ -2,6 +2,7 @@ import { getDictionary } from '@/dictionaries/dictionaries.js';
 import Navbar from '@/components/Navbar';  
 import BannerSection from '@/sections/BannerSection';
 import AboutUsSection from '@/sections/AboutUsSection';
+import RotarySection from '@/sections/RotarySection';
 
 export const dynamicParams = false;
 
@@ -22,9 +23,10 @@ export default async function Home({ params }) {
       <main className='landing-page__main'>
         <BannerSection dict={dict}/>
         <AboutUsSection dict={dict}/>
+        <RotarySection dict={dict}/>
       </main>
       <footer className='footer'>
-        <p>{dict.description}</p>
+        {/* <p>{dict.description}</p> */}
       </footer>
     </div>
   );
