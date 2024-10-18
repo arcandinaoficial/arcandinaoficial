@@ -110,4 +110,10 @@
             width: clamp(200px, 70%, 900px);
         }
     }
+
+    &__carousel{
+        box-sizing: border-box;
+        padding: 20px 0px;
+        background-color: $rotary-blue-color;
+    }
 }

@@ -1,6 +1,6 @@
 .curvy-carousel {
     width: clamp(80px, 100%, 1400px);
-    height: 400px;
+    height: 500px;
     margin: auto;
     position: relative;
     --slide-height: 19rem;
@@ -20,6 +20,19 @@
         height: 100%;
         perspective: 2000px; // Apply perspective to the container
         perspective-origin: center; 
+        position: relative; 
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5%; // Adjust width based on how much fade you want
+            height: 100%;
+            background: linear-gradient(to right, $rotary-blue-color, rgba(255, 255, 255, 0)); // Adjust the colors to blend with your background
+            pointer-events: none; // Allows interaction with the carousel
+            z-index: 2;
+        }
     }
 
     &__container {
