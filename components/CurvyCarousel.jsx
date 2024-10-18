@@ -1,112 +1,119 @@
 'use client'
 
-import React, {useCallback, useEffect, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
 import carouselData from '@/data/curvy-carousel-slides.json';
 
 const options = { 
     dragFree: false, 
-    loop: true 
+    loop: false,
+    align: 'start', // Ensure alignment to the center
 }
-const TWEEN_FACTOR_BASE = 0.2
+
 const slides = carouselData;
 
 const CurvyCarousel = () => {
-    
-    // Setup
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])  // Setup Embla carousel reference and autoplay plugin
-    const tweenFactor = useRef(0) // Reference to keep track of tween factor and nodes for parallax effect
-    const tweenNodes = useRef([]) // Reference to keep track of tween factor and nodes for parallax effect
+    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [middleSlideIndex, setMiddleSlideIndex] = useState(3);
 
-    // Effects    
-    // Embla api setup
-    const setTweenNodes = useCallback((emblaApi) => {
-        tweenNodes.current = emblaApi.slideNodes().map((slideNode) => {
-        return slideNode.querySelector('.curvy-carousel__parallax__layer')
-        })
-    }, []) // Function to set the tween nodes for parallax animation
-    const setTweenFactor = useCallback((emblaApi) => {
-        tweenFactor.current = TWEEN_FACTOR_BASE * emblaApi.scrollSnapList().length
-    }, []) // Function to set the tween factor based on scroll snaps
-    const tweenParallax = useCallback((emblaApi, eventName) => {
-        const engine = emblaApi.internalEngine()
-        const scrollProgress = emblaApi.scrollProgress()
-        const slidesInView = emblaApi.slidesInView()
-        const isScrollEvent = eventName === 'scroll'
-
-        emblaApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
-        let diffToTarget = scrollSnap - scrollProgress
-        const slidesInSnap = engine.slideRegistry[snapIndex]
-
-        slidesInSnap.forEach((slideIndex) => {
-            if (isScrollEvent && !slidesInView.includes(slideIndex)) return
-
-            if (engine.options.loop) {
-            engine.slideLooper.loopPoints.forEach((loopItem) => {
-                const target = loopItem.target()
-
-                if (slideIndex === loopItem.index && target !== 0) {
-                const sign = Math.sign(target)
-
-                if (sign === -1) {
-                    diffToTarget = scrollSnap - (1 + scrollProgress)
-                }
-                if (sign === 1) {
-                    diffToTarget = scrollSnap + (1 - scrollProgress)
-                }
-                }
-            })
-            }
-
-            const translate = diffToTarget * (-1 * tweenFactor.current) * 100
-            const tweenNode = tweenNodes.current[slideIndex]
-            tweenNode.style.transform = `translateX(${translate}%)`
-        })
-        })
-    }, []) // Parallax effect function to animate slides as they scroll
     useEffect(() => {
-        if (!emblaApi) return
+        const updateNumberOfSlides = () => {
+            if (window.innerWidth <= 480) {
+                setMiddleSlideIndex(1);
+            } else if (window.innerWidth <= 768){
+                setMiddleSlideIndex(2); 
+            } else {
+                setMiddleSlideIndex(3);
+            }
+        };
 
-        setTweenNodes(emblaApi)
-        setTweenFactor(emblaApi)
-        tweenParallax(emblaApi)
+        // Initial check
+        updateNumberOfSlides();
 
-        emblaApi
-        .on('reInit', setTweenNodes)
-        .on('reInit', setTweenFactor)
-        .on('reInit', tweenParallax)
-        .on('scroll', tweenParallax)
-        .on('slideFocus', tweenParallax)
-    }, [emblaApi, tweenParallax])  // Effect to initialize the parallax animation and event listeners on Embla carousel
+        // Add event listener for window resize to keep updating on changes
+        window.addEventListener('resize', updateNumberOfSlides);
 
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateNumberOfSlides);
+        };
+    }, []); // Effect runs only once on mount but listens for resize changes
+    
+    useEffect(() => {
+        if (!emblaApi) return;
+    
+        const updateSlideStyles = () => {
+            const slides = emblaApi.slideNodes();
+            const slidesInView = emblaApi.slidesInView(); // Get the visible slides (indices)
+    
+            slides.forEach((slide, index) => {
+                slide.style.transform = "scaleY(1) rotateY(0deg)"; // Reset all slides to default
+    
+                if (slidesInView.includes(index)) {
+                    // Calculate the distance from the center for the visible slides only
+                    let distanceFromCenter = index - slidesInView[middleSlideIndex];
+                    const firstAngle = '30deg';
+                    const secondAngle = '40deg';
+                    const thirdAngle = '50deg';
+
+                    const firstScaleY = '0.7';
+                    const secondScaleY = '0.75';
+                    const thirdScaleY = '0.85';
+    
+                    // Apply transformations only to the visible slides
+                    if (distanceFromCenter === 0) {
+                        slide.style.transform = `scaleY(${firstScaleY}) scaleX(1) rotateY(0deg)`; // Center slide
+                    } else if (distanceFromCenter === 1) {
+                        slide.style.transform = `scaleY(${secondScaleY}) scaleX(1) rotateY(-${firstAngle})`; // Slide to the left
+                    } else if (distanceFromCenter === -1) {
+                        slide.style.transform = `scaleY(${secondScaleY}) scaleX(1) rotateY(${firstAngle})`; // Slide to the right
+                    } else if (distanceFromCenter === 2) {
+                        slide.style.transform = `scaleY(${thirdScaleY}) scaleX(1) rotateY(-${secondAngle})`; // Slide further left
+                    } else if (distanceFromCenter === -2) {
+                        slide.style.transform = `scaleY(${thirdScaleY}) scaleX(1) rotateY(${secondAngle})`; // Slide further right
+                    } else if (distanceFromCenter === 3) {
+                        slide.style.transform = `scaleY(1) scaleX(1.1) rotateY(-${thirdAngle})`; // Far left
+                    } else if (distanceFromCenter === -3) {
+                        slide.style.transform = `scaleY(1) scaleX(1.1) rotateY(${thirdAngle})`; // Far right
+                    }
+                }
+            });
+        };
+    
+        // Track the slide changes continuously on scroll
+        emblaApi.on('scroll', updateSlideStyles);
+    
+        // Initialize styles immediately
+        updateSlideStyles();
+    
+        // Cleanup listeners when the component is unmounted
+        return () => {
+            emblaApi.off('scroll', updateSlideStyles);
+        };
+    }, [emblaApi, middleSlideIndex]);
+    
     return (
-        <>
-            {/* Carrusel */}
+        <div className="curvy-carousel-container">
             <div className="curvy-carousel">
-                <div className='curvy-carousel__image-section'>
-                    <div className="curvy-carousel__viewport" ref={emblaRef}>
-                        <div className="curvy-carousel__container">
-                            {slides.map((slide, index) => (
-                                <div className="curvy-carousel__slide" key={index}>
-                                    <div className="curvy-carousel__parallax">
-                                        <div className="curvy-carousel__parallax__layer">
-                                            <img
-                                                className="curvy-carousel__slide__img curvy-carousel__parallax__img"
-                                                src={slide.src}  
-                                                alt={slide.title} 
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                <div className="curvy-carousel__viewport" ref={emblaRef}>
+                    <div className="curvy-carousel__container">
+                        {slides.map((slide, index) => (
+                            <div
+                                className="curvy-carousel__slide"
+                                key={index}
+                            >
+                                <img
+                                    className="curvy-carousel__slide__img"
+                                    src={slide.src}
+                                    alt={slide.title}
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-        </>
-        
-    )
-}
+        </div>
+    );
+};
 
 export default CurvyCarousel;
