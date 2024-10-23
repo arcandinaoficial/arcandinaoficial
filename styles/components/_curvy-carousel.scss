@@ -6,7 +6,7 @@
     --slide-height: 19rem;
     --slide-spacing: 10px;
     --slide-size: calc(100% / 7);
-    background: linear-gradient(to top, $wave-blue-color 15%, white 50%, $wave-blue-color 85%);
+    background: linear-gradient(to top, transparent 20%, rgba(255, 255, 255, 0.6) 50%, transparent 80%);
 
     @include respond-to(tablet){
         --slide-size: calc(100% / 5);
@@ -31,7 +31,7 @@
             left: 0;
             width: clamp(10px, 5%, 40px); 
             height: 100%;
-            background: linear-gradient(to right, $wave-blue-color, rgba(255, 255, 255, 0)); 
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0)); 
             pointer-events: none; 
             z-index: 2;
         }
@@ -43,7 +43,7 @@
             right: 0;
             width: clamp(10px, 5%, 40px); 
             height: 100%;
-            background: linear-gradient(to left,$wave-blue-color, rgba(255, 255, 255, 0)); 
+            background: linear-gradient(to left,transparent, rgba(255, 255, 255, 0)); 
             pointer-events: none; 
             z-index: 2;
         }

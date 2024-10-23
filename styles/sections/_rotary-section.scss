@@ -1,12 +1,12 @@
 .rotary-section{
     width: 100%;
-    height: fit-content;
-    transform: translateY(-32px);
+    height: calc(fit-content);
     z-index: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, transparent 0px, transparent 30px, $wave-blue-color 30px);
+    background: linear-gradient(to bottom, $wave-blue-color 0px, $wave-blue-color 120px, #011338 50%, #011338 70%, $wave-blue-color 100%);
+    padding-bottom: 50px;
     
     &__waves{
         position: relative;
@@ -14,6 +14,7 @@
         height: 160px;
         flex-grow: 1;
         width: 100%;
+        transform: translateY(-32px);
     }
 
     &__wave{

@@ -43,6 +43,13 @@ const RotarySection = ({ dict }) => {
       </h2>
       <p className='rotary-section__description'>{dict.rotaryText4}</p>
       <ContentDiplayer dict={dict} />
+      <p className='aboutus-section__arca-redirect'> 
+          {dict.rotaryText5} 
+          <br/> 
+          <a href="https://example.com">
+              <strong>{dict.visitTheArk}</strong>
+          </a>
+      </p>
     </section>
   );
 };
