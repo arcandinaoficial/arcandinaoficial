@@ -1,11 +1,12 @@
 .curvy-carousel {
     width: clamp(80px, 100%, 1400px);
-    height: 500px;
+    height: 400px;
     margin: auto;
     position: relative;
     --slide-height: 19rem;
     --slide-spacing: 10px;
     --slide-size: calc(100% / 7);
+    background: linear-gradient(to top, $wave-blue-color 15%, white 50%, $wave-blue-color 85%);
 
     @include respond-to(tablet){
         --slide-size: calc(100% / 5);
@@ -13,6 +14,7 @@
 
     @include respond-to(mobile){
         --slide-size: calc(100% / 3);
+        height: 250px;
     }
 
     &__viewport {
@@ -27,10 +29,22 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 5%; // Adjust width based on how much fade you want
+            width: clamp(10px, 5%, 40px); 
             height: 100%;
-            background: linear-gradient(to right, $rotary-blue-color, rgba(255, 255, 255, 0)); // Adjust the colors to blend with your background
-            pointer-events: none; // Allows interaction with the carousel
+            background: linear-gradient(to right, $wave-blue-color, rgba(255, 255, 255, 0)); 
+            pointer-events: none; 
+            z-index: 2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: clamp(10px, 5%, 40px); 
+            height: 100%;
+            background: linear-gradient(to left,$wave-blue-color, rgba(255, 255, 255, 0)); 
+            pointer-events: none; 
             z-index: 2;
         }
     }

@@ -6,7 +6,11 @@ import {
     Ship, 
     CircleDashed, 
     HeartHandshake,
-    Menu 
+    Menu,
+    Clapperboard,
+    Mic,
+    BookOpenText,
+    Lightbulb 
 } from 'lucide-react';
 
 const Button = ({ 
@@ -25,6 +29,10 @@ const Button = ({
         Ship: <Ship color={iconColor} size={iconSize} />,
         HeartHandshake: <HeartHandshake color={iconColor} size={iconSize} />,
         Menu: <Menu color={iconColor} size={iconSize} />,
+        Clapperboard: <Clapperboard color={iconColor} size={iconSize} />,
+        Mic: <Mic color={iconColor} size={iconSize} />,
+        BookOpenText: <BookOpenText color={iconColor} size={iconSize} />,
+        Lightbulb: <Lightbulb color={iconColor} size={iconSize} />,
     };
 
     return (

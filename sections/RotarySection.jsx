@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import WaveBackground from '@/components/WaveBackground';
 import CurvyCarousel from '@/components/CurvyCarousel';
+import ContentDiplayer from '@/components/ContentDisplayer';
 
 const RotarySection = ({ dict }) => {
   return (
@@ -32,13 +33,16 @@ const RotarySection = ({ dict }) => {
           />
         </span>
       </h2>
-      <div className='rotary-section__description'>
-        <p>{dict.rotaryText1}</p>
-      </div>
+      <p className='rotary-section__description'>{dict.rotaryText1}</p>
       <div className='rotary-section__carousel'> 
         <CurvyCarousel />
       </div>
-    
+      <h2 className='rotary-section__content-title'>
+          <span>{dict.rotaryText2}</span>
+          <span>{dict.rotaryText3}</span>
+      </h2>
+      <p className='rotary-section__description'>{dict.rotaryText4}</p>
+      <ContentDiplayer dict={dict} />
     </section>
   );
 };
