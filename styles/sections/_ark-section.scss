@@ -77,6 +77,7 @@
             font-size: 1.2rem;
             line-height: 1.5;
             user-select: auto;
+            width: 100%;
         }
 
         span{
@@ -118,11 +119,31 @@
         &__image{
             width: 100%;
             height: auto;
+            transform-origin: center; 
+            animation: smooth-rock 6s ease-in-out infinite; 
 
             @include respond-to(mobile){
                 height: 85dvh;
                 width: auto;
             }
         }
+    }
+}
+
+@keyframes smooth-rock {
+    0% {
+        transform: rotate(1.5deg); /* Start slightly rotated to one side */
+    }
+    25% {
+        transform: rotate(-1.5deg); /* Smoothly rotate to the other side */
+    }
+    50% {
+        transform: rotate(1.5deg); /* Back to the starting side */
+    }
+    75% {
+        transform: rotate(-1.5deg); /* Continue to the other side */
+    }
+    100% {
+        transform: rotate(1.5deg); /* Loop smoothly back to the starting side */
     }
 }

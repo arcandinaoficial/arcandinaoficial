@@ -1,40 +1,149 @@
 .character-pin{
 
-    --pin-size: 120px;
+    --pin-size: clamp(80px, 10vw ,120px);
 
     position: absolute;
     transform: translate(-50%, -50%);
-    width: var(--pin-size); 
-    height: var(--pin-size); 
-    background-color: red;
     z-index: 5;
-    border-radius: calc(var(--pin-size) / 2);
-    border: 10px solid $white-color;
-    box-sizing: border-box;
-    overflow: hidden;
     @include flex-center();
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover{
+        animation: jump 0.6s ease 3;
+    }
+
+    &__image{
+        width: var(--pin-size); 
+        height: var(--pin-size); 
+        border-radius: calc(var(--pin-size) / 2);
+        border: clamp(5px, 0.8vw, 10px) solid $white-color;
+        box-sizing: border-box;
+        overflow: hidden;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        z-index: -2;
+        @include flex-center();
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: clamp(5px, 0.8vw, 10px);
+            left: clamp(5px, 0.8vw, 10px);
+            width: calc(100% - (clamp(5px, 0.8vw, 10px) * 2));
+            height: calc(100% - (clamp(5px, 0.8vw, 10px) * 2));
+            border-radius: calc(var(--pin-size) / 2);
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            mix-blend-mode: destination-out;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: clamp(5px, 0.8vw, 10px);
+            left: clamp(5px, 0.8vw, 10px);
+            width: calc(100% - (clamp(5px, 0.8vw, 10px) * 2));
+            height: calc(100% - (clamp(5px, 0.8vw, 10px) * 2));
+            border-radius: calc(var(--pin-size) / 2);
+            background-color: $white-color; 
+            mask: url('/characters/mouse-pointer-click.svg') no-repeat center / 70% 70%;
+            -webkit-mask: url('/characters/mouse-pointer-click.svg') no-repeat center / 70% 70%;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+
+        &:hover::before, &:hover::after{
+            opacity: 1;
+        }
+    }
 
     &__character{
         height: 110%;
         width: 110%;
         object-fit: contain;
-        transform: translateY(15px);
+        transform: translateY(10%);
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        z-index: -1;
+    }
+
+    &__pin {
+
+        @include respond-to(mobile){
+            --r: 3px; 
+        }
+
+        position: absolute;
+        bottom: -35%;
+        z-index: -3;
+        --r: 5px; 
+        width: var(--pin-size);
+        aspect-ratio: 1 / cos(30deg); 
+        --_g: calc(tan(60deg) * var(--r)) bottom var(--r), red 98%, #0000 101%;
+        -webkit-mask: 
+            conic-gradient(from -30deg at 50% calc(200% - 3 * var(--r) / 2), #000 60deg, #0000 0)
+            0 100% / 100% calc(100% - 3 * var(--r) / 2) no-repeat,
+            radial-gradient(var(--r) at 50% calc(2 * var(--r)), #000 98%, #0000 101%),
+            radial-gradient(var(--r) at left var(--_g)),
+            radial-gradient(var(--r) at right var(--_g));
+        mask: 
+            conic-gradient(from -30deg at 50% calc(200% - 3 * var(--r) / 2), #000 60deg, #0000 0)
+            0 100% / 100% calc(100% - 3 * var(--r) / 2) no-repeat,
+            radial-gradient(var(--r) at 50% calc(2 * var(--r)), #000 98%, #0000 101%),
+            radial-gradient(var(--r) at left var(--_g)),
+            radial-gradient(var(--r) at right var(--_g));
+        clip-path: polygon(50% 0, 100% 100%, 0 100%); 
+        background: $white-color; 
+        transform: rotate(180deg); 
+        user-select: none;
     }
 
     &--cori{
-        background: linear-gradient(220deg, #1E9FBA 0%, #0E4854 100%);
+        left: 35%;
+        top: 5%;
+
+        @include respond-to(mobile){
+            left: 65%;
+            top: 25%;
+        }
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #1E9FBA 0%, #0E4854 100%);
+        }
     }
 
     &--ratasura{
-        background: linear-gradient(220deg, #EB4038 0%, #9C2B25 100%);
-        
+        left: 30%;
+        top: 20%;
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #EB4038 0%, #9C2B25 100%);
+        }
+
         .character-pin__character{
-            transform: translateY(15px) translateX(5px);
+            transform: translateY(10%) translateX(5px);
         }
     }
 
     &--guardian{
-        background: linear-gradient(220deg, #9CAB3C 0%, #3F4518 100%);
+        left: 40%;
+        top: 60%;
+
+        @include respond-to(mobile){
+            left: 35%;
+            top: 30%;
+        }
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #9CAB3C 0%, #3F4518 100%);
+        }
 
         .character-pin__character{
             transform: translateY(10px) scale(1.2);
@@ -42,22 +151,61 @@
     }
 
     &--tucan{
-        background: linear-gradient(220deg, #FF5A99 0%, #B41B56 100%);
+        left: 80%;
+        top: 20%;
 
+        @include respond-to(mobile){
+            left: 50%;
+            top: 70%;
+        }
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #FF5A99 0%, #B41B56 100%);
+        }
+        
         .character-pin__character{
             transform: translateY(10px);
         }
     }
 
     &--antonella{
-        background: linear-gradient(220deg, #FF993F 0%, #D4721B 100%);
+        left: 20%;
+        top: 25%;
+
+        @include respond-to(mobile){
+            left: 50%;
+            top: 15%;
+        }
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #FF993F 0%, #D4721B 100%);
+        }
     }
 
     &--jagui{
-        background: linear-gradient(220deg, #5F3543 0%, #AD3B61 100%);
-        
+        left: 60%;
+        top: 50%;
+
+        @include respond-to(mobile){
+            left: 40%;
+            top: 50%;
+        }
+
+        .character-pin__image{
+            background: linear-gradient(220deg, #5F3543 0%, #AD3B61 100%);
+        }
+
         .character-pin__character{
             transform: translateY(0px) scale(0.95);
         }
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px); 
     }
 }

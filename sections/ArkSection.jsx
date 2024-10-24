@@ -68,12 +68,12 @@ const ArkSection = ({ dict }) => {
             height={arkImage === '/ark.png' ? 636 : 1692}
             priority
           />
-          <CharacterPin positionX={'10%'} positionY={'20%'} characterName={'cori'}/>
-          <CharacterPin positionX={'30%'} positionY={'20%'} characterName={'jagui'}/>
-          <CharacterPin positionX={'50%'} positionY={'20%'} characterName={'antonella'}/>
-          <CharacterPin positionX={'70%'} positionY={'20%'} characterName={'tucan'}/>
-          <CharacterPin positionX={'90%'} positionY={'20%'} characterName={'guardian'}/>
-          <CharacterPin positionX={'55%'} positionY={'50%'} characterName={'ratasura'}/>
+          <CharacterPin characterName={'cori'}/>
+          <CharacterPin characterName={'jagui'}/>
+          <CharacterPin characterName={'antonella'}/>
+          <CharacterPin characterName={'tucan'}/>
+          <CharacterPin characterName={'guardian'}/>
+          {/* <CharacterPin characterName={'ratasura'}/> */}
         </div>
       </section>
     </div>

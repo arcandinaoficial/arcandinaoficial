@@ -3,9 +3,9 @@
 import Image from 'next/image';
 import React, {useEffect, useState} from 'react';
 
-const CharacterPin = ({positionX, positionY, characterName}) => {
+const CharacterPin = ({characterName}) => {
 
-    const [characterImage, setCharacterImage] = useState('/characters/cori.jpg');
+    const [characterImage, setCharacterImage] = useState('/characters/cori.png');
 
     useEffect(()=>{
         switch(characterName){
@@ -33,15 +33,19 @@ const CharacterPin = ({positionX, positionY, characterName}) => {
     },[])
 
     return (
-        <div className={`character-pin character-pin--${characterName}`} style={{left: `${positionX}`, top: `${positionY}`}}>
-            <Image
-                className='character-pin__character'
-                src={characterImage} 
-                alt={`Imagen de ${characterName}`}
-                width={100} 
-                height={100} 
-                priority 
-            />
+        <div className={`character-pin character-pin--${characterName}`}>
+            <div className="character-pin__image" >
+                <Image
+                    className='character-pin__character'
+                    src={characterImage} 
+                    alt={`Imagen de ${characterName}`}
+                    width={100} 
+                    height={100} 
+                    priority 
+                />
+            </div>
+            <div className='character-pin__pin'>
+            </div>
         </div>
     );
 };
