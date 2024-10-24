@@ -1,0 +1,63 @@
+.character-pin{
+
+    --pin-size: 120px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: var(--pin-size); 
+    height: var(--pin-size); 
+    background-color: red;
+    z-index: 5;
+    border-radius: calc(var(--pin-size) / 2);
+    border: 10px solid $white-color;
+    box-sizing: border-box;
+    overflow: hidden;
+    @include flex-center();
+
+    &__character{
+        height: 110%;
+        width: 110%;
+        object-fit: contain;
+        transform: translateY(15px);
+    }
+
+    &--cori{
+        background: linear-gradient(220deg, #1E9FBA 0%, #0E4854 100%);
+    }
+
+    &--ratasura{
+        background: linear-gradient(220deg, #EB4038 0%, #9C2B25 100%);
+        
+        .character-pin__character{
+            transform: translateY(15px) translateX(5px);
+        }
+    }
+
+    &--guardian{
+        background: linear-gradient(220deg, #9CAB3C 0%, #3F4518 100%);
+
+        .character-pin__character{
+            transform: translateY(10px) scale(1.2);
+        }
+    }
+
+    &--tucan{
+        background: linear-gradient(220deg, #FF5A99 0%, #B41B56 100%);
+
+        .character-pin__character{
+            transform: translateY(10px);
+        }
+    }
+
+    &--antonella{
+        background: linear-gradient(220deg, #FF993F 0%, #D4721B 100%);
+    }
+
+    &--jagui{
+        background: linear-gradient(220deg, #5F3543 0%, #AD3B61 100%);
+        
+        .character-pin__character{
+            transform: translateY(0px) scale(0.95);
+        }
+    }
+}

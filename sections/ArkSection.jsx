@@ -2,16 +2,13 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { motion, useMotionValue, useTransform, useScroll } from 'framer-motion';
+import { motion, useTransform, useScroll } from 'framer-motion';
+import CharacterPin from '@/components/CharacterPin';
 
 const ArkSection = ({ dict }) => {
   const [arkImage, setArkImage] = useState('/ark.png');
   const { scrollY } = useScroll();
-
-  // Parallax rotation effect
-  const rotate = useMotionValue(0);
   
-  // Create a back-and-forth oscillation effect for rotation using sine wave
   const rotateTransform = useTransform(scrollY, (value) => {
     return Math.sin(value / 80) * 5;
   });
@@ -71,6 +68,12 @@ const ArkSection = ({ dict }) => {
             height={arkImage === '/ark.png' ? 636 : 1692}
             priority
           />
+          <CharacterPin positionX={'10%'} positionY={'20%'} characterName={'cori'}/>
+          <CharacterPin positionX={'30%'} positionY={'20%'} characterName={'jagui'}/>
+          <CharacterPin positionX={'50%'} positionY={'20%'} characterName={'antonella'}/>
+          <CharacterPin positionX={'70%'} positionY={'20%'} characterName={'tucan'}/>
+          <CharacterPin positionX={'90%'} positionY={'20%'} characterName={'guardian'}/>
+          <CharacterPin positionX={'55%'} positionY={'50%'} characterName={'ratasura'}/>
         </div>
       </section>
     </div>

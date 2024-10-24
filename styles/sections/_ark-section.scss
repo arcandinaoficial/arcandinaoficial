@@ -113,6 +113,7 @@
         height: fit-content;
         width: 100%;
         @include flex-center();
+        position: relative;
 
         &__image{
             width: 100%;
