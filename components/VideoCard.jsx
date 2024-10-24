@@ -43,7 +43,7 @@ const VideoCard = ({ video }) => {
   }
 
   return (
-    <div className="video-card">
+    <div className="video-card" onClick={() => window.open(video.src, '_blank')}>
       <img src={videoData.thumbnail} alt={videoData.title} className="video-card__thumbnail" />
       <h5 className="video-card__title">{videoData.title}</h5>
       <p className="video-card__description">{videoData.description}</p>
