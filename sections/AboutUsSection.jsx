@@ -4,7 +4,7 @@ import React from 'react';
 const AboutUsSection = ({dict}) => {
   return (
     <section className='aboutus-section'>
-        <h2 className='aboutus-section__title'>
+        <h2 className='aboutus-section__title' id='AboutUsSection'>
             <span>{dict.aboutUsText1}</span>
             <span>{dict.aboutUsText2}</span>
         </h2>

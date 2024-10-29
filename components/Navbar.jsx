@@ -9,22 +9,22 @@ const Navbar = ({dict}) => {
   const navbarItems = [
       {
         'text': dict.navbarItem1,
-        'scrollTo': '50px',
+        'scrollTo': 'AboutUsSection',
         'icon': 'Info'
       },
       {
         'text': dict.navbarItem2,
-        'scrollTo': '150px',
+        'scrollTo': 'RotarySection',
         'icon': 'Handshake'
       },
       {
         'text': dict.navbarItem3,
-        'scrollTo': '250px',
+        'scrollTo': 'ContentSection',
         'icon': 'Clapperboard'
       },
       {
         'text': dict.navbarItem4,
-        'scrollTo': '350px',
+        'scrollTo': 'ArkSection',
         'icon': 'Compass'
       }
   ]
@@ -43,13 +43,13 @@ const Navbar = ({dict}) => {
         {navbarItems.map((item, index) => (
           <li key={index}>
             {item.text}
-            <NavbarItem href={item.action} />
+            <NavbarItem targetId={item.scrollTo} />
           </li>
         ))}
       </ul>
       <div className='navbar__buttons'>
         <Button label={dict.navbarButtonVisita} icon={'Ship'}/>
-        <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'}/>
+        <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'} onClick="https://www.gofundme.com" actionType="redirect"/>
       </div>
       <div className='navbar__burger-menu'>
         <MenuButton navbarItems={navbarItems} dict={dict}/>

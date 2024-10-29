@@ -37,7 +37,7 @@ const ArkSection = ({ dict }) => {
   return (
     <div className='ark-section__background'>
       <section className='ark-section'>
-        <div className='ark-section__content'>
+        <div className='ark-section__content' id='ArkSection'>
           <div className='ark-section__text'>
             <h2>{dict.arkText1}</h2>
             <p>{dict.arkText2}</p>

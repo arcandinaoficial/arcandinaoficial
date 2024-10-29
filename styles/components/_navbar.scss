@@ -31,6 +31,9 @@
         margin: 0; 
 
         li{
+            width: fit-content;
+            height: 0.9rem;
+            position: relative;
             text-wrap: nowrap;
             cursor: pointer;
 

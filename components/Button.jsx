@@ -22,7 +22,8 @@ const Button = ({
     disabled = false,
     icon,
     iconColor = '#faf9f6', 
-    iconSize = 18
+    iconSize = 18,
+    actionType = ''
 }) => {
 
     const iconsMap = {
@@ -35,11 +36,19 @@ const Button = ({
         Lightbulb: <Lightbulb color={iconColor} size={iconSize} />,
     };
 
+    const handleButtonClick = () => {
+        if (actionType === 'redirect' && typeof onClick === 'string') {
+            window.open(onClick, '_blank');
+        } else if (actionType === 'function' && typeof onClick === 'function') {
+            onClick();
+        }
+    }; 
+
     return (
         <button
         type={type}
         className={`button button--${variable} ${className}`}
-        onClick={onClick}
+        onClick={handleButtonClick}
         disabled={disabled}
         >
         {label}

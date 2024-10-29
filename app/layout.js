@@ -1,4 +1,3 @@
-import { getDictionary } from '@/dictionaries/dictionaries.js';
 import '@/styles/global.scss';
 
 // Prime react styling
@@ -7,17 +6,6 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/primereact.min.css';
-import Navbar from '@/components/Navbar';
-
-export async function generateMetadata({ params }) {
-
-  const dict = await getDictionary(params.lang);
-
-  return {
-    title: dict.landingPageTitle,
-    description: dict.landingPageDescription,
-  };
-}
 
 export default function RootLayout({ children, params }) {
   return (
