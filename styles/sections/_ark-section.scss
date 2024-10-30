@@ -3,7 +3,7 @@
     width: clamp(200px, 90%, 1200px);
     overflow-x: hidden;
     box-sizing: border-box;
-    padding: 50px 0px;
+    padding: 50px 0px 100px 0px;
 
     @include respond-to(tablet){
         gap: 80px;

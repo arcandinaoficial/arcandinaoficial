@@ -4,6 +4,7 @@ import BannerSection from '@/sections/BannerSection';
 import AboutUsSection from '@/sections/AboutUsSection';
 import RotarySection from '@/sections/RotarySection';
 import ArkSection from '@/sections/ArkSection';
+import FooterSection from '@/sections/FooterSection';
 
 export const dynamicParams = false;
 
@@ -28,9 +29,7 @@ export default async function Home({ params }) {
           <RotarySection dict={dict}/>
           <ArkSection dict={dict}/>
         </main>
-        <footer className='footer'>
-          {/* <p>{dict.description}</p> */}
-        </footer>
+        <FooterSection dict={dict}/>
       </div>
     </>
   );

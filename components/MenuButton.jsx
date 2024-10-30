@@ -83,7 +83,7 @@ const MenuButton = ({navbarItems, dict}) => {
                     <hr></hr>
                     <div className='navbar__dialog__footer__buttons'>
                         <Button label={dict.navbarButtonVisita} icon={'Ship'}/>
-                        <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'}/>
+                        <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'} onClick="https://www.gofundme.com" actionType="redirect"/>
                     </div>
                 </div>
             </Dialog>

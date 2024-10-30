@@ -14,6 +14,12 @@
     outline-offset: 2px;
     cursor: pointer;
 
+    &--loading{
+        @extend .video-card;
+        height: 100% !important;
+        background-color: $gray-color-lt;
+    }
+
     &:hover{
         transform: scale(0.97);
         outline: 3px solid $white-color;

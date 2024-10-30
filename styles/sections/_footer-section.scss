@@ -1,0 +1,207 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    @include flex-center($direction: column, $gap: 30px);
+    box-sizing: border-box;
+    padding: 30px 50px;
+
+    background-image: url('/banner-image.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 200% auto;
+    position: relative;
+    box-shadow: 0px -12px 11.9px rgba(0, 0, 0, 0.32);
+
+    @include respond-to(tablet){
+        background-size: 400% auto;
+    }
+
+    @include respond-to(mobile){
+        padding: 30px;
+        background-size: 600% auto;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.55); 
+        z-index: 1; 
+    }
+
+    &__content{
+        z-index: 2; 
+        @include flex-center($direction: row, $justify: space-between, $align: flex-start, $gap: 30px);
+        width: 100%;
+        flex-wrap: wrap;
+
+        &__group{
+            flex-grow: 1;
+            flex-wrap: wrap;
+            @include flex-center($direction: row, $justify: flex-start, $align: flex-start, $gap: 4%);
+        
+            &:nth-child(2){
+                justify-content: flex-end;
+            }
+
+            @include respond-to(tablet){
+                &:nth-child(2){
+                    justify-content: flex-start;
+                }
+            }
+
+            @include respond-to(mobile){
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        
+        &__list {
+            ul{
+                @include flex-center($direction: column, $align: flex-start, $gap: 12px);
+            }
+
+            li{
+                list-style-type: none;
+                @include bodyFont($weight: Regular);
+                color: $white-color;
+                font-size: 0.8rem;
+                line-height: 0.8rem;
+                white-space: nowrap;
+                cursor: pointer;
+
+                &:hover {
+                    animation: spring-right 0.5s ease-out; 
+                }
+
+                @include respond-to(laptop){
+                    font-size: 1rem;
+                    line-height: 1rem;
+                }
+            }
+
+            h6{
+                @include titleFont($weight: SemiBold);
+                color: $white-color;
+                font-size: 1rem;
+                margin-bottom: 10px;
+                white-space: nowrap;
+
+                @include respond-to(laptop){
+                    font-size: 1.2rem;
+                }
+            }
+
+            &--contact{
+                li{
+                    @include flex-center();
+                    user-select: text;
+
+                    &:hover{
+                        animation: none;
+                    }
+                }
+            }
+
+            &--socials{
+                ul{
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                li{
+                    &:hover{
+                        animation: ring-bell 0.5s ease-in-out;
+                    }
+
+                    img{
+                        width: 30px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__hr{
+        width: 100%;
+        z-index: 2; 
+        
+    }
+
+    &__sponsors{
+        z-index: 2;
+        width: 100%;
+        @include flex-center($direction: row, $justify: flex-start, $gap: 30px);
+        flex-wrap: wrap;
+
+        @include respond-to(tablet){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        &__sponsor{
+            @include flex-center();
+            padding: 10px;
+            border-radius: 10px;
+            height: 60px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+            flex-grow: 1;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            img{
+                height: 90%;
+                width: auto;
+
+                @include respond-to(mobile){
+                    height: auto;
+                    max-height: 90%;
+                    width: 20vw;
+                    object-fit: contain;
+                }
+            }
+
+            &--arcandina{
+                @extend .footer__sponsors__sponsor;
+                background-color: $white-color;
+            }
+
+            &--rotary{
+                @extend .footer__sponsors__sponsor;
+                background-color: $rotary-blue-color;
+            }
+
+        }
+    }
+
+    &__sponsor{
+        @include flex-center($direction: column, $gap: 10px, $justify: flex-start, $align: flex-start); 
+        @include bodyFont($weight: Regular);
+        color: $white-color;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+
+        @include respond-to(laptop){
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+    }
+
+}
+
+@keyframes spring-right {
+    0% {
+        transform: translateX(0); // Starting position
+    }
+    50% {
+        transform: translateX(5px); // Move 5px to the right
+    }
+    100% {
+        transform: translateX(0); // Spring back to original position
+    }
+}

@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
+import { Skeleton } from 'primereact/skeleton';
 const YOUTUBE_API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 const getVideoIdFromUrl = (url) => {
@@ -39,7 +40,7 @@ const VideoCard = ({ video }) => {
   }, [video.src]);
 
   if (!videoData) {
-    return <div>Loading...</div>; 
+    return <Skeleton className="video-card--loading"></Skeleton>; 
   }
 
   return (
