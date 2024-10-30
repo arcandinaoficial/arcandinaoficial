@@ -2,7 +2,7 @@
 const nextConfig = {
     output: "export",
     basePath: "/arcandinaoficial",
-    assetPrefix: "/arcandinaoficial/",
+    assetPrefix: "./",
 };
 
 export default nextConfig;
