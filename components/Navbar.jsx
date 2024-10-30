@@ -33,7 +33,7 @@ const Navbar = ({dict}) => {
     <nav className='navbar'>
       <Image
           className='navbar__logo'
-          src="/logo-arcandina.png" 
+          src="./logo-arcandina.png" 
           alt="Logo de Arcandina"
           width={110} 
           height={69} 
