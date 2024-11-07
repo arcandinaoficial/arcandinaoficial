@@ -7,8 +7,8 @@ const nextConfig = {
         domains: ['i.ytimg.com'], 
         unoptimized: true, 
     },
-    assetPrefix: isProd ? '/arcandinaoficial/' : '',
-    basePath: isProd ? '/arcandinaoficial' : '',
+    assetPrefix: '',
+    basePath: '',
     output: isProd ? 'export' : undefined,
 };
 
