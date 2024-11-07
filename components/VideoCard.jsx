@@ -26,7 +26,7 @@ const fetchVideoData = async (videoId) => {
   return null;
 };
 
-const VideoCard = ({ video }) => {
+const VideoCard = ({ video, className = '' }) => {
   const [videoData, setVideoData] = useState(null);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const VideoCard = ({ video }) => {
   }
 
   return (
-    <div className="video-card" onClick={() => window.open(video.src, '_blank')}>
+    <div className={`video-card ${className}`} onClick={() => window.open(video.src, '_blank')}>
       <div className="video-card__thumbnail" >
           <Image
               className='video-card__thumbnail-image'

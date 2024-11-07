@@ -3,6 +3,7 @@
 import React, {useState} from 'react';
 import Button from './Button';
 import LandingPageVideos from './content-displayers/LandingPageVideos';
+import LandingPagePodcasts from './content-displayers/LandingPagePodcasts';
 
 const ContentDiplayer = ({dict}) => {
 
@@ -36,7 +37,7 @@ const ContentDiplayer = ({dict}) => {
             case 1:
                 return <LandingPageVideos />;
             case 2:
-                return <div>2</div>;
+                return <LandingPagePodcasts />;
             case 3:
                 return <div>3</div>;
             default:
@@ -50,6 +51,7 @@ const ContentDiplayer = ({dict}) => {
                 {contentButtons.map((button, index) => (
                     <Button 
                         onClick={() => {setSelectedContent(button.id)}} 
+                        actionType='function'
                         key={index} 
                         label={button.label} 
                         icon={button.icon} 
