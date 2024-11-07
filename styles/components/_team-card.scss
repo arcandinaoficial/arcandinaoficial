@@ -1,0 +1,72 @@
+.team-card {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: start; // Align the text content to start at the top
+    margin-top: 20px;
+    align-items: center;
+    justify-items: center;
+
+    @include respond-to(laptop){
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1; // Make the wrapper square
+        border-radius: 20px;
+        overflow: hidden; // Ensure image fits within rounded corners
+        padding: 15px;
+        background-color: $primary-color;
+        grid-column: 1 / span 1;
+
+        @include respond-to(laptop){
+            grid-row: 1 / span 1;
+            width: clamp(200px, 100%, 400px);
+            
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+    }
+
+    &__text {
+        grid-column: 2 / span 1;
+        width: 100%;
+        height: 100%;
+        background-color: $white-color;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include respond-to(laptop){
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        h3 {
+            @include flex-center($gap: 0px, $align: flex-start, $justify: flex-start, $direction: column);
+            @include titleFont($weight: ExtraBold);
+            font-size: 2.8rem;
+            color: $primary-color;
+        }
+
+        p {
+            @include bodyFont();
+            font-size: 1.2rem;
+            line-height: 1.5;
+            user-select: auto;
+            margin-top: 5px;
+        }
+    }
+}

@@ -70,6 +70,13 @@
         }
     }
 
+    &__creators{
+        width: clamp(80px, 80%, 1200px);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     @include respond-to(mobile){
         &__title{
 

@@ -1,3 +1,4 @@
+import TeamCard from '@/components/TeamCard';
 import WindowCarousel from '@/components/WindowCarousel';
 import React from 'react';
 
@@ -11,6 +12,13 @@ const AboutUsSection = ({dict}) => {
         <p className='aboutus-section__description'>
             {dict.aboutUsText3}
         </p>
+        <span className='aboutus-section__content-title'>
+            {dict.aboutUsText6}
+        </span>
+        <div className='aboutus-section__creators'>
+            <TeamCard imageSrc={'/maria-elena-ordonez-img.jpg'} title={'María Elena Ordoñez'} description={dict.mariaElenaDescription}/>
+            <TeamCard imageSrc={'/pablo-palacios-img.jpg'} title={'Pablo Palacios Naranjo'} description={dict.pabloDescription}/>
+        </div>
         <span className='aboutus-section__content-title'>
             {dict.aboutUsText4}
         </span>
