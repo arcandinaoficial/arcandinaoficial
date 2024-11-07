@@ -23,6 +23,8 @@
         perspective: 2000px; // Apply perspective to the container
         perspective-origin: center; 
         position: relative; 
+        padding-left: 5px;
+        transform: translateX(4px);
 
         &::before {
             content: '';
