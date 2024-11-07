@@ -1,5 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -7,8 +5,8 @@ const nextConfig = {
         domains: ['i.ytimg.com'], 
         unoptimized: true, 
     },
-    assetPrefix: isProd ? '/arcandinaoficial/' : '',
-    basePath: isProd ? '/arcandinaoficial' : '',
+    assetPrefix: '',
+    basePath: '',
     output: 'export'
 };
 
