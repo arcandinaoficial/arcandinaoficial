@@ -86,6 +86,7 @@
             flex: 0 0 var(--slide-size);
             min-width: 0;
             padding-left: var(--slide-spacing);
+            box-sizing: border-box;
         
             position: relative;
             @include flex-center($gap: 0px);

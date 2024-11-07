@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { Skeleton } from 'primereact/skeleton';
 const YOUTUBE_API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
@@ -45,7 +46,16 @@ const VideoCard = ({ video }) => {
 
   return (
     <div className="video-card" onClick={() => window.open(video.src, '_blank')}>
-      <img src={videoData.thumbnail} alt={videoData.title} className="video-card__thumbnail" />
+      <div className="video-card__thumbnail" >
+          <Image
+              className='video-card__thumbnail-image'
+              src={videoData?.thumbnail || ''} 
+              alt={videoData.title}
+              width={500} 
+              height={500} 
+              priority 
+          />
+      </div>
       <h5 className="video-card__title">{videoData.title}</h5>
       <p className="video-card__description">{videoData.description}</p>
     </div>

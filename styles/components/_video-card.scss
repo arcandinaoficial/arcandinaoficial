@@ -1,14 +1,14 @@
 .video-card{
     @include flex-center($direction: column, $justify: start, $gap: 5px);
     height: 100%;
-    width: clamp(310px, 100%, 500px);
+    width: calc(100% - 10px);
     background-color: $white-color;
     overflow: hidden;
     box-sizing: border-box;
     padding: 15px;
     border-radius: 15px;
     transition: all 0.2s linear, opacity 300ms ease;
-    transform: scale(0.95);
+    transform: scale(0.97);
     position: relative;
     outline: 3px solid transparent;
     outline-offset: 2px;
@@ -21,26 +21,67 @@
     }
 
     &:hover{
-        transform: scale(0.97);
+        transform: scale(1);
         outline: 3px solid $white-color;
         box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8); 
+
+        .video-card__thumbnail::before,
+        .video-card__thumbnail::after {
+            opacity: 1;
+        }
     
         @include respond-to(mobile){
             transform: scale(0.96);
         }
     }
 
-    &__thumbnail{
+    &__thumbnail {
+        position: relative; // Add relative positioning to the thumbnail
         width: 100%;
         height: 118px;
-        object-fit: cover;
         border-radius: 10px;
+        overflow: hidden; // Ensure the overlay stays within rounded corners
+
+        &-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute; // Position overlay absolutely within thumbnail
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); // Dark overlay
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%; // Center play icon
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white-color;
+            mask: url('/play.svg') no-repeat center / 70% 70%;
+            -webkit-mask: url('/play.svg') no-repeat center / 70% 70%;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
     }
+    
 
     &__title{
         @include titleFont();
         font-size: 1.1rem;
-        line-height: 1.1rem;
+        line-height: 1.3rem;
         margin-top: 10px;
         align-self: flex-start;
 
