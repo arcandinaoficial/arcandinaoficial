@@ -24,6 +24,8 @@
         padding: 15px;
         background-color: $primary-color;
         grid-column: 1 / span 1;
+        box-shadow: inset -5px -5px 10px #c36a1a,
+            inset 5px 5px 10px #ff9e28;
 
         @include respond-to(laptop){
             grid-row: 1 / span 1;
