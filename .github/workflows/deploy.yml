@@ -23,6 +23,7 @@ jobs:
     - name: Build project
       env:
         NEXT_PUBLIC_YOUTUBE_API_KEY: ${{ secrets.NEXT_PUBLIC_YOUTUBE_API_KEY }}
+        NODE_ENV: ${{ secrets.NODE_ENV }}
       run: npm run build
 
     - name: Add CNAME file
