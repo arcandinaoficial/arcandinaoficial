@@ -33,7 +33,7 @@ const RotarySection = ({ dict }) => {
           />
         </span>
       </h2>
-      <p className='rotary-section__description'>{dict.rotaryText1}</p>
+      <p className='rotary-section__description'>{dict.rotaryText4}</p>
       <div className='rotary-section__carousel'> 
         <CurvyCarousel />
       </div>
@@ -41,7 +41,6 @@ const RotarySection = ({ dict }) => {
           <span>{dict.rotaryText2}</span>
           <span>{dict.rotaryText3}</span>
       </h2>
-      <p className='rotary-section__description'>{dict.rotaryText4}</p>
       <ContentDiplayer dict={dict} />
       <p className='aboutus-section__arca-redirect'> 
           {dict.rotaryText5} 

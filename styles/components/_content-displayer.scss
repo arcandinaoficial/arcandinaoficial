@@ -2,6 +2,7 @@
     @include flex-center($direction: column);
     width: 100%;
     max-width: 100%;
+    margin-top: 30px;
 
     &__buttons{
         @include flex-center($direction: row);

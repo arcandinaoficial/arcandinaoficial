@@ -13,8 +13,9 @@
 
     padding: 100px 0px;
 
-    box-shadow: inset 0px -65px 198.8px 0px rgba(0, 0, 0, 0.77);
-    
+    box-shadow: 
+        inset 0px -65px 198.8px 0px rgba(0, 0, 0, 0.77),
+        0px -5px 5px -3px rgba(0,0,0,0.8);
 
     &__title{
         @include flex-center($direction: column);
@@ -42,7 +43,7 @@
         color: $white-color;
         font-size: 1.2rem;
         line-height: 1.5;
-        text-align: center;
+        text-align: justify;
         user-select: auto;
     }
 
