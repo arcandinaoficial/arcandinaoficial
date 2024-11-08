@@ -1,3 +1,4 @@
+import LinkText from '@/components/LinkText';
 import TeamCard from '@/components/TeamCard';
 import WindowCarousel from '@/components/WindowCarousel';
 import React from 'react';
@@ -28,9 +29,7 @@ const AboutUsSection = ({dict}) => {
         <p className='aboutus-section__arca-redirect'> 
             {dict.aboutUsText5} 
             <br/> 
-            <a href="https://example.com">
-                <strong>{dict.visitTheArk}</strong>
-            </a>
+            <LinkText text={dict.visitTheArk} route={'arcandina'}/>
         </p>
     </section>
   );

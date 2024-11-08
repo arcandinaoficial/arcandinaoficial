@@ -5,6 +5,7 @@ import Image from 'next/image';
 import WaveBackground from '@/components/WaveBackground';
 import CurvyCarousel from '@/components/CurvyCarousel';
 import ContentDiplayer from '@/components/ContentDisplayer';
+import LinkText from '@/components/LinkText';
 
 const RotarySection = ({ dict }) => {
   return (
@@ -45,9 +46,7 @@ const RotarySection = ({ dict }) => {
       <p className='aboutus-section__arca-redirect'> 
           {dict.rotaryText5} 
           <br/> 
-          <a href="https://example.com">
-              <strong>{dict.visitTheArk}</strong>
-          </a>
+          <LinkText text={dict.visitTheArk} route={'arcandina'}/>
       </p>
     </section>
   );
