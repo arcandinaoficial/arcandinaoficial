@@ -5,10 +5,12 @@
     grid-template-columns: 35% 65%;
     gap: 20px;
     box-sizing: border-box;
-    align-items: start; // Align the text content to start at the top
-    margin-top: 20px;
     align-items: center;
     justify-items: center;
+
+    &:nth-child(1){
+        margin-top: 30px;
+    }
 
     @include respond-to(laptop){
         grid-template-columns: 100%;

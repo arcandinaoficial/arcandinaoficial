@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import Button from './Button';
 import LandingPageVideos from './content-displayers/LandingPageVideos';
 import LandingPagePodcasts from './content-displayers/LandingPagePodcasts';
+import LandingPageRevista from './content-displayers/LandingPageRevista';
 
 const ContentDiplayer = ({dict}) => {
 
@@ -39,7 +40,7 @@ const ContentDiplayer = ({dict}) => {
             case 2:
                 return <LandingPagePodcasts />;
             case 3:
-                return <div>3</div>;
+                return <LandingPageRevista dict={dict}/>;
             default:
                 return <div>4</div>;
         }
@@ -52,7 +53,7 @@ const ContentDiplayer = ({dict}) => {
                     <Button 
                         onClick={
                             () => {
-                                if(button.id === 1 || button.id === 2){ // Temporarily disable revista and talleres
+                                if(button.id !== 4){ // Temporarily disable revista and talleres
                                     setSelectedContent(button.id); 
                                 }
                             }

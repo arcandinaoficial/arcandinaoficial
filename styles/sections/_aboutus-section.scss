@@ -49,9 +49,11 @@
 
     &__content-title{
         @include bodyFont($weight: ExtraBold);
+        font-size: 1.2rem;
         background-color: $white-color;
         color: $primary-color;
         width: auto;
+        max-width: 90%;
         text-align: center;
         box-sizing: border-box;
         padding: 10px 30px;

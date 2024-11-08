@@ -18,7 +18,7 @@
   "aboutUsText1": "About",
   "aboutUsText2": "the Arcandina",
   "aboutUsText3": "María Elena Ordóñez and Pablo Palacios created the television series ARCANDINA to promote education in environmental and civic values. ARCANDINA was broadcast on television networks in several Latin American countries and the United States, reaching millions of children and their families with messages of environmental awareness. It has been recognized by institutions such as UNESCO, the National Wildlife Federation, and the Schwab Foundation of the World Economic Forum as one of the best environmental edu-communication strategies for children in the continent.",
-  "aboutUsText4": "Here's some of the content we have made",
+  "aboutUsText4": "Some of out content (Select a window)",
   "aboutUsText5": "Do you want to know more about Arcandina?",
   "aboutUsText6": "Meet the creators",
   "visitTheArk": "Visit the ark here",
@@ -47,5 +47,8 @@
   "footerText1": "With the colaboration of:",
   "footerText2": "Thanks to the support from:",
   "mariaElenaDescription": "Educator, children's story writer, television scriptwriter and director, expert in communication and environmental education, with experience in developing audiovisual products and television programs for children and youth. In 2003, María Elena Ordóñez was named one of the 20 most outstanding Social Entrepreneurs worldwide by the Schwab Foundation of the World Economic Forum. In 2000, she was selected as a fellow by the Ashoka organization for social entrepreneurship and as a Social Leader by the Avina Foundation. She was recognized among the 40 exceptional women of Ecuador by Vistazo Magazine and among the 12 most outstanding Ecuadorians of 2002 by El Universo newspaper in Ecuador.",
-  "pabloDescription": "Expert in multimedia communication and strategic communication planning, film director, photographer, and writer. He has served as a Communications Program Officer for Johns Hopkins University. Consultant and advisor for USAID, UNESCO, and UNICEF. President of the Arcandina Foundation and director of the Cimerron Cinema company in New York. Director and co-producer of the documentary series “Africa: the beat goes on,” about the contributions of Afro-descendants to the continent's culture and identity. His documentary Flags, Feathers and Lies was selected by the Library of Congress of the United States."
+  "pabloDescription": "Expert in multimedia communication and strategic communication planning, film director, photographer, and writer. He has served as a Communications Program Officer for Johns Hopkins University. Consultant and advisor for USAID, UNESCO, and UNICEF. President of the Arcandina Foundation and director of the Cimerron Cinema company in New York. Director and co-producer of the documentary series “Africa: the beat goes on,” about the contributions of Afro-descendants to the continent's culture and identity. His documentary Flags, Feathers and Lies was selected by the Library of Congress of the United States.",
+  "revistaTitle": "A board the Arcandina",
+  "revistaDescription": "This magazine, presented by Arcandina and Rotary, invites readers to dive into essential topics on water conservation and river preservation. Through educational articles and inspiring projects, it explores the importance of protecting our water resources and the biodiversity that depends on them. With a focus on environmental conservation and responsible water management, this publication aims to raise awareness and inspire actions toward a more sustainable future. We invite you to read it and discover how, together, we can protect our rivers and ensure clean water for everyone!",
+  "revistaButton": "Read the magazine here"
 }
