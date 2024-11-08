@@ -22,7 +22,7 @@ export default async function Home({ params }) {
   return (
     <>
       <div>
-        <Navbar dict={dict}/>
+        <Navbar dict={dict} params={params}/>
         <main className='landing-page__main'>
           <BannerSection dict={dict}/>
           <AboutUsSection dict={dict}/>

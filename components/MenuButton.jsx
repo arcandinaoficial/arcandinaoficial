@@ -11,7 +11,7 @@ import {
     Compass 
 } from 'lucide-react';
 
-const MenuButton = ({navbarItems, dict}) => {
+const MenuButton = ({navbarItems, dict, params}) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -82,7 +82,12 @@ const MenuButton = ({navbarItems, dict}) => {
                 <div className='navbar__dialog__footer'>
                     <hr></hr>
                     <div className='navbar__dialog__footer__buttons'>
-                        <Button label={dict.navbarButtonVisita} icon={'Ship'}/>
+                        <Button 
+                            label={dict.navbarButtonVisita} 
+                            icon={'Ship'}
+                            actionType='navigate'
+                            onClick={`/${params.lang}/arcandina`}
+                        />
                         <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'} onClick="https://www.gofundme.com" actionType="redirect"/>
                     </div>
                 </div>

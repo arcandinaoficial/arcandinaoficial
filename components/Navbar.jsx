@@ -4,7 +4,7 @@ import Button from './Button';
 import Image from 'next/image';
 import MenuButton from './MenuButton';
 
-const Navbar = ({dict}) => {
+const Navbar = ({dict, params}) => {
 
   const navbarItems = [
       {
@@ -48,11 +48,16 @@ const Navbar = ({dict}) => {
         ))}
       </ul>
       <div className='navbar__buttons'>
-        <Button label={dict.navbarButtonVisita} icon={'Ship'}/>
+        <Button 
+          label={dict.navbarButtonVisita} 
+          icon={'Ship'}
+          actionType='navigate'
+          onClick={`/${params.lang}/arcandina`}
+        />
         <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'} onClick="https://www.gofundme.com" actionType="redirect"/>
       </div>
       <div className='navbar__burger-menu'>
-        <MenuButton navbarItems={navbarItems} dict={dict}/>
+        <MenuButton navbarItems={navbarItems} dict={dict} params={params}/>
       </div>
     </nav>
   );

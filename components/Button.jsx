@@ -11,7 +11,8 @@ import {
     Mic,
     BookOpenText,
     Lightbulb,
-    House 
+    House,
+    CircleArrowLeft
 } from 'lucide-react';
 
 const Button = ({ 
@@ -36,6 +37,7 @@ const Button = ({
         BookOpenText: <BookOpenText color={iconColor} size={iconSize} />,
         Lightbulb: <Lightbulb color={iconColor} size={iconSize} />,
         House: <House color={iconColor} size={iconSize} />,
+        CircleArrowLeft: <CircleArrowLeft color={iconColor} size={iconSize} />,
     };
 
     const handleButtonClick = () => {

@@ -7,7 +7,7 @@ export default async function Home({ params }) {
 
   return (
     <section className='arcandina'>
-      <WorkingScreen dict={dict}/>
+      <WorkingScreen dict={dict} params={params}/>
     </section>
   );
 }
