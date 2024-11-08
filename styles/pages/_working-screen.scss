@@ -1,0 +1,19 @@
+.working-screen{
+    @include flex-center($direction: column);
+
+    h2{
+        @include titleFont();
+        font-size: 2.5rem;
+        color: $white-color;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    p{
+        @include bodyFont();
+        text-align: center;
+        width: 60%;
+        line-height: 1.2rem;
+        color: $white-color;
+    }
+}

@@ -10,7 +10,8 @@ import {
     Clapperboard,
     Mic,
     BookOpenText,
-    Lightbulb 
+    Lightbulb,
+    House 
 } from 'lucide-react';
 
 const Button = ({ 
@@ -34,15 +35,18 @@ const Button = ({
         Mic: <Mic color={iconColor} size={iconSize} />,
         BookOpenText: <BookOpenText color={iconColor} size={iconSize} />,
         Lightbulb: <Lightbulb color={iconColor} size={iconSize} />,
+        House: <House color={iconColor} size={iconSize} />,
     };
 
     const handleButtonClick = () => {
         if (actionType === 'redirect' && typeof onClick === 'string') {
             window.open(onClick, '_blank');
+        } else if (actionType === 'navigate' && typeof onClick === 'string') {
+            window.location.href = onClick; // Navigate in the same tab
         } else if (actionType === 'function' && typeof onClick === 'function') {
             onClick();
         }
-    }; 
+    };
 
     return (
         <button
