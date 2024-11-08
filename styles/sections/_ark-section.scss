@@ -2,6 +2,7 @@
     @include flex-center($direction: column, $gap: 180px);
     width: clamp(200px, 90%, 1200px);
     overflow-x: hidden;
+    overflow-y: hidden;
     box-sizing: border-box;
     padding: 50px 0px 100px 0px;
 

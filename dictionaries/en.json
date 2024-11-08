@@ -33,7 +33,7 @@
   "rotaryText5": "For more content from Arcandina & Rotary",
   "arkText1": "Explore the Arcandina!",
   "arkText2": "In the Arcandina, you'll have access to an exclusive selection of videos and podcasts, including all episodes of the miniseries developed in collaboration with Rotary and much more. Additionally, you’ll find a library with magazines and stories that allow you to explore fascinating topics. You'll also be able to discover the most innovative projects and workshops from Arcandina, presenting valuable information accompanied by graphics, infographics, and educational material. Dive into the ark's content and be part of this amazing educational adventure!",
-  "arkText3": "Hover over each character",
+  "arkText3": "Click on each character",
   "footerTitle1": "Navigate",
   "footerTitle2": "Visit the Ark",
   "footerTitle3": "Contact",
@@ -53,7 +53,19 @@
   "revistaButton": "Read the magazine here",
   "arcandinaTitle": "",
   "arcandinaDescription": "",
-  "workingPageTitle": "We're Working on It!",
+  "workingPageTitle": "We're Working on It",
   "workingPageDescription": "This section is currently under development. Please check back soon to discover new content and features. Thank you for your patience!",
-  "back": "Go back"
+  "back": "Go back",
+  "proyectosYTalleres": "Projects and Workshops with",
+  "visitArcandina": "Arcandina's homepage with",
+  "rinconLectura": "Reading Nook with",
+  "zonaVideos": "Video Zone with",
+  "podcasts": "Podcast Studio with",
+  "landingPage": {
+    "jaguiDescription": "Visit with Jagüi the projects and workshops we have conducted, along with all their materials.",
+    "antonellaDescription": "Go to the homepage to see the latest Arcandina news and important instructions we have for you.",
+    "tucanDescription": "Read along with Tucán all the stories and readings we have for you in the reading corner.",
+    "guardianDescription": "Watch all the audiovisual content we have for you in the Video Zone, along with the Green Guardian, the leader of Arcandina.",
+    "coriDescription": "Listen to our podcasts with Cori, the ocean guardian, in our podcast studio."
+  }
 }

@@ -1,0 +1,126 @@
+.character-message{
+    position: fixed;
+    visibility: hidden;
+    bottom: -100px; 
+    right: 20px;
+    opacity: 0;
+    transition: bottom 0.4s ease-in-out, opacity 0.8s ease;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 300px;
+    width: 350px;
+    max-width: 80vw;
+    z-index: 1000;
+    
+
+    &-visible{
+        position: absolute;
+        visibility: visible;
+        bottom: 20px; 
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &__image{
+        grid-row: 1 / span 1;
+        margin-left: auto;
+    }
+
+    &__character{
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        filter: drop-shadow(-4px 0px 9px rgba(0, 0, 0, 0.88));
+        transform: translateY(10px);
+    }
+
+    &__info{
+        grid-row: 2 / span 1;
+        display: grid;
+        grid-template-columns: 5% 95%;
+        position: relative;
+        filter: drop-shadow(-4px 0px 9px rgba(0, 0, 0, 0.88));
+        cursor: pointer;
+
+        &__border{
+            grid-column: 1 / span 1;
+            width: 150%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            border-radius: 10px 0px 0px 10px;
+
+            &--jagui{
+                background-color: $jagui-color;
+            }
+            &--cori{
+                background-color: $cori-color;
+            }
+            &--antonella{
+                background-color: $antonella-color;
+            }
+            &--tucan{
+                background-color: $tucan-color;
+            }
+            &--guardian{
+                background-color: $guardian-color;
+            }
+        }
+
+        &__text{
+            grid-column: 2 / span 1;
+            z-index: 2;
+            background-color: $white-color;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 5%;
+
+            @include flex-center($direction: column, $align: flex-start, $gap: 2px);
+        
+            span{
+                @include titleFont($weight: Bold);
+                font-size: 0.8rem;
+            }
+
+            h6{
+                @include titleFont($weight: Bold);
+                font-size: 2.5rem;
+            }
+
+            p{
+                @include bodyFont();
+                line-height: 1.2rem;
+                margin-top: 3px;
+            }
+
+            &--jagui{
+                h6{
+                    color: $jagui-color;
+                }
+            }
+            &--cori{
+                h6{
+                    color: $cori-color;
+                }
+            }
+            &--antonella{
+                h6{
+                    color: $antonella-color;
+                }
+            }
+            &--tucan{
+                h6{
+                    color: $tucan-color;
+                }
+            }
+            &--guardian{
+                h6{
+                    color: $guardian-color;
+                }
+            }
+        }
+    }
+}

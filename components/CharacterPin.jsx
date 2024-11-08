@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, {useEffect, useState} from 'react';
 
-const CharacterPin = ({characterName}) => {
+const CharacterPin = ({characterName, action}) => {
 
     const [characterImage, setCharacterImage] = useState('/characters/cori.png');
 
@@ -33,7 +33,7 @@ const CharacterPin = ({characterName}) => {
     },[])
 
     return (
-        <div className={`character-pin character-pin--${characterName}`}>
+        <div className={`character-pin character-pin--${characterName}`} onClick={action}>
             <div className="character-pin__image" >
                 <Image
                     className='character-pin__character'

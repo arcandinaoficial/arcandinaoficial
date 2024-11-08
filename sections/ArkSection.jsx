@@ -4,10 +4,12 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import CharacterPin from '@/components/CharacterPin';
+import CharacterMessage from '@/components/CharacterMessage';
 
 const ArkSection = ({ dict }) => {
   const [arkImage, setArkImage] = useState('/ark.png');
   const { scrollY } = useScroll();
+  const [visibleCharacter, setVisibleCharacter] = useState('');
   
   const rotateTransform = useTransform(scrollY, (value) => {
     return Math.sin(value / 80) * 5;
@@ -34,8 +36,13 @@ const ArkSection = ({ dict }) => {
     };
   }, []);
 
+  const handlePinClick = (character) => (event) => {
+    event.stopPropagation(); 
+    setVisibleCharacter(character);
+  };
+
   return (
-    <div className='ark-section__background'>
+    <div className='ark-section__background' onClick={() => setVisibleCharacter('')}>
       <section className='ark-section'>
         <div className='ark-section__content' id='ArkSection'>
           <div className='ark-section__text'>
@@ -68,14 +75,20 @@ const ArkSection = ({ dict }) => {
             height={arkImage === '/ark.png' ? 636 : 1692}
             priority
           />
-          <CharacterPin characterName={'cori'}/>
-          <CharacterPin characterName={'jagui'}/>
-          <CharacterPin characterName={'antonella'}/>
-          <CharacterPin characterName={'tucan'}/>
-          <CharacterPin characterName={'guardian'}/>
+          <CharacterPin characterName={'cori'} action={handlePinClick('cori')}/>
+          <CharacterPin characterName={'jagui'} action={handlePinClick('jagui')}/>
+          <CharacterPin characterName={'antonella'} action={handlePinClick('antonella')}/>
+          <CharacterPin characterName={'tucan'} action={handlePinClick('tucan')}/>
+          <CharacterPin characterName={'guardian'} action={handlePinClick('guardian')}/>
           {/* <CharacterPin characterName={'ratasura'}/> */}
         </div>
       </section>
+
+      <CharacterMessage characterName={'cori'} dict={dict} visible={visibleCharacter === 'cori'}/>
+      <CharacterMessage characterName={'jagui'} dict={dict} visible={visibleCharacter === 'jagui'}/>
+      <CharacterMessage characterName={'antonella'} dict={dict} visible={visibleCharacter === 'antonella'}/>
+      <CharacterMessage characterName={'tucan'} dict={dict} visible={visibleCharacter === 'tucan'}/>
+      <CharacterMessage characterName={'guardian'} dict={dict} visible={visibleCharacter === 'guardian'}/>
     </div>
   );
 };

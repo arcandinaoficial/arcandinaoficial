@@ -33,7 +33,7 @@
   "rotaryText5": "Para más contenido de Arcandina & Rotary",
   "arkText1": "¡Explora el Arcandina!",
   "arkText2": "En el Arcandina, tendrás acceso a una selección exclusiva de videos y podcasts, incluyendo todos los episodios de la miniserie desarrollada en conjunto con el Rotary y mucho más. Además, encontrarás una biblioteca con revistas y cuentos, que te permitirán explorar temas fascinantes. También podrás descubrir los proyectos y talleres más innovadores del Arcandina, donde se presenta información valiosa acompañada de gráficos, infografías y material educativo. ¡Sumérgete en el contenido del arca y forma parte de esta increíble aventura educativa!",
-  "arkText3": "Desliza el cursor sobre cada personaje",
+  "arkText3": "Haz click sobre cada personaje",
   "footerTitle1": "Navega",
   "footerTitle2": "Visita el arca",
   "footerTitle3": "Contacto",
@@ -53,7 +53,19 @@
   "revistaButton": "Lee la revista aquí",
   "arcandinaTitle": "",
   "arcandinaDescription": "",
-  "workingPageTitle": "¡Estamos Trabajando en Esto!",
+  "workingPageTitle": "Estamos Trabajando en Esto",
   "workingPageDescription": "Esta sección está en desarrollo. Vuelve pronto para descubrir nuevo contenido y funciones. ¡Gracias por tu paciencia!",
-  "back": "Volver"
+  "back": "Volver",
+  "proyectosYTalleres": "Proyectos y Talleres con",
+  "visitArcandina": "Inicio del Arcandina con",
+  "rinconLectura": "Rincón de Lectura con",
+  "zonaVideos": "Zona de Videos con",
+  "podcasts": "Estudio de Podcasts con",
+  "landingPage": {
+    "jaguiDescription": "Visita con Jagüi los proyectos y talleres que hemos realizado junto con todo su material.",
+    "antonellaDescription": "Visita el inicio para poder ver las últimas noticias del Arcandina y las instrucciones importantes que tenemos para tí.",
+    "tucanDescription": "Lee junto con Tucán todos los cuentos y lecturas que tenemos para tí en el rincón de lectura.",
+    "guardianDescription": "Mira todo el contenido audiovisual que tenemos para tí en la Zona de Videos, junto con el Guardían Verde, el líder del Arcandina.",
+    "coriDescription": "Escucha nuestros podcasts con Cori, la guardiana del océano, en nuestro estudio de podcasts."
+  }
 }
