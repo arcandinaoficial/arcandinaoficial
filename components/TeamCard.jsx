@@ -6,7 +6,7 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 
 const TeamCard = ({ imageSrc, title, description }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.4 });
+  const isInView = useInView(ref, { amount: 0.25 });
 
   // Parallax effect based on scroll position
   const { scrollYProgress } = useScroll({
