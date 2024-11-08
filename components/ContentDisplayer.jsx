@@ -50,7 +50,13 @@ const ContentDiplayer = ({dict}) => {
             <div className='content-displayer__buttons'>
                 {contentButtons.map((button, index) => (
                     <Button 
-                        onClick={() => {setSelectedContent(button.id)}} 
+                        onClick={
+                            () => {
+                                if(button.id === 1 || button.id === 2){ // Temporarily disable revista and talleres
+                                    setSelectedContent(button.id); 
+                                }
+                            }
+                        } 
                         actionType='function'
                         key={index} 
                         label={button.label} 
