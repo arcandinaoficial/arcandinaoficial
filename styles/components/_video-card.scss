@@ -14,12 +14,6 @@
     outline-offset: 2px;
     cursor: pointer;
 
-    &--loading{
-        @extend .video-card;
-        height: 100% !important;
-        background-color: $gray-color-lt;
-    }
-
     &:hover{
         transform: scale(1);
         outline: 3px solid $white-color;
@@ -35,18 +29,31 @@
         }
     }
 
+    &--loading{
+        @extend .video-card;
+        height: 100% !important;
+        background-color: $gray-color-lt;
+
+        &:hover{
+            transform: scale(0.94);
+        }
+    }
+
     &__thumbnail {
         position: relative; // Add relative positioning to the thumbnail
         width: 100%;
-        height: 118px;
+        height: fit-content;
+        max-height: 118px;
         border-radius: 10px;
         overflow: hidden; // Ensure the overlay stays within rounded corners
+        aspect-ratio: 16 / 9;
 
         &-image{
-            height: 100%;
+            height: auto;
             width: 100%;
             object-fit: cover;
             z-index: -2;
+            aspect-ratio: 16 / 9;
         }
     
         &::before {
@@ -97,13 +104,13 @@
     &__description{
         width: 100%;
         @include bodyFont();
-        line-height: 1.1rem;
+        line-height: 1.25rem;
         margin-top: 10px;
         align-self: flex-start;
         max-height: 100%; // Adjust this value depending on the number of lines
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 5; // Limit to 3 lines
+        -webkit-line-clamp: 5; 
         line-clamp: 5;
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
