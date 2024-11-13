@@ -67,5 +67,7 @@
     "tucanDescription": "Read along with Tucán all the stories and readings we have for you in the reading corner.",
     "guardianDescription": "Watch all the audiovisual content we have for you in the Video Zone, along with the Green Guardian, the leader of Arcandina.",
     "coriDescription": "Listen to our podcasts with Cori, the ocean guardian, in our podcast studio."
-  }
+  },
+  "emptyVideoCardTitle": "Coming Soon",
+  "emptyVideoCardDescription": "Don't miss the next episode! Follow us on social media to be the first to know when it's available."
 }

@@ -7,10 +7,11 @@ import {
 import VideoCard from '../VideoCard';
 import useEmblaCarousel from 'embla-carousel-react'
 import slides from '@/data/videos/rotary-miniserie.json';
+import VideoCardEmpty from '../VideoCardEmpty';
 
 const options = { align: 'start', loop: true }
 
-const LandingPageVideos = (props) => {
+const LandingPageVideos = ({dict}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
   const {
@@ -20,13 +21,19 @@ const LandingPageVideos = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
 
+  const cutIndex = slides.findIndex(slide => slide.src === 'contentcut');
+  const slidesToRender = cutIndex === -1 ? slides : slides.slice(0, cutIndex + 1);
+
   return (
     <section className="content-displayer__videos">
         <div className="content-displayer__videos__viewport" ref={emblaRef}>
             <div className="content-displayer__videos__container">
-                {slides.map((slide, index) => (
+                {slidesToRender.map((slide, index) => (
                     <div className="content-displayer__videos__slide" key={index}>
-                        <VideoCard video={slide} />
+                        {slide.src === 'contentcut' ? 
+                          <VideoCardEmpty dict={dict} /> :
+                          <VideoCard video={slide} />
+                        }
                     </div>  
                 ))}
             </div>

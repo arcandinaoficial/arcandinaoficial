@@ -39,6 +39,50 @@
         }
     }
 
+    &--empty{
+        @extend .video-card;
+        height: 100% !important;
+        background-color: transparent;
+        border: 2px dashed $white-color;
+
+        &__title{
+            @include titleFont();
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            margin-top: 10px;
+            align-self: center;
+            color: $white-color;
+        }
+
+        &__description{
+            width: 100%;
+            @include bodyFont();
+            line-height: 1.25rem;
+            margin-top: 10px;
+            align-self: flex-start;
+            word-wrap: break-word;
+            color: white;
+            text-align: center;
+        }
+
+        &__socials{
+            list-style-type: none;
+            width: 100%;
+            @include flex-center($gap: 10px);
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            li{
+                transition: all 0.2s linear;
+
+                img{
+                    width: 28px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
     &__thumbnail {
         position: relative; // Add relative positioning to the thumbnail
         width: 100%;

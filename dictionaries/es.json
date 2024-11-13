@@ -67,5 +67,7 @@
     "tucanDescription": "Lee junto con Tucán todos los cuentos y lecturas que tenemos para tí en el rincón de lectura.",
     "guardianDescription": "Mira todo el contenido audiovisual que tenemos para tí en la Zona de Videos, junto con el Guardían Verde, el líder del Arcandina.",
     "coriDescription": "Escucha nuestros podcasts con Cori, la guardiana del océano, en nuestro estudio de podcasts."
-  }
+  },
+  "emptyVideoCardTitle": "Próximamente",
+  "emptyVideoCardDescription": "¡No te pierdas el próximo episodio! Síguenos en redes sociales y entérate primero cuando esté disponible"
 }

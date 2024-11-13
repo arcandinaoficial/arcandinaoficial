@@ -36,11 +36,11 @@ const ContentDiplayer = ({dict}) => {
     const renderContent = () => {
         switch (selectedContent) {
             case 1:
-                return <LandingPageVideos />;
+                return <LandingPageVideos dict={dict} />;
             case 2:
-                return <LandingPagePodcasts />;
+                return <LandingPagePodcasts dict={dict} />;
             case 3:
-                return <LandingPageRevista dict={dict}/>;
+                return <LandingPageRevista dict={dict} />;
             default:
                 return <div>4</div>;
         }
