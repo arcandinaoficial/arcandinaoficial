@@ -63,7 +63,15 @@ const MenuButton = ({navbarItems, dict, params}) => {
         <>
             <Button onClick={() => setVisible(true)} actionType='function' iconSize={25} iconColor='#f58521' label={null} icon={'Menu'} className='navbar__burger-menu__button'/>
             {/* Diálogo de detalles */}
-            <Dialog position={'top-left'} className='navbar__dialog' header="" visible={visible} draggable={false} onHide={() => setVisible(false)} >
+            <Dialog 
+                position={'top-left'} 
+                className='navbar__dialog' 
+                header="" 
+                visible={visible} 
+                draggable={false} 
+                onHide={() => setVisible(false)} 
+                resizable={false}
+            >
                 <ul className='navbar__items navbar__items--dialog'>
                     {navbarItems.map((item, index) => (
                         <motion.li 

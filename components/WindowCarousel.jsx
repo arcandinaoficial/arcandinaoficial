@@ -238,7 +238,14 @@ const WindowCarousel = () => {
             </div>
 
             {/* Diálogo de detalles */}
-            <Dialog className='carousel__slide__dialog' header="" visible={visible} draggable={false} onHide={() => setVisible(false)} >
+            <Dialog 
+                className='carousel__slide__dialog' 
+                header="" 
+                visible={visible} 
+                draggable={false} 
+                onHide={() => setVisible(false)} 
+                resizable={false}
+            >
                 <div className='carousel__slide__dialog__lights'>
                     {
                         Array.from({ length: numberOfLights }).map((_, index) => (
