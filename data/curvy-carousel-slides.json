@@ -1,58 +1,66 @@
 [
     {
-        "src": "https://media1.giphy.com/media/1AjFIU0zw3VsEUNxxk/200.webp?cid=790b7611iqvv3sy3axilmqam4bf1zhuhvtp80kkfs2xi9k9s&ep=v1_gifs_search&rid=200.webp&ct=g",
+        "src": "/curvy-carousel/gif1.gif",
         "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/25kLnBQQ1sG4M/200.webp?cid=790b7611iqvv3sy3axilmqam4bf1zhuhvtp80kkfs2xi9k9s&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 2"
+        "src": "/curvy-carousel/gif2.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/kn2GtngXJ3hZu/giphy.webp?cid=790b7611iqvv3sy3axilmqam4bf1zhuhvtp80kkfs2xi9k9s&ep=v1_gifs_search&rid=giphy.webp&ct=g",
-        "title": "Random GIF 3"
+        "src": "/curvy-carousel/gif3.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media4.giphy.com/media/xqklsTVVXhPa/200.webp?cid=790b7611iqvv3sy3axilmqam4bf1zhuhvtp80kkfs2xi9k9s&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 4"
+        "src": "/curvy-carousel/gif4.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/12ffdI8DuUi2RO/200.webp?cid=790b7611iqvv3sy3axilmqam4bf1zhuhvtp80kkfs2xi9k9s&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 5"
+        "src": "/curvy-carousel/gif5.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/pJlwmFs6l8uQw/200.webp?cid=ecf05e47n00goslugh0p6r9wmz9p1qurh5lg4jx147k0fxrc&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 6"
+        "src": "/curvy-carousel/gif6.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media2.giphy.com/media/1300w1HkjihpIY/200.webp?cid=ecf05e47n00goslugh0p6r9wmz9p1qurh5lg4jx147k0fxrc&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 7"
+        "src": "/curvy-carousel/gif7.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/4PjjOgU3Pj236/200.webp?cid=ecf05e4727lrvw85ox286l0vmaav42ocxn00f2kzf9ltry8w&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 8"
+        "src": "/curvy-carousel/gif8.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media0.giphy.com/media/9J2wGiEnQPPLa/giphy.webp?cid=ecf05e4727lrvw85ox286l0vmaav42ocxn00f2kzf9ltry8w&ep=v1_gifs_search&rid=giphy.webp&ct=g",
-        "title": "Random GIF 9"
+        "src": "/curvy-carousel/gif9.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media3.giphy.com/media/5PGOG2uWtJikU/200.webp?cid=ecf05e471xq011kvfgc6754t6alwk7l8hsumtevpd4p51xs2&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 10"
+        "src": "/curvy-carousel/gif10.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media1.giphy.com/media/12qHWnTUBzLWXS/giphy.webp?cid=ecf05e471xq011kvfgc6754t6alwk7l8hsumtevpd4p51xs2&ep=v1_gifs_search&rid=giphy.webp&ct=g",
-        "title": "Random GIF 11"
+        "src": "/curvy-carousel/gif11.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media4.giphy.com/media/12zyJFTYPuMQI8/giphy.webp?cid=ecf05e47vtrsrbjrpaw3reoa4mko4wle4cn8v8qjr1skw7jy&ep=v1_gifs_search&rid=giphy.webp&ct=g",
-        "title": "Random GIF 12"
+        "src": "/curvy-carousel/gif12.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media3.giphy.com/media/YYMIRb6ZbhPekWrfD7/giphy.webp?cid=ecf05e47iuyuaqf5shcui610uxzkwucsm00h3it5p0bn03d5&ep=v1_gifs_search&rid=giphy.webp&ct=g",
-        "title": "Random GIF 13"
+        "src": "/curvy-carousel/gif13.gif",
+        "title": "Random GIF 1"
     },
     {
-        "src": "https://media3.giphy.com/media/xUA7aS8zKYFHbng6NW/200.webp?cid=ecf05e47iuyuaqf5shcui610uxzkwucsm00h3it5p0bn03d5&ep=v1_gifs_search&rid=200.webp&ct=g",
-        "title": "Random GIF 14"
+        "src": "/curvy-carousel/gif14.gif",
+        "title": "Random GIF 1"
+    },
+    {
+        "src": "/curvy-carousel/gif15.gif",
+        "title": "Random GIF 1"
+    },
+    {
+        "src": "/curvy-carousel/gif16.gif",
+        "title": "Random GIF 1"
     }
 ]
