@@ -62,6 +62,12 @@ const WindowCarousel = () => {
     useEffect(() => {
         setSlides(carouselData[lang] || []);
     }, [lang]); // Sets the corresponding slides according to the language
+    useEffect(() => {
+        if (emblaApi) {
+            console.log('Re init');
+            emblaApi.reInit();
+        }
+    }, [slides, emblaApi]);
     
     // Embla api setup
     const updateCurrentIndex = useCallback(() => {
@@ -232,8 +238,8 @@ const WindowCarousel = () => {
                     </div>
                 </div>
                 <div className="carousel__slide-details">
-                    <h4>{slides[currentIndex]?.title}</h4>
-                    <p>{slides[currentIndex]?.description}</p>
+                    <h4 onClick={() => {setCurrentSlide(slides[currentIndex]); setVisible(true)}}>{slides[currentIndex]?.title}</h4>
+                    <p onClick={() => {setCurrentSlide(slides[currentIndex]); setVisible(true)}}>{slides[currentIndex]?.description}</p>
                 </div>
             </div>
 
@@ -263,9 +269,10 @@ const WindowCarousel = () => {
                     width={450}
                     height={450}
                 />
-                <div className="carousel__slide-details">
+                <div className="carousel__slide-details--dialog">
                     <h4>{currentSlide?.title}</h4>
                     <p>{currentSlide?.description}</p>
+                    <p style={{textAlign: 'center', marginTop: '20px'}}><strong>{currentSlide?.message}</strong></p>
                 </div>
             </Dialog>
         </>

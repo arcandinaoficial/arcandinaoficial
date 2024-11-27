@@ -65,7 +65,7 @@
 
     &__banderines{
         width: clamp(100px, 80%, 800px);
-        margin-top: -3%;
+        margin-top: -2.5%;
         z-index: 0;
 
         @include respond-to(mobile){
@@ -197,6 +197,7 @@
                 .aboutus-section__description__image{
                     height: 25dvh;
                     max-height: 180px;
+                    margin-bottom: 5%;
                 }
             }
 
@@ -249,7 +250,7 @@
         width: clamp(200px, 50%, 1000px);
         @include flex-center($justify: space-between);
 
-        --image-width: 25%;
+        --image-width: 20%;
 
         @include respond-to(tablet){
             --image-width: 35%;
@@ -264,6 +265,10 @@
             width: var(--image-width);
             height: auto;
         }
+    }
+
+    &__carousel{
+        @include flex-center();
     }
 
     @include respond-to(mobile){
