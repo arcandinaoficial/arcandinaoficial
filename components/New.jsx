@@ -26,9 +26,9 @@ const New = ({slide}) => {
             <h2 className='new__title'>{slide.articleTitle}</h2>
             <p className='new__content'>
                 {slide.articleParagraphs?.map((par, index) => (
-                    <p className="new__paragraph" key={index}>
+                    <span className="new__paragraph" key={index}>
                         {par}
-                    </p>
+                    </span>
                 )) || <></>}
             </p>
             {
