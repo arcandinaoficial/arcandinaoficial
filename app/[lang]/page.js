@@ -16,10 +16,9 @@ export async function generateStaticParams() {
   ];
 }
 
-export default async function Home({ params, slug }) {
+export default async function Home({ params }) {
 
   const dict = await getDictionary(params.lang);
-  console.log(slug);
 
   return (
     <>

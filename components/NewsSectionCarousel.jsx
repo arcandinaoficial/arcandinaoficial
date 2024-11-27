@@ -14,7 +14,7 @@ const options = {
 }
 const TWEEN_FACTOR_BASE = 0.2
 
-const NewsSectionCarousel = ({slides}) => {
+const NewsSectionCarousel = ({slides, newId = null}) => {
     
     // Setup
     const [emblaRef, emblaApi] = useEmblaCarousel(options)  // Setup Embla carousel reference and autoplay plugin
@@ -113,6 +113,15 @@ const NewsSectionCarousel = ({slides}) => {
         onPrevButtonClick,
         onNextButtonClick
     } = usePrevNextButtons(emblaApi, onNavButtonClick) // Rendering logic for the slides or placeholders when slides are not available
+    useEffect(() => {
+        if (emblaApi && newId) {
+            const targetIndex = slides.findIndex((slide) => slide.id === parseInt(newId));
+            if (targetIndex !== -1) {
+                emblaApi.scrollTo(targetIndex); // Scroll to the specific slide
+                setCurrentSlide(slides[targetIndex]); // Set the current slide
+            }
+        }
+    }, [emblaApi, newId, slides]); // Scroll to specific news slide if `newId` is provided
 
     // Component functions
     const renderSlides = () => {
