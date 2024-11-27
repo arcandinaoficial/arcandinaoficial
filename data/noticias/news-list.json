@@ -42,8 +42,46 @@
             "articleButtonText": "Inscríbete en la Minga aquí"
         }
     ], 
-    "en": 
-    [
-
+    "en": [
+        {
+            "id": 1,
+            "bannerTitle1": "Minga - Fest",
+            "bannerTitle2": "for the Water",
+            "bannerSubtitle": "Join us to protect water",
+            "hasBannerButton": true,
+            "bannerButtonText": "Learn more",
+            "images": [
+                "/news/minga-fest/img1.webp",
+                "/news/minga-fest/img2.webp"
+            ],
+            "date": "November 27, 2024",
+            "articleTitle": "Minga - Fest for the Water",
+            "articleParagraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ],
+            "hasArticleButton": true,
+            "articleButtonText": "Register for the Minga here"
+        },
+        {
+            "id": 2,
+            "bannerTitle1": "Plant a Tree",
+            "bannerTitle2": "tree minga",
+            "bannerSubtitle": "Join us to plant a tree",
+            "hasBannerButton": false,
+            "bannerButtonText": "",
+            "images": [
+                "/news/minga-fest/img1.webp"
+            ],
+            "date": "November 30, 2024",
+            "articleTitle": "Tree Planting Minga",
+            "articleParagraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ],
+            "hasArticleButton": false,
+            "articleButtonText": "Register for the Minga here"
+        }
     ]
 }
