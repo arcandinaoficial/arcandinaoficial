@@ -6,7 +6,7 @@ import carouselData from '@/data/curvy-carousel-slides.json';
 import { motion } from 'framer-motion';
 
 const options = { 
-    dragFree: false, 
+    dragFree: true, 
     loop: false,
     align: 'start', // Ensure alignment to the center
 }

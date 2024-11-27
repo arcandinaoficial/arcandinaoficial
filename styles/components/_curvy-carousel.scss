@@ -1,6 +1,6 @@
 .curvy-carousel {
     width: clamp(80px, 100%, 1400px);
-    height: 400px;
+    height: 350px;
     margin: auto;
     position: relative;
     --slide-height: 19rem;
@@ -10,6 +10,7 @@
 
     @include respond-to(tablet){
         --slide-size: calc(100% / 5);
+        height: 300px;
     }
 
     @include respond-to(mobile){
