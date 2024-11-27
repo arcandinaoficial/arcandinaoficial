@@ -10,9 +10,18 @@ const AboutUsSection = ({dict}) => {
             <span>{dict.aboutUsText1}</span>
             <span>{dict.aboutUsText2}</span>
         </h2>
-        <p className='aboutus-section__description'>
-            {dict.aboutUsText3}
-        </p>
+        <div className='aboutus-section__text'>
+            <div className='aboutus-section__shelf'>
+                <div className='aboutus-section__description'>
+                    <div className='aboutus-section__description__overlay'></div>
+                    <p className='aboutus-section__description__text'>{dict.aboutUsText3}</p>
+                    <img className='aboutus-section__description__image' src='/suitcase-image.webp' alt='An image of a travelling suitcase'></img>
+                </div>
+            </div>
+            <img className='aboutus-section__banderines' src='/banderines-image.webp' alt='An image of some flags on a rope'></img>
+            <img className='aboutus-section__banderines--small' src='/banderines-image-small.webp' alt='An image of some flags on a rope'></img>
+        </div>
+        
         <span className='aboutus-section__content-title'>
             {dict.aboutUsText6}
         </span>

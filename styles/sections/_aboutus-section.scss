@@ -21,30 +21,168 @@
         @include flex-center($direction: column);
 
         span:nth-child(1){
+            @include fancyFont($weight: Regular);
+            color: $primary-color;
+            font-size: 3rem;
+            display: inline-block;
+            transition: font-size 0.3s ease-in-out;
+            align-self: flex-start;
+            transform: rotate(-10deg) translateX(-50%) translateY(-20%);
+        }
+
+        span:nth-child(2){
             @include titleFont();
             color: $white-color;
             font-size: 4rem;
             transition: font-size 0.3s ease-in-out;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.32));
+        }
+    }
+
+    &__text{
+        width: 100%;
+        @include flex-center($direction: column, $gap: 0px);
+        position: relative;
+        overflow: hidden;
+
+        @include respond-to(mobile){
+            width: clamp(100px, 80%, 800px);
+        }
+    }
+
+    &__banderines{
+        width: clamp(100px, 80%, 800px);
+        margin-top: -3%;
+        z-index: 0;
+
+        @include respond-to(mobile){
+            display: none;
         }
 
-        span:nth-child(2){
-            @include fancyFont($weight: Regular);
-            color: $primary-color;
-            font-size: 2.5rem;
-            display: inline-block;
-            transition: font-size 0.3s ease-in-out;
-            transform: rotate(-10deg) translateX(7vw) translateY(-10px);
+        &--small{
+            display: none;
+            z-index: 0;
+
+            @include respond-to(mobile){
+                width: 100%;
+                margin-top: -7%;
+                display: block;
+            }
+        }
+    }
+
+    &__shelf{
+        width: clamp(200px, 85%, 1000px);
+        height: fit-content;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 0px 17px 20px 0px rgba($color: #000000, $alpha: 0.6);
+
+        background-image: url('/wood-tables-image.webp');
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        background-position: top center;
+
+        @include respond-to(mobile){
+            width: 100%;
+            box-shadow: 0px 5px 15px -5px rgba($color: #000000, $alpha: 0.8);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba($color: #FF863A, $alpha: 0.5);
+            z-index: -2;
         }
     }
 
     &__description{
-        width: clamp(200px, 70%, 900px);
-        @include bodyFont();
-        color: $white-color;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        text-align: justify;
-        user-select: auto;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        position: relative;
+        box-sizing: border-box;
+        padding: 4%;
+        padding-bottom: 0px;
+        z-index: 1;
+
+        background-image: url('/wood-tables-image.webp');
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        background-position: top center;
+
+        @include respond-to(tablet){
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba($color: #89461C, $alpha: 0.8);
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 50%);
+            z-index: -1;
+        }
+
+        &__text{
+            @include bodyFont();
+            color: $white-color;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: justify;
+            user-select: auto;
+            box-sizing: border-box;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            z-index: 2;
+        }
+
+        &__image{
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            align-self: flex-end;
+            justify-self: flex-end;
+
+            @include respond-to(tablet){
+                height: 20dvh;
+                max-height: 120px;
+                width: auto;
+                margin: 0px auto;
+            }
+        }
+
+        &__overlay{
+            position: absolute;
+            background-color: rgba($color: #000000, $alpha: 0.15);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            box-shadow: inset 0px 15px 15px 0px rgba($color: #000000, $alpha: 0.6);
+        }
+        
     }
 
     &__content-title{
@@ -84,12 +222,12 @@
         &__title{
 
             span:nth-child(1){
-                font-size: 3rem;
+                font-size: 2.5rem;
+                transform: rotate(-10deg) translateX(-30%) translateY(-10%);
             }
 
             span:nth-child(2){
-                font-size: 1.5rem;
-                
+                font-size: 3rem;
             }
         }
     }
