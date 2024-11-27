@@ -20,6 +20,19 @@
     &__title{
         @include flex-center($direction: column);
 
+        &--second{
+            @include titleFont();
+            color: $white-color;
+            font-size: 4rem;
+            transition: font-size 0.3s ease-in-out;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.32));
+            @include flex-center($direction: column, $gap: 5px);
+            text-wrap: wrap;
+            width: 100%;
+            max-width: clamp(200px, 85%, 1000px);
+            text-align: center;
+        }
+
         span:nth-child(1){
             @include fancyFont($weight: Regular);
             color: $primary-color;
@@ -161,6 +174,7 @@
         &__image{
             width: 100%;
             height: auto;
+            object-fit: contain;
             z-index: 2;
             align-self: flex-end;
             justify-self: flex-end;
@@ -170,6 +184,25 @@
                 max-height: 120px;
                 width: auto;
                 margin: 0px auto;
+            }
+        }
+
+        &--reversed{
+            grid-template-columns: 30% 70%;
+
+            @include respond-to(tablet){
+                grid-template-columns: 100%;
+                grid-row: auto auto;
+
+                .aboutus-section__description__image{
+                    height: 25dvh;
+                    max-height: 180px;
+                }
+            }
+
+            .aboutus-section__description__text{
+                padding-left: 5%;
+                padding-right: 0px;
             }
         }
 
@@ -211,15 +244,34 @@
         }
     }
 
-    &__creators{
-        width: clamp(80px, 80%, 1200px);
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
+    &__logos{
+        margin-top: 30px;
+        width: clamp(200px, 50%, 1000px);
+        @include flex-center($justify: space-between);
+
+        --image-width: 25%;
+
+        @include respond-to(tablet){
+            --image-width: 35%;
+        }
+
+        &--arcandina{
+            width: var(--image-width);
+            height: auto;
+        }
+
+        &--rotary{
+            width: var(--image-width);
+            height: auto;
+        }
     }
 
     @include respond-to(mobile){
         &__title{
+
+            &--second{
+                font-size: 3rem;
+            }
 
             span:nth-child(1){
                 font-size: 2.5rem;
