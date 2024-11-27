@@ -83,7 +83,6 @@
         max-height: 100svh;
         border-radius: 0px 15px 15px 0px;
         overflow: hidden;
-        z-index: 60000; 
 
         .p-dialog-header{
             background-image: url('/ark-base.webp');
@@ -175,8 +174,4 @@
 
         
     }
-}
-
-.p-dialog-mask{
-    height: svh;
 }
