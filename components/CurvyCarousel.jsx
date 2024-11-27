@@ -152,7 +152,7 @@ const CurvyCarousel = () => {
             y: 0,
             transition: {
                 delay: i * 0.1, // Delay each slide by 100ms for a sequential effect
-                duration: 0.5
+                duration: 0.2
             }
         }),
     };
