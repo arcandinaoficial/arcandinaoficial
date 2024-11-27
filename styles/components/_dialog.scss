@@ -1,0 +1,24 @@
+.p-dialog-header-icon {
+    svg{
+        height: 15px;
+        width: 15px;
+    }
+
+    &:focus{
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    &:hover{
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    &:active{
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}

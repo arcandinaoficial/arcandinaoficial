@@ -1,0 +1,158 @@
+.news-section-mini-carousel{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    --slide-height: 100%;
+    --slide-spacing: 10px;
+    --slide-size: 20%;
+    --max-height: 200px;
+    transition: all 1s ease-in;
+    margin-top: 10px;
+    max-height: var(--max-height);
+    background-color: $white-color;
+
+    @include respond-to(mobile){
+        --slide-size: calc(100% / 3);
+    }
+
+    &__viewport{
+        overflow: hidden;
+        height: 100%;
+        max-height: 100%;
+        margin: 0px 10px;
+        max-height: var(--max-height);
+    }
+
+    &__container{
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+        height: 100%;
+        max-height: var(--max-height);
+    }
+
+    &__slide{
+        transform: translate3d(0, 0, 0);
+        flex: 0 0 var(--slide-size);
+        min-width: 0;
+        padding-left: var(--slide-spacing);
+        position: relative;
+        max-height: var(--max-height);
+    }
+
+    &__slide__img{
+        display: block;
+        height: var(--slide-height);
+        object-fit: cover;
+        user-select: none;
+        width: 100%;
+        object-position: right;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__controls {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: space-between;
+        gap: 1.2rem;
+        position: absolute;
+        z-index: 10;
+        top: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__buttons{
+        @include flex-center($justify: space-between, $gap: 0px);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(10px);
+        width: calc(100% - 20px);
+        user-select: none;
+        pointer-events: none;
+        z-index: 10;
+    }
+
+    &__dialog{
+
+        height: 90dvh;
+        width: 90vw;
+
+        .p-dialog-content{
+            background-image: url('/ark-base.png');
+            background-size: 100% auto;
+            background-repeat: repeat-y;
+            background-position: top center;
+            border-radius: 0px 0px var(--border-radius) var(--border-radius);
+            box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+        
+            box-sizing: border-box;
+            padding: 4%;
+            position: relative;
+            z-index: 1;
+
+            @include flex-center();
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 50%);
+                z-index: -1;
+            }
+        }
+
+        .p-dialog-header{
+            background-image: url('/ark-base.png');
+            background-size: 100% 200%;
+            background-position: top center;
+            border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+            z-index: 3;
+            box-sizing: border-box;
+            padding-right: 10px;
+            height: 30px;
+        }
+
+        .p-dialog-header-icon{
+            color: $white-color;
+            margin-top: 50%;
+            height: 15px;
+            width: 15px;
+
+            svg{
+                height: 15px;
+                width: 15px;
+            }
+
+            &:hover{
+                background-color: transparent;
+                animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
+            }
+        }
+
+        &__image {
+            object-fit: contain;
+            border-radius: 10px;
+        
+            /* Default styles */
+            max-width: 100%;
+            max-height: 100%;
+        
+            /* For landscape images */
+            width: 100%;
+            height: auto;
+        
+            /* For portrait images */
+            @media (min-aspect-ratio: 1/1) {
+                height: 100%;
+                width: auto;
+            }
+        }
+        
+    }
+}

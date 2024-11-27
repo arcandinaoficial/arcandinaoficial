@@ -18,8 +18,10 @@
 @import "./sections/rotary-section";
 @import "./sections/ark-section";
 @import "./sections/footer-section";
+@import "./sections/news-section";
 
 // Components
+@import "./components/dialog";
 @import "./components/button";
 @import "./components/navbar";
 @import "./components/carousel";
@@ -30,3 +32,5 @@
 @import "./components/navbar-item";
 @import "./components/team-card";
 @import "./components/character-message";
+@import "./components/news-section-carousel";
+@import "./components/news-section-mini-carousel";

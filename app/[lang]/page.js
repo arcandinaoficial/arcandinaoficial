@@ -5,6 +5,7 @@ import AboutUsSection from '@/sections/AboutUsSection';
 import RotarySection from '@/sections/RotarySection';
 import ArkSection from '@/sections/ArkSection';
 import FooterSection from '@/sections/FooterSection';
+import NewsSection from '@/sections/NewsSection';
 
 export const dynamicParams = false;
 
@@ -27,6 +28,7 @@ export default async function Home({ params }) {
           <BannerSection dict={dict}/>
           <AboutUsSection dict={dict}/>
           <RotarySection dict={dict}/>
+          <NewsSection dict={dict} lang={params.lang || 'es'}/>
           <ArkSection dict={dict}/>
         </main>
         <FooterSection dict={dict}/>
