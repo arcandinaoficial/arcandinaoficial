@@ -12,8 +12,8 @@ const New = ({slide}) => {
             case 1:
                 return <Button 
                     className='new__button'
-                    actionType='function'
-                    onClick={() => console.log('hola')}
+                    actionType='redirect'
+                    onClick={'https://docs.google.com/forms/d/1BCe7EdGSuZnTsXjJp6jropPXvnc-44QwMJZSDTnXF0s/edit?ts=673681ba'}
                     label={slide.articleButtonText}
                 />
             default: return <></>
@@ -21,7 +21,7 @@ const New = ({slide}) => {
     }
 
     return (
-        <article className='new'>
+        <article className='new' id='new-content'>
             <span className='new__date'>{slide.date}</span>
             <h2 className='new__title'>{slide.articleTitle}</h2>
             <p className='new__content'>

@@ -1,7 +1,6 @@
 .new{
     width: clamp(200px, 85%, 1000px);
-    margin: 30px auto;
-    margin-bottom: 50px;
+    margin: 60px auto;
 
     &__date{
         @include bodyFont($weight: SemiBold);

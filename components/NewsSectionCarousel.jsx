@@ -172,8 +172,8 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
             case 1:
                 return <Button 
                     className='carousel__text__button'
-                    actionType='function'
-                    onClick={() => console.log('hola')}
+                    actionType='scrollTo'
+                    onClick={'new-content'}
                     label={slide.bannerButtonText}
                 />
             default: return <></>
