@@ -6,6 +6,7 @@ import { DotButton, useDotButton } from '@/components/EmblaCarouselDotButton'
 import useEmblaCarousel from 'embla-carousel-react'
 import Button from '@/components/Button'
 import NewsSectionMiniCarousel from './NewsSectionMiniCarousel'
+import New from './New'
 
 const options = { 
     dragFree: false, 
@@ -204,6 +205,7 @@ const NewsSectionCarousel = ({slides}) => {
                     currentSlide?.images?.length > 1 &&
                     <NewsSectionMiniCarousel images={currentSlide.images} />
                 }
+                <New slide={currentSlide || {}}/>
             </div>
         </>
         
