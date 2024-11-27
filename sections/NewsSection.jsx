@@ -1,21 +1,19 @@
-'use client'
+'use client';
 
-import React, { useEffect, useRef } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import React, { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 
 import noticias from '@/data/noticias/news-list.json';
 import NewsSectionCarousel from '@/components/NewsSectionCarousel';
 
 const NewsSection = ({ lang }) => {
-
-    const searchParams = useSearchParams();
     const router = useRouter();
     const sectionRef = useRef();
-    const newId = searchParams.get('new');
+    const [newId, setNewId] = useState(null);
 
-    const easeInOutCubic = (t) => 
+    const easeInOutCubic = (t) =>
         t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    
+
     const handleScroll = (targetId) => {
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
@@ -23,7 +21,7 @@ const NewsSection = ({ lang }) => {
         const startY = window.scrollY;
         const targetY = targetElement.getBoundingClientRect().top + startY;
         const distance = targetY - startY;
-        const duration = 2000; // 1 second scroll duration
+        const duration = 2000; // 2 seconds scroll duration
         let startTime = null;
 
         const scrollAnimation = (currentTime) => {
@@ -35,7 +33,7 @@ const NewsSection = ({ lang }) => {
             window.scrollTo(0, startY + distance * easedProgress);
 
             if (progress < 1) {
-            requestAnimationFrame(scrollAnimation);
+                requestAnimationFrame(scrollAnimation);
             }
         };
 
@@ -43,24 +41,25 @@ const NewsSection = ({ lang }) => {
     };
 
     useEffect(() => {
-        // Check if the newId exists in the noticias list
-        const isValidNewId = noticias[lang]?.some((news) => news.id === parseInt(newId, 10));
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('new');
+        const isValidNewId = noticias[lang]?.some(
+            (news) => news.id === parseInt(id, 10)
+        );
 
-        // If the newId is invalid, remove it from the URL
-        if (newId && !isValidNewId) {
-            const currentParams = new URLSearchParams(window.location.search);
-            currentParams.delete('new');
-            router.replace(`${window.location.pathname}?${currentParams.toString()}`, { shallow: true });
-        }
-
-        // If the newId is valid, scroll to the news section
-        if (newId && isValidNewId && sectionRef.current) {
+        if (id && isValidNewId) {
+            setNewId(id);
             handleScroll('news-section');
+        } else if (id) {
+            params.delete('new');
+            router.replace(`${window.location.pathname}?${params.toString()}`, {
+                shallow: true,
+            });
         }
-    }, [newId, lang, router]);
+    }, [lang, router]);
 
     return (
-        <section id='news-section' className="news-section" ref={sectionRef}>
+        <section id="news-section" className="news-section" ref={sectionRef}>
             <NewsSectionCarousel slides={noticias[lang]} newId={newId} />
         </section>
     );
