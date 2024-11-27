@@ -11,30 +11,6 @@ const RotarySection = ({ dict }) => {
   return (
     <section className='rotary-section'>
       <WaveBackground />
-      <h2 className='rotary-section__title' id='RotarySection'>
-        <span className="rotary-section__arcandina-logo">
-          <Image 
-            src="/ark-logo.png" 
-            alt="Arcandina Logo" 
-            width={909} 
-            height={431} 
-            priority 
-          />
-          arcandina
-        </span>
-        <span> & </span>
-        <span className="rotary-section__rotary-logo">
-          Rotary
-          <Image 
-            src="/rotary-logo.png" 
-            alt="Rotary Logo" 
-            width={862} 
-            height={267} 
-            priority 
-          />
-        </span>
-      </h2>
-      <p className='rotary-section__description'>{dict.rotaryText4}</p>
       <div className='rotary-section__carousel'> 
         <CurvyCarousel />
       </div>

@@ -40,73 +40,6 @@
         }
     }
 
-    &__title{
-        flex-grow: 1;
-        width: 100%;
-        padding-top: 20px;
-        @include flex-center($gap: 30px);
-        @include titleFont($weight: Medium);
-        font-size: 4rem;
-        color: $white-color;
-
-        @include respond-to(mobile){
-            font-size: 3rem;
-            gap: 15px;
-        }
-    }
-
-    &__arcandina-logo{
-        @include flex-center($direction: column, $gap: 0px);
-        @include titleFont($weight: SemiBold);
-        font-size: 2.5rem;
-        color: $white-color;
-
-        img{
-            height: auto;
-            width: 100px;
-        }
-
-        @include respond-to(mobile){
-            font-size: 1.6rem;
-
-            img{
-                width: 60px;
-            }
-        }
-    }
-
-    &__rotary-logo{
-        @include flex-center($gap: 5px);
-        font-size: 1.8rem;
-        color: $white-color;
-        text-indent: -9999px;
-
-        img{
-            height: auto;
-            width: 200px;
-        }
-
-        @include respond-to(mobile){
-            img{
-                width: 120px;
-            }
-        }
-    }
-
-    &__description{
-        flex-grow: 1;
-        @include bodyFont();
-        color: $white-color;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        text-align: justify;
-        user-select: auto;
-        @include flex-center();
-        box-sizing: border-box;
-        padding: 30px 0px;
-        width: clamp(200px, 70%, 900px);
-    }
-
     &__carousel{
         box-sizing: border-box;
         padding: 20px 0px;
@@ -114,21 +47,26 @@
 
     &__content-title{
         @include flex-center($direction: column);
+        margin-bottom: 25px;
     
         span:nth-child(1){
             @include titleFont();
             color: $white-color;
             font-size: 4rem;
             transition: font-size 0.3s ease-in-out;
+            text-align: center;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.32));
         }
 
         span:nth-child(2){
             @include fancyFont($weight: Regular);
             color: $white-color;
-            font-size: 2.5rem;
+            font-size: 3rem;
             display: inline-block;
             transition: font-size 0.3s ease-in-out;
-            transform: rotate(-9deg) translateX(7vw) translateY(-5px);
+            align-self: center;
+            transform: rotate(-4deg);
+            text-align: center;
         }
 
         @include respond-to(mobile){
@@ -137,8 +75,7 @@
             }
 
             span:nth-child(2){
-                font-size: 1.5rem;
-                
+                font-size: 2.5rem;
             }
         }
     }
