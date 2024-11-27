@@ -80,6 +80,7 @@
             line-height: 1.5;
             user-select: auto;
             width: 100%;
+            text-align: justify;
         }
 
         span{
@@ -89,6 +90,8 @@
             font-size: 1.2rem;
             line-height: 1.5;
             user-select: auto;
+            width: fit-content;
+            text-align: center;
         }
     }
 
