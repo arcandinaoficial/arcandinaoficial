@@ -27,30 +27,23 @@
         top: 10vw;
         @include flex-center($direction: column);
         transition: translate 0.3s ease-in-out;
+        transform: translateX(10%);
 
         h1{
             @include titleFont();
             color: $white-color;
-            font-size: 7rem;
+            font-size: 5rem;
             transition: font-size 0.3s ease-in-out;
         }
 
         span{
             @include fancyFont();
             color: $white-color;
-            font-size: 2rem;
+            font-size: 3rem;
             display: inline-block;
             transition: font-size 0.3s ease-in-out;
-        }
-
-        span:first-of-type {
             align-self: flex-start;
-            transform: rotate(-10deg) translateX(-5vw) translateY(10px);
-        }
-    
-        span:last-of-type {
-            align-self: flex-end;
-            transform: rotate(-5deg) translateX(5vw) translateY(-10px);
+            transform: rotate(-10deg) translateX(-50%) translateY(-20%);
         }
     }
 
@@ -73,7 +66,7 @@
         &__title{
             top: 25vw;
             h1{
-                font-size: 6rem;
+                font-size: 4.5rem;
             }
         }
     }
@@ -85,17 +78,15 @@
         &__title{
 
             top: 30vw;
+            transform: translateX(8%);
 
             h1{
-                font-size: 4rem;
+                font-size: 3rem;
             }
 
             span{
-                font-size: 1.5rem;
-            }
-
-            span:last-of-type {
-                transform: rotate(-5deg) translateX(10vw) translateY(-10px);
+                font-size: 2.5rem;
+                transform: rotate(-10deg) translateX(-30%) translateY(-20%);
             }
         }
     }

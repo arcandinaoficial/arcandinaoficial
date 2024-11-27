@@ -23,7 +23,6 @@ const BannerSection = ({dict}) => {
         <div className='banner-section__title'>
             <span>{dict.bannerText1}</span>
             <h1>{dict.bannerText2}</h1>
-            <span>{dict.bannerText3}</span>
         </div>
     </section>
   );
