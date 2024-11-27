@@ -64,6 +64,14 @@
                 @include flex-center($direction: column, $align: flex-start, $gap: 12px);
             }
 
+            &__item{
+                @include flex-center();
+
+                &:hover {
+                    animation: spring-right 0.5s ease-out; 
+                }
+            }
+
             li{
                 list-style-type: none;
                 @include bodyFont($weight: Regular);

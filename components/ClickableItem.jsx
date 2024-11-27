@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const ClickableItem = ({ onClick, children, actionType }) => {
+const ClickableItem = ({ onClick, children, actionType, className = '' }) => {
 
     const easeInOutCubic = (t) => 
         t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
@@ -44,7 +44,7 @@ const ClickableItem = ({ onClick, children, actionType }) => {
     }; 
 
     return (
-        <div onClick={handleClick} style={{ cursor: 'pointer' }}>
+        <div onClick={handleClick} style={{ cursor: 'pointer' }} className={className}>
             {children}
         </div>
     );

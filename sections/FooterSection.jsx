@@ -12,6 +12,16 @@ const FooterSection = ({dict}) => {
     <footer className='footer'>
         <div className='footer__content'>
             <div className='footer__content__group'>
+                <div className='footer__content__list footer__content__list--contact'>
+                    <h6>{dict.footerTitle5}</h6>
+                    <ul>
+                        <li>
+                            <ClickableItem className='footer__content__list__item' onClick={'https://whatsapp.com/channel/0029VatT9crGOj9mFN61Bz40'} actionType={'redirect'}>
+                                <img style={{width: '18px', height: '18px'}} src="/socials/whatsapp-icon.svg" alt="Instagram"/>{dict.footerWhatsappText}
+                            </ClickableItem>
+                        </li>
+                    </ul>
+                </div>
                 <div className='footer__content__list'>
                     <h6>{dict.footerTitle1}</h6>
                     <ul>
