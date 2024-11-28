@@ -10,7 +10,8 @@
             "bannerButtonText": "Conóce más",
             "images": [
                 "/news/minga-fest/img1.webp",
-                "/news/minga-fest/img2.webp"
+                "/news/minga-fest/img2.webp",
+                "/news/minga-fest/img3.webp"
             ], 
             "date": "27 de noviembre, 2024",
             "articleTitle": "Minga - Fest por el Agua",
@@ -29,7 +30,7 @@
             "hasBannerButton": false,
             "bannerButtonText": "",
             "images": [
-                "/news/minga-fest/img1.webp"
+                "/news/minga-arboles/img1.webp"
             ], 
             "date": "30 de noviembre, 2024",
             "articleTitle": "Minga de plantación de árboles",
@@ -52,7 +53,8 @@
             "bannerButtonText": "Learn more",
             "images": [
                 "/news/minga-fest/img1.webp",
-                "/news/minga-fest/img2.webp"
+                "/news/minga-fest/img2.webp",
+                "/news/minga-fest/img3.webp"
             ],
             "date": "November 27, 2024",
             "articleTitle": "Minga - Fest for the Water",
@@ -71,7 +73,7 @@
             "hasBannerButton": false,
             "bannerButtonText": "",
             "images": [
-                "/news/minga-fest/img1.webp"
+                "/news/minga-arboles/img1.webp"
             ],
             "date": "November 30, 2024",
             "articleTitle": "Tree Planting Minga",

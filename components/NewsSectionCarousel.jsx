@@ -212,7 +212,7 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
                 </div>
                 {
                     currentSlide?.images?.length > 1 &&
-                    <NewsSectionMiniCarousel images={currentSlide.images} />
+                    <NewsSectionMiniCarousel images={currentSlide.images.slice(1)} />
                 }
                 <New slide={currentSlide || {}}/>
             </div>
