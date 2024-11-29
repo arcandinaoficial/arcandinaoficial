@@ -9,9 +9,7 @@
             "hasBannerButton": true,
             "bannerButtonText": "Conóce más",
             "images": [
-                "/news/minga-fest/img1.webp",
-                "/news/minga-fest/img2.webp",
-                "/news/minga-fest/img3.webp"
+                "/news/minga-fest/img1.webp"
             ], 
             "date": "27 de noviembre, 2024",
             "articleTitle": "Minga - Fest por el Agua",
@@ -20,26 +18,6 @@
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Inscríbete en la Minga aquí"
-        },
-        {
-            "id": 2,
-            "bannerTitle1": "Planta un árbol",
-            "bannerTitle2": "minga de árboles",
-            "bannerSubtitle": "Acompáñanos a plantar un árbol",
-            "hasBannerButton": false,
-            "bannerButtonText": "",
-            "images": [
-                "/news/minga-arboles/img1.webp"
-            ], 
-            "date": "30 de noviembre, 2024",
-            "articleTitle": "Minga de plantación de árboles",
-            "articleParagraphs": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            ],
-            "hasArticleButton": false,
             "articleButtonText": "Inscríbete en la Minga aquí"
         }
     ], 
@@ -52,9 +30,7 @@
             "hasBannerButton": true,
             "bannerButtonText": "Learn more",
             "images": [
-                "/news/minga-fest/img1.webp",
-                "/news/minga-fest/img2.webp",
-                "/news/minga-fest/img3.webp"
+                "/news/minga-fest/img1.webp"
             ],
             "date": "November 27, 2024",
             "articleTitle": "Minga - Fest for the Water",
@@ -63,26 +39,6 @@
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Register for the Minga here"
-        },
-        {
-            "id": 2,
-            "bannerTitle1": "Plant a Tree",
-            "bannerTitle2": "tree minga",
-            "bannerSubtitle": "Join us to plant a tree",
-            "hasBannerButton": false,
-            "bannerButtonText": "",
-            "images": [
-                "/news/minga-arboles/img1.webp"
-            ],
-            "date": "November 30, 2024",
-            "articleTitle": "Tree Planting Minga",
-            "articleParagraphs": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            ],
-            "hasArticleButton": false,
             "articleButtonText": "Register for the Minga here"
         }
     ]

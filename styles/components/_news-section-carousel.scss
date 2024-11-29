@@ -9,7 +9,11 @@
 
     &__image-section{
         position: relative;
-        height: clamp(400px, 50dvh, 600px);
+        height: clamp(400px, 70dvh, 650px);
+
+        @include respond-to(mobile){
+            height: clamp(400px, 55dvh, 500px);
+        }
     }
 
     &__viewport{
