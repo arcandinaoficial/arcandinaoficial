@@ -183,7 +183,7 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
     return (
         <>
             {/* Carrusel */}
-            <div className="news-section-carousel">
+            <div className={`news-section-carousel ${currentSlide.className || ''}`}>
                 <div className='news-section-carousel__image-section'>
                     <div className="news-section-carousel__viewport" ref={emblaRef}>
                         <div className="news-section-carousel__container">

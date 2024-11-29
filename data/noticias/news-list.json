@@ -3,43 +3,50 @@
     [
         {
             "id": 1,
+            "className": "minga-fest",
             "bannerTitle1": "Minga - Fest",
-            "bannerTitle2": "por el Agua",
-            "bannerSubtitle": "Acompáñanos a cuidar el agua",
+            "bannerTitle2": "por el Planeta",
+            "bannerSubtitle": " “Somos Agua, Somos Bosques, Somos Vida” ",
             "hasBannerButton": true,
             "bannerButtonText": "Conóce más",
             "images": [
                 "/news/minga-fest/img1.webp"
             ], 
-            "date": "27 de noviembre, 2024",
-            "articleTitle": "Minga - Fest por el Agua",
+            "date": "30 de noviembre, 2024",
+            "articleTitle": "Minga - Fest por el Planeta",
             "articleParagraphs": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "El planeta está atravesando una crisis ambiental que pone en grave riesgo las fuentes de agua, la biodiversidad, los bosques y la vida en la Tierra. Ante esta situación crítica, es imprescindible promover acciones masivas de educación y concientización para resaltar la importancia de cuidar las fuentes de agua, reforestar con especies nativas, reciclar plásticos y otros materiales que contaminan ríos y mares, y reducir los niveles de emisiones.",
+                "Minga - Fest 2025",
+                "La Minga - Fest 2025 se plantea como una acción comunitaria global para limpiar fuentes de agua, reforestar y reciclar, que se llevará a cabo de manera simultánea en todo el mundo los días 19 y 20 de abril de 2025. Esta celebración de la naturaleza integra actividades educativas, rituales, música, arte, investigación e incidencia ciudadana, creando un momento inmersivo y vivencial de conexión con la Madre Tierra.",
+                "El evento rescata el concepto de la minga, una práctica ancestral de los pueblos indígenas que simboliza la acción comunitaria en beneficio del bien colectivo. A través de estas acciones, se busca fomentar una conciencia ambiental global y una relación más respetuosa y sostenible con nuestro entorno natural."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Inscríbete en la Minga aquí"
+            "articleButtonText": "Inscríbete haciendo click aquí"
         }
     ], 
-    "en": [
+    "en": 
+    [
         {
             "id": 1,
+            "className": "minga-fest",
             "bannerTitle1": "Minga - Fest",
-            "bannerTitle2": "for the Water",
-            "bannerSubtitle": "Join us to protect water",
+            "bannerTitle2": "for the Planet",
+            "bannerSubtitle": "“We Are Water, We Are Forests, We Are Life”",
             "hasBannerButton": true,
-            "bannerButtonText": "Learn more",
+            "bannerButtonText": "Learn More",
             "images": [
                 "/news/minga-fest/img1.webp"
-            ],
-            "date": "November 27, 2024",
-            "articleTitle": "Minga - Fest for the Water",
+            ], 
+            "date": "November 30, 2024",
+            "articleTitle": "Minga - Fest for the Planet",
             "articleParagraphs": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "The planet is facing an environmental crisis that seriously endangers water sources, biodiversity, forests, and life on Earth. In response to this critical situation, it is essential to promote massive education and awareness campaigns to highlight the importance of protecting water sources, reforesting with native species, recycling plastics and other materials that pollute rivers and oceans, and reducing emission levels.",
+                "Minga - Fest 2025",
+                "Minga - Fest 2025 is envisioned as a global community action to clean water sources, reforest, and recycle, taking place simultaneously around the world on April 19 and 20, 2025. This celebration of nature integrates educational activities, rituals, music, art, research, and citizen advocacy, creating an immersive and experiential moment of connection with Mother Earth.",
+                "The event embraces the concept of the 'minga,' an ancestral practice of indigenous peoples that represents community action for the collective good. Through these actions, the aim is to foster global environmental awareness and a more respectful and sustainable relationship with our natural environment."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Register for the Minga here"
+            "articleButtonText": "Sign up by clicking here"
         }
     ]
 }
