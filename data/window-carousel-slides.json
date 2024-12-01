@@ -1,37 +1,4 @@
 {
-    "en": [
-        {
-            "src": "/window-carousel/carousel-img-1.png",
-            "title": "Stories to Protect Water",
-            "description": "Join Cori in this video series where we explore the challenges our water sources face. Discover the importance of wetlands, streams, and how pollution from plastics, oils, detergents, and textiles impacts our rivers and seas.",
-            "message": "Because we are water, we are forests, we are life."
-        },
-        {
-            "src": "/window-carousel/carousel-img-2.png",
-            "title": "Podcasts to Protect Water",
-            "description": "Through our podcasts, Cori shares practical tips to prevent the pollution of rivers and seas from home. Learn how your actions can make a difference. Plus, we invite you to write your own stories about water conservation and share your creativity with the world.",
-            "message": "Because we are water, we are forests, we are life."
-        },
-        {
-            "src": "/window-carousel/carousel-img-3.png",
-            "title": "Magazine: Onboard the Arcandina",
-            "description": "In the Arcandina magazine, you'll find games, practical tips, and activities to learn how to care for our rivers, water sources, and seas. We also share links where you can dive deeper into what each of us can do to protect these vital resources. Join Cori and experience the adventure of learning and acting to care for water!",
-            "message": "Because we are water, we are forests, we are life."
-        },
-        {
-            "src": "/window-carousel/carousel-img-4.png",
-            "title": "Project Guide to Protect Water at Home and School",
-            "description": "Transform small actions into big changes. This guide is designed to inspire you to care for water from your home and classroom, with simple, fun projects full of positive impact. Discover how to save water, reduce waste, and protect this vital resource for everyone.",
-            "message": "You can be the change!"
-        },
-        {
-            "src": "/window-carousel/carousel-img-1.png",
-            "title": "Stories to Protect Water",
-            "description": "Join Cori in this video series where we explore the challenges our water sources face. Discover the importance of wetlands, streams, and how pollution from plastics, oils, detergents, and textiles impacts our rivers and seas.",
-            "message": "Because we are water, we are forests, we are life."
-        }
-    ]
-    ,
     "es": [
         {
             "src": "/window-carousel/carousel-img-1.png",
@@ -62,6 +29,38 @@
             "title": "Historias para Cuidar el Agua",
             "description": "Acompaña a Cori en esta serie de videos donde exploramos los desafíos que enfrentan nuestras fuentes de agua. Descubra la importancia de los páramos, las quebradas, y cómo la contaminación por plásticos, aceites, detergentes y textiles afecta nuestros ríos y mares.",
             "message": "Porque somos agua, somos bosque, somos vida."
+        }
+    ],
+    "en": [
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": "Stories to Protect Water",
+            "description": "Join Cori in this video series where we explore the challenges our water sources face. Discover the importance of wetlands, streams, and how pollution from plastics, oils, detergents, and textiles impacts our rivers and seas.",
+            "message": "Because we are water, we are forests, we are life."
+        },
+        {
+            "src": "/window-carousel/carousel-img-2.png",
+            "title": "Podcasts to Protect Water",
+            "description": "Through our podcasts, Cori shares practical tips to prevent the pollution of rivers and seas from home. Learn how your actions can make a difference. Plus, we invite you to write your own stories about water conservation and share your creativity with the world.",
+            "message": "Because we are water, we are forests, we are life."
+        },
+        {
+            "src": "/window-carousel/carousel-img-3.png",
+            "title": "Magazine: Onboard the Arcandina",
+            "description": "In the Arcandina magazine, you'll find games, practical tips, and activities to learn how to care for our rivers, water sources, and seas. We also share links where you can dive deeper into what each of us can do to protect these vital resources. Join Cori and experience the adventure of learning and acting to care for water!",
+            "message": "Because we are water, we are forests, we are life."
+        },
+        {
+            "src": "/window-carousel/carousel-img-4.png",
+            "title": "Project Guide to Protect Water at Home and School",
+            "description": "Transform small actions into big changes. This guide is designed to inspire you to care for water from your home and classroom, with simple, fun projects full of positive impact. Discover how to save water, reduce waste, and protect this vital resource for everyone.",
+            "message": "You can be the change!"
+        },
+        {
+            "src": "/window-carousel/carousel-img-1.png",
+            "title": "Stories to Protect Water",
+            "description": "Join Cori in this video series where we explore the challenges our water sources face. Discover the importance of wetlands, streams, and how pollution from plastics, oils, detergents, and textiles impacts our rivers and seas.",
+            "message": "Because we are water, we are forests, we are life."
         }
     ]
 }

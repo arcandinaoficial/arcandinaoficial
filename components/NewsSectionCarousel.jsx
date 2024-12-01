@@ -115,7 +115,7 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick) // Rendering logic for the slides or placeholders when slides are not available
     useEffect(() => {
         if (emblaApi && newId) {
-            const targetIndex = slides.findIndex((slide) => slide.id === parseInt(newId));
+            const targetIndex = slides.findIndex((slide) => slide.id === newId);
             if (targetIndex !== -1) {
                 emblaApi.scrollTo(targetIndex); // Scroll to the specific slide
                 setCurrentSlide(slides[targetIndex]); // Set the current slide

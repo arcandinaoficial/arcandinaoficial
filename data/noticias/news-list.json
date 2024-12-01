@@ -2,7 +2,7 @@
     "es": 
     [
         {
-            "id": 1,
+            "id": "minga-fest",
             "className": "minga-fest",
             "bannerTitle1": "Minga - Fest",
             "bannerTitle2": "por el Planeta",
@@ -27,7 +27,7 @@
     "en": 
     [
         {
-            "id": 1,
+            "id": "minga-fest",
             "className": "minga-fest",
             "bannerTitle1": "Minga - Fest",
             "bannerTitle2": "for the Planet",

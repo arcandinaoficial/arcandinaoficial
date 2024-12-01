@@ -42,15 +42,15 @@ const NewsSection = ({ lang }) => {
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
-        const id = params.get('new');
-        const isValidNewId = noticias[lang]?.some(
-            (news) => news.id === parseInt(id, 10)
+        const newKey = params.get('new');
+        const isValidNewKey = noticias[lang]?.some(
+            (news) => news.id === newKey
         );
 
-        if (id && isValidNewId) {
-            setNewId(id);
+        if (newKey && isValidNewKey) {
+            setNewId(newKey); // Assuming `setNewId` now handles keys
             handleScroll('news-section');
-        } else if (id) {
+        } else if (newKey) {
             params.delete('new');
             router.replace(`${window.location.pathname}?${params.toString()}`, {
                 shallow: true,

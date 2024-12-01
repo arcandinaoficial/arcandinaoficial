@@ -26,7 +26,9 @@ export default async function Home({ params }) {
         <Navbar dict={dict} params={params}/>
         <main className='landing-page__main'>
           <BannerSection dict={dict}/>
-          <AboutUsSection dict={dict}/>
+          <div className='boat-clip'>
+            <AboutUsSection dict={dict}/>
+          </div>
           <RotarySection dict={dict}/>
           <NewsSection dict={dict} lang={params.lang || 'es'}/>
           <ArkSection dict={dict}/>
