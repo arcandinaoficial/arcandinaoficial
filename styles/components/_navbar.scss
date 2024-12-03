@@ -19,6 +19,18 @@
         width: clamp(60px, 4vw, 110px);
         height: auto;
         cursor: pointer;
+
+        &-container{
+            position: relative;
+
+            button{
+                position: absolute !important;
+                width: 100% !important;
+                height: 100% !important;
+                top: 0 !important;
+                left: 0 !important;
+            }
+        }
     }
 
     &__items{

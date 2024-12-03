@@ -3,6 +3,7 @@ import NavbarItem from './NavbarItem';
 import Button from './Button';
 import Image from 'next/image';
 import MenuButton from './MenuButton';
+import LinkTextHome from './LinkTextHome';
 
 const Navbar = ({dict, params}) => {
 
@@ -35,14 +36,18 @@ const Navbar = ({dict, params}) => {
 
   return (
     <nav className='navbar'>
-      <Image
-          className='navbar__logo'
-          src="/logo-arcandina.png" 
-          alt="Logo de Arcandina"
-          width={110} 
-          height={69} 
-          priority 
-      />
+      <div className='navbar__logo-container'>
+        <Image
+            className='navbar__logo'
+            src="/logo-arcandina.png" 
+            alt="Logo de Arcandina"
+            width={110} 
+            height={69} 
+            priority
+        />
+        <LinkTextHome />
+      </div>
+      
       <ul className='navbar__items'>
         {navbarItems.map((item, index) => (
           item.showOnExpand ? (
