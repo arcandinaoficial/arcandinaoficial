@@ -72,6 +72,26 @@
                 }
             }
 
+            &--contact{
+                &__li{
+                    @include flex-center();
+                    user-select: text;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    @include bodyFont($weight: Regular);
+                    color: $white-color;
+                    font-size: 0.8rem;
+                    line-height: 0.8rem;
+                    white-space: nowrap;
+                    cursor: pointer;
+
+                    &:hover{
+                        animation: none;
+                    }
+                }
+            }
+
             li{
                 list-style-type: none;
                 @include bodyFont($weight: Regular);
