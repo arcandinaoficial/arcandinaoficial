@@ -5,6 +5,7 @@ import Button from './Button';
 import LandingPageVideos from './content-displayers/LandingPageVideos';
 import LandingPagePodcasts from './content-displayers/LandingPagePodcasts';
 import LandingPageRevista from './content-displayers/LandingPageRevista';
+import LandingPageGuias from './content-displayers/LandingPageGuias';
 
 const ContentDiplayer = ({dict}) => {
 
@@ -42,7 +43,7 @@ const ContentDiplayer = ({dict}) => {
             case 3:
                 return <LandingPageRevista dict={dict} />;
             default:
-                return <div>4</div>;
+                return <LandingPageGuias dict={dict} />;
         }
     };
 
@@ -51,13 +52,7 @@ const ContentDiplayer = ({dict}) => {
             <div className='content-displayer__buttons'>
                 {contentButtons.map((button, index) => (
                     <Button 
-                        onClick={
-                            () => {
-                                if(button.id !== 4){ // Temporarily disable revista and talleres
-                                    setSelectedContent(button.id); 
-                                }
-                            }
-                        } 
+                        onClick={() => setSelectedContent(button.id)} 
                         actionType='function'
                         key={index} 
                         label={button.label} 
