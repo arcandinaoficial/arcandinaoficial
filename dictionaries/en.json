@@ -72,5 +72,9 @@
     "coriDescription": "Listen to our podcasts with Cori, the ocean guardian, in our podcast studio."
   },
   "emptyVideoCardTitle": "Coming Soon",
-  "emptyVideoCardDescription": "Don't miss the next episode! Follow us on social media to be the first to know when it's available."
+  "emptyVideoCardDescription": "Don't miss the next episode! Follow us on social media to be the first to know when it's available.",
+  "toasts": {
+    "donationTitle": "Thank you for your interest!",
+    "donationMessage": "We haven't created a campaign for you to donate yet, but we'll keep you updated through our social media channels."
+  }
 }

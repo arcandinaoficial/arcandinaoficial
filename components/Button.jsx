@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, {useRef} from 'react';
 import PropTypes from 'prop-types';
 import { 
     Ship, 
@@ -14,6 +14,7 @@ import {
     House,
     CircleArrowLeft
 } from 'lucide-react';
+import { Toast } from 'primereact/toast';
 
 const Button = ({ 
     label, 
@@ -27,6 +28,10 @@ const Button = ({
     iconSize = 18,
     actionType = ''
 }) => {
+
+    // ------------------ Setup -----------------------
+
+    const toast = useRef(null);
 
     const iconsMap = {
         Ship: <Ship color={iconColor} size={iconSize} />,
@@ -70,6 +75,8 @@ const Button = ({
         requestAnimationFrame(scrollAnimation);
     };
 
+    // ------------------ Functions -----------------------
+
     const handleButtonClick = () => {
         if (actionType === 'redirect' && typeof onClick === 'string') {
             window.open(onClick, '_blank');
@@ -77,21 +84,30 @@ const Button = ({
             window.location.href = onClick; // Navigate in the same tab
         } else if (actionType === 'scrollTo' && typeof onClick === 'string') {
             handleScroll(onClick); // Scroll in the same tab
+        } else if (actionType === 'toast') {
+            toast.current.show({ 
+                severity: onClick.severity, 
+                summary: onClick.summary, 
+                detail: onClick.detail
+            });
         } else if (actionType === 'function' && typeof onClick === 'function') {
             onClick();
         }
     };
 
     return (
-        <button
-        type={type}
-        className={`button button--${variable} ${className}`}
-        onClick={handleButtonClick}
-        disabled={disabled}
-        >
-        {label}
-        {icon ? (iconsMap[icon] || <CircleDashed color={iconColor} size={iconSize} />) : null}
-        </button>
+        <>
+            <Toast ref={toast} />
+            <button
+                type={type}
+                className={`button button--${variable} ${className}`}
+                onClick={handleButtonClick}
+                disabled={disabled}
+                >
+                    {label}
+                    {icon ? (iconsMap[icon] || <CircleDashed color={iconColor} size={iconSize} />) : null}
+            </button>
+        </>
     );
 };
 

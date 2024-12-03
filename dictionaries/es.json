@@ -72,5 +72,9 @@
     "coriDescription": "Escucha nuestros podcasts con Cori, la guardiana del océano, en nuestro estudio de podcasts."
   },
   "emptyVideoCardTitle": "Próximamente",
-  "emptyVideoCardDescription": "¡No te pierdas el próximo episodio! Síguenos en redes sociales y entérate primero cuando esté disponible"
+  "emptyVideoCardDescription": "¡No te pierdas el próximo episodio! Síguenos en redes sociales y entérate primero cuando esté disponible",
+  "toasts": {
+    "donationTitle": "¡Gracias por tu interés!",
+    "donationMessage": "Por ahora no hemos creado una campaña para que puedas donar, pero te mantendremos al tanto a través de nuestras redes sociales"
+  }
 }

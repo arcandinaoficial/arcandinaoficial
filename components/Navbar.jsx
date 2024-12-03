@@ -73,11 +73,11 @@ const Navbar = ({dict, params}) => {
           onClick={`/${params.lang}/arcandina`}
         />
         <Button 
-          label={dict.navbarButtonDona} 
-          variable='secondary' 
-          icon={'HeartHandshake'} 
-          onClick="https://www.gofundme.com" 
-          actionType="redirect"
+              label={dict.navbarButtonDona} 
+              variable='secondary' 
+              icon={'HeartHandshake'} 
+              onClick={{ severity: 'success', summary: dict.toasts.donationTitle, detail: dict.toasts.donationMessage }}
+              actionType="toast"
           />
       </div>
       <div className='navbar__burger-menu'>
