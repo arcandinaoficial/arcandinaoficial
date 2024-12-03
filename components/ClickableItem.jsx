@@ -36,6 +36,8 @@ const ClickableItem = ({ onClick, children, actionType, className = '' }) => {
     const handleClick = () => {
         if (actionType === 'redirect' && typeof onClick === 'string') {
             window.open(onClick, '_blank');
+        } else if (actionType === 'navigate' && typeof onClick === 'string') {
+            window.location.href = onClick; // Navigate in the same tab
         } else if(actionType === 'scrollTo' && typeof onClick === 'string'){
             handleScroll(onClick);
         } else if (actionType === 'function' && typeof onClick === 'function') {

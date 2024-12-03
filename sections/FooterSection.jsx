@@ -6,7 +6,7 @@ import {
 import ClickableItem from '@/components/ClickableItem';
 import Image from 'next/image';
 
-const FooterSection = ({dict}) => {
+const FooterSection = ({dict, params}) => {
 
   return (
     <footer className='footer'>
@@ -26,18 +26,18 @@ const FooterSection = ({dict}) => {
                     <h6>{dict.footerTitle1}</h6>
                     <ul>
                         <li><ClickableItem onClick={'AboutUsSection'} actionType={'scrollTo'}>{dict.navbarItem1}</ClickableItem></li>
-                        <li><ClickableItem onClick={'RotarySection'} actionType={'scrollTo'}>{dict.navbarItem2}</ClickableItem></li>
-                        <li><ClickableItem onClick={'ContentSection'} actionType={'scrollTo'}>{dict.navbarItem3}</ClickableItem></li>
-                        <li><ClickableItem onClick={'ArkSection'} actionType={'scrollTo'}>{dict.navbarItem4}</ClickableItem></li>
+                        <li><ClickableItem onClick={'ContentSection'} actionType={'scrollTo'}>{dict.navbarButtonHistorias}</ClickableItem></li>
+                        <li><ClickableItem onClick={'JournalSection'} actionType={'scrollTo'}>{dict.navbarItem2}</ClickableItem></li>
+                        <li><ClickableItem onClick={'ArkSection'} actionType={'scrollTo'}>{dict.navbarItem3}</ClickableItem></li>
                     </ul>
                 </div>
                 <div className='footer__content__list'>
                     <h6>{dict.footerTitle2}</h6>
                     <ul>
-                        <li>{dict.arkSection1}</li>
-                        <li>{dict.arkSection2}</li>
-                        <li>{dict.arkSection3}</li>
-                        <li>{dict.arkSection4}</li>
+                        <li><ClickableItem onClick={`/${params.lang}/arcandina`} actionType={'navigate'}>{dict.arkSection1}</ClickableItem></li>
+                        <li><ClickableItem onClick={`/${params.lang}/arcandina`} actionType={'navigate'}>{dict.arkSection2}</ClickableItem></li>
+                        <li><ClickableItem onClick={`/${params.lang}/arcandina`} actionType={'navigate'}>{dict.arkSection3}</ClickableItem></li>
+                        <li><ClickableItem onClick={`/${params.lang}/arcandina`} actionType={'navigate'}>{dict.arkSection4}</ClickableItem></li>
                     </ul>
                 </div>
             </div>

@@ -33,7 +33,7 @@ export default async function Home({ params }) {
           <NewsSection dict={dict} lang={params.lang || 'es'}/>
           <ArkSection dict={dict}/>
         </main>
-        <FooterSection dict={dict}/>
+        <FooterSection dict={dict} params={params}/>
       </div>
     </>
   );
