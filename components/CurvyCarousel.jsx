@@ -138,7 +138,7 @@ const CurvyCarousel = () => {
                     emblaApi.scrollTo(0); // Go back to the first slide if at the last slide
                 }
             }
-        }, 3000); // Scroll every 3 seconds
+        }, 2000); // Scroll every 3 seconds
     
         return () => clearInterval(autoScroll); // Cleanup interval on unmount
     }, [emblaApi, inView]);
