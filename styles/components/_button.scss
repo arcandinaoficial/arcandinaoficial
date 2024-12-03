@@ -22,6 +22,10 @@
     &:hover svg {
         animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
     }
+
+    &:hover img {
+        animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
+    }
     
     &--primary{
         background-color: $primary-color;
@@ -40,6 +44,16 @@
             background-color: $secondary-color-lt;
         }
     }
+
+    &--rotary{
+        background-color: $rotary-blue-color;
+        color: $white-color;
+
+        &:hover{
+            background-color: $rotary-blue-color-lt;
+        }
+    }
+
 }
 
 // Keyframes for the ringing bell animation

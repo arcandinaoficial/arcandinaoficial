@@ -49,12 +49,25 @@ const Navbar = ({dict, params}) => {
       </ul>
       <div className='navbar__buttons'>
         <Button 
+          label={dict.navbarButtonHistorias} 
+          icon={'Rotary'}
+          actionType='scrollTo'
+          onClick={'ContentSection'}
+          variable='rotary'
+        />
+        <Button 
           label={dict.navbarButtonVisita} 
           icon={'Ship'}
           actionType='navigate'
           onClick={`/${params.lang}/arcandina`}
         />
-        <Button label={dict.navbarButtonDona} variable='secondary' icon={'HeartHandshake'} onClick="https://www.gofundme.com" actionType="redirect"/>
+        <Button 
+          label={dict.navbarButtonDona} 
+          variable='secondary' 
+          icon={'HeartHandshake'} 
+          onClick="https://www.gofundme.com" 
+          actionType="redirect"
+          />
       </div>
       <div className='navbar__burger-menu'>
         <MenuButton navbarItems={navbarItems} dict={dict} params={params}/>

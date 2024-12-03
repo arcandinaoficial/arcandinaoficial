@@ -61,7 +61,7 @@
     }
 
     &__buttons{
-        @include flex-center($direction: row, $gap: 15px);
+        @include flex-center($direction: row, $gap: 10px);
         margin-left: auto;
     }
 
