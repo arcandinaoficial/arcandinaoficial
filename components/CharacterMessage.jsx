@@ -8,13 +8,13 @@ const CharacterMessage = ({characterName, dict, visible}) => {
 
     const router = useRouter();
     const currentPath = usePathname();
-    const [characterImage, setCharacterImage] = useState('/characters/cori.png');
+    const [characterImage, setCharacterImage] = useState('/characters/cori.webp');
     const [characterInfo, setCharacterInfo] = useState({});
 
     useEffect(()=>{
         switch(characterName){
             case 'jagui':
-                setCharacterImage('/characters/jagui.png');
+                setCharacterImage('/characters/jagui.webp');
                 setCharacterInfo({
                     span: dict.proyectosYTalleres,
                     h6: 'Jagüi',
@@ -22,7 +22,7 @@ const CharacterMessage = ({characterName, dict, visible}) => {
                 })
                 return;
             case 'antonella':
-                setCharacterImage('/characters/antonella.png');
+                setCharacterImage('/characters/antonella.webp');
                 setCharacterInfo({
                     span: dict.visitArcandina,
                     h6: 'Antonella',
@@ -30,7 +30,7 @@ const CharacterMessage = ({characterName, dict, visible}) => {
                 })
                 return;
             case 'tucan':
-                setCharacterImage('/characters/tucan2.png');
+                setCharacterImage('/characters/tucan2.webp');
                 setCharacterInfo({
                     span: dict.rinconLectura,
                     h6: 'Tucán',
@@ -38,7 +38,7 @@ const CharacterMessage = ({characterName, dict, visible}) => {
                 })
                 return;
             case 'guardian':
-                setCharacterImage('/characters/guardian.png');
+                setCharacterImage('/characters/guardian.webp');
                 setCharacterInfo({
                     span: dict.zonaVideos,
                     h6: 'Guardián Verde',
@@ -46,7 +46,7 @@ const CharacterMessage = ({characterName, dict, visible}) => {
                 })
                 return;
             case 'cori':
-                setCharacterImage('/characters/cori.png');
+                setCharacterImage('/characters/cori.webp');
                 setCharacterInfo({
                     span: dict.podcasts,
                     h6: 'Cori',
@@ -54,7 +54,7 @@ const CharacterMessage = ({characterName, dict, visible}) => {
                 })
                 return;
             case 'ratasura':
-                setCharacterImage('/characters/ratasura.png');
+                setCharacterImage('/characters/ratasura.webp');
                 return;
             default: 
                 break;

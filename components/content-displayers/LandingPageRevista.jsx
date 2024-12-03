@@ -12,7 +12,7 @@ const LandingPageRevista = ({dict}) => {
                 <div className='content-displayer__revista__cover'>
                     <Image
                         className='content-displayer__revista__cover__image'
-                        src="/revista-cover.png" 
+                        src="/revista-cover.webp" 
                         alt="Portada de la revista A bordo del Arcandina"
                         width={800} 
                         height={800} 
@@ -33,7 +33,7 @@ const LandingPageRevista = ({dict}) => {
             <div className='content-displayer__revista__image'>
                 <Image
                     className='content-displayer__revista__image__image'
-                    src="/revista-image.png" 
+                    src="/revista-image.webp" 
                     alt="Imagen de una parte de la revista A bordo del Arcandina"
                     width={800} 
                     height={800} 

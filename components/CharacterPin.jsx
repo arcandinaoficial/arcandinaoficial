@@ -5,27 +5,27 @@ import React, {useEffect, useState} from 'react';
 
 const CharacterPin = ({characterName, action}) => {
 
-    const [characterImage, setCharacterImage] = useState('/characters/cori.png');
+    const [characterImage, setCharacterImage] = useState('/characters/cori.webp');
 
     useEffect(()=>{
         switch(characterName){
             case 'jagui':
-                setCharacterImage('/characters/jagui.png');
+                setCharacterImage('/characters/jagui.webp');
                 return;
             case 'antonella':
-                setCharacterImage('/characters/antonella.png');
+                setCharacterImage('/characters/antonella.webp');
                 return;
             case 'tucan':
-                setCharacterImage('/characters/tucan.png');
+                setCharacterImage('/characters/tucan.webp');
                 return;
             case 'guardian':
-                setCharacterImage('/characters/guardian.png');
+                setCharacterImage('/characters/guardian.webp');
                 return;
             case 'cori':
-                setCharacterImage('/characters/cori.png');
+                setCharacterImage('/characters/cori.webp');
                 return;
             case 'ratasura':
-                setCharacterImage('/characters/ratasura.png');
+                setCharacterImage('/characters/ratasura.webp');
                 return;
             default: 
                 break;

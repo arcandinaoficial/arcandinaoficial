@@ -167,7 +167,7 @@ const WindowCarousel = () => {
                 <div className="carousel__slide" key={`placeholder-${index}`}>
                     <Image
                         className='carousel__slide__window'
-                        src={'/window-carousel/boat-window.png'}
+                        src={'/window-carousel/boat-window.webp'}
                         alt={'Marco de imagen con forma de ventana de bote'}
                         width={450}
                         height={450}
@@ -177,7 +177,7 @@ const WindowCarousel = () => {
                         <div className="carousel__parallax__layer">
                             <Image
                                 className='carousel__slide__img carousel__parallax__img'
-                                src={'/window-carousel/placeholder-img.png'}
+                                src={'/window-carousel/placeholder-img.webp'}
                                 alt={'Marcador de posición de Arcandina'}
                                 width={500}
                                 height={500}
@@ -193,7 +193,7 @@ const WindowCarousel = () => {
             <div className="carousel__slide" key={index}>
                 <Image
                     className='carousel__slide__window'
-                    src={'/window-carousel/boat-window.png'}
+                    src={'/window-carousel/boat-window.webp'}
                     alt={'Marco de imagen con forma de ventana de bote'}
                     width={450}
                     height={450}

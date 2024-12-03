@@ -6,7 +6,7 @@ const BannerSection = ({dict}) => {
     <section className='banner-section'>
         <Image
             className='banner-section__background'
-            src="/banner-image.png" 
+            src="/banner-image.webp" 
             alt="Imagen del océano con islas de fondo"
             width={1811} 
             height={1114} 
@@ -14,7 +14,7 @@ const BannerSection = ({dict}) => {
         />
         <Image
             className='banner-section__characters'
-            src="/banner-characters.png" 
+            src="/banner-characters.webp" 
             alt="Personajes de Arcandina"
             width={1554} 
             height={443} 

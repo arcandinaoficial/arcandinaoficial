@@ -7,7 +7,7 @@ import CharacterPin from '@/components/CharacterPin';
 import CharacterMessage from '@/components/CharacterMessage';
 
 const ArkSection = ({ dict }) => {
-  const [arkImage, setArkImage] = useState('/ark.png');
+  const [arkImage, setArkImage] = useState('/ark.webp');
   const { scrollY } = useScroll();
   const [visibleCharacter, setVisibleCharacter] = useState('');
   
@@ -18,9 +18,9 @@ const ArkSection = ({ dict }) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 480) {
-        setArkImage('/ark-rotated.png');
+        setArkImage('/ark-rotated.webp');
       } else {
-        setArkImage('/ark.png');
+        setArkImage('/ark.webp');
       }
     };
 
@@ -57,7 +57,7 @@ const ArkSection = ({ dict }) => {
           >
             <Image
               className='ark-section__ilustration__image'
-              src="/ark-ilustration.png"
+              src="/ark-ilustration.webp"
               alt="Dibujo del arcandina con sus personajes"
               width={1264}
               height={1071}
@@ -71,8 +71,8 @@ const ArkSection = ({ dict }) => {
             className='ark-section__ark__image'
             src={arkImage}
             alt="Dibujo de un arca"
-            width={arkImage === '/ark.png' ? 1692 : 636}
-            height={arkImage === '/ark.png' ? 636 : 1692}
+            width={arkImage === '/ark.webp' ? 1692 : 636}
+            height={arkImage === '/ark.webp' ? 636 : 1692}
             priority
           />
           <CharacterPin characterName={'cori'} action={handlePinClick('cori')}/>
