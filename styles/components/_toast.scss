@@ -1,4 +1,5 @@
 .p-toast{
+    z-index: 500000 !important;
     @include respond-to(tablet){
         width: fit-content;
         max-width: calc(100vw - 40px);
