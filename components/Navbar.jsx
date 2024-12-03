@@ -14,16 +14,11 @@ const Navbar = ({dict, params}) => {
       },
       {
         'text': dict.navbarItem2,
-        'scrollTo': 'RotarySection',
+        'scrollTo': 'JournalSection',
         'icon': 'Handshake'
       },
       {
         'text': dict.navbarItem3,
-        'scrollTo': 'ContentSection',
-        'icon': 'Clapperboard'
-      },
-      {
-        'text': dict.navbarItem4,
         'scrollTo': 'ArkSection',
         'icon': 'Compass'
       }
