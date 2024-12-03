@@ -10,17 +10,26 @@ const Navbar = ({dict, params}) => {
       {
         'text': dict.navbarItem1,
         'scrollTo': 'AboutUsSection',
-        'icon': 'Info'
+        'icon': 'House',
+        'showOnExpand': true
+      },
+      {
+        'text': dict.navbarButtonHistorias,
+        'scrollTo': 'ContentSection',
+        'icon': 'Droplets',
+        'showOnExpand': false
       },
       {
         'text': dict.navbarItem2,
         'scrollTo': 'JournalSection',
-        'icon': 'Handshake'
+        'icon': 'NotebookText',
+        'showOnExpand': true
       },
       {
         'text': dict.navbarItem3,
         'scrollTo': 'ArkSection',
-        'icon': 'Compass'
+        'icon': 'Compass',
+        'showOnExpand': true
       }
   ]
 
@@ -36,10 +45,12 @@ const Navbar = ({dict, params}) => {
       />
       <ul className='navbar__items'>
         {navbarItems.map((item, index) => (
-          <li key={index}>
-            {item.text}
-            <NavbarItem targetId={item.scrollTo} />
-          </li>
+          item.showOnExpand ? (
+            <li key={index}>
+              {item.text}
+              <NavbarItem targetId={item.scrollTo} />
+            </li>
+          ) : null
         ))}
       </ul>
       <div className='navbar__buttons'>

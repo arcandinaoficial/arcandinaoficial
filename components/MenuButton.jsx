@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { Dialog } from 'primereact/dialog';
 import { 
-    Info, 
-    Handshake, 
-    Clapperboard,
+    House, 
+    NotebookText, 
+    Droplets,
     Compass 
 } from 'lucide-react';
 
@@ -17,14 +17,14 @@ const MenuButton = ({navbarItems, dict, params}) => {
 
     const getCorrespondingIcon = (iconName) => {
         switch (iconName){
-            case 'Handshake':
-                return <Handshake color={'white'} size={20} />;
-            case 'Clapperboard':
-                return <Clapperboard color={'white'} size={20} /> ;
+            case 'NotebookText':
+                return <NotebookText color={'white'} size={20} />;
+            case 'Droplets':
+                return <Droplets color={'white'} size={20} /> ;
             case 'Compass': 
                 return <Compass color={'white'} size={20} /> ;
             default: 
-                return <Info color={'white'} size={20} /> ;
+                return <House color={'white'} size={20} /> ;
         }
     }
 
