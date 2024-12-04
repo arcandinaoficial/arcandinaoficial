@@ -96,4 +96,6 @@ const Flipbook = forwardRef(({ pages }, ref) => {
     );
 });
 
+Flipbook.displayName = 'Flipbook';
+
 export default Flipbook;
