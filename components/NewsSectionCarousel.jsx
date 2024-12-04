@@ -7,6 +7,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Button from '@/components/Button'
 import NewsSectionMiniCarousel from './NewsSectionMiniCarousel'
 import New from './New'
+import Image from 'next/image';
 
 const options = { 
     dragFree: false, 
@@ -142,10 +143,13 @@ const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
             <div className="news-section-carousel__slide" key={index}>
                 <div className="news-section-carousel__parallax">
                     <div className="news-section-carousel__parallax__layer">
-                        <img
+                        <Image
                             className="news-section-carousel__slide__img news-section-carousel__parallax__img"
-                            src={slide.images[0]}  
-                            alt={`Imagen de ${slide.articleTitle}`} 
+                            src={slide.images[0]}
+                            alt={`Imagen de ${slide.articleTitle}`}
+                            width={800}
+                            height={600} 
+                            priority={true} 
                         />
                     </div>
                 </div>
