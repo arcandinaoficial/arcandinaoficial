@@ -202,10 +202,13 @@ const WindowCarousel = () => {
                 />
                 <div className="carousel__parallax">
                     <div className="carousel__parallax__layer">
-                        <img
+                        <Image
                             className="carousel__slide__img carousel__parallax__img"
                             src={slide.src}  
                             alt={slide.title} 
+                            width={450}
+                            height={450}
+                            priority={true}
                         />
                     </div>
                 </div>
