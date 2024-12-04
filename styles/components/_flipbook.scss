@@ -1,0 +1,62 @@
+.flipbook{
+    &__dialog{
+        --border-radius: 15px;
+
+        width: 100vw;
+        height: 100dvh;
+        max-height: none;
+
+        position: relative;
+    
+        .p-dialog-header{
+            background-image: url('/ark-base.webp');
+            background-size: 100% 200%;
+            background-position: top center;
+            border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+            z-index: 3;
+            box-sizing: border-box;
+            padding-right: 10px;
+            height: 30px;
+        }
+
+        .p-dialog-content{
+            background-image: url('/ark-base.webp');
+            background-size: 100% auto;
+            background-repeat: repeat-y;
+            background-position: top center;
+            border-radius: 0px 0px var(--border-radius) var(--border-radius);
+            box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+        
+            box-sizing: border-box;
+            padding: 10px;
+
+            @include flex-center($direction: column, $justify: flex-start);
+        }
+
+        .p-dialog-header-icon{
+            color: $white-color;
+            margin-top: 50%;
+            height: 15px;
+            width: 15px;
+
+            svg{
+                height: 15px;
+                width: 15px;
+            }
+
+            &:hover{
+                background-color: transparent;
+                animation: ring-bell 0.5s ease-in-out; // Trigger the animation on hover
+            }
+        }
+    }
+
+    &__container{
+        @include flex-center();
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+}

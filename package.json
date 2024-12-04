@@ -23,6 +23,7 @@
     "primereact": "^10.8.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-pageflip": "^2.0.3",
     "react-transition-group": "^4.4.5",
     "sass": "^1.78.0"
   },

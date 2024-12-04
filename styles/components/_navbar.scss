@@ -90,7 +90,7 @@
     }
 
     &__dialog{
-        height: 100svh !important;
+        height: 100dvh !important;
         width: 300px;
         max-height: 100svh;
         border-radius: 0px 15px 15px 0px;
@@ -109,7 +109,7 @@
         }
 
         .p-dialog-content{
-            height: 100svh;
+            height: 100dvh;
             box-sizing: border-box;
             padding: 20px;
             display: flex;
