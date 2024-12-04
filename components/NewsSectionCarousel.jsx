@@ -14,7 +14,7 @@ const options = {
 }
 const TWEEN_FACTOR_BASE = 0.2
 
-const NewsSectionCarousel = ({slides, newId = null}) => {
+const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
     
     // Setup
     const [emblaRef, emblaApi] = useEmblaCarousel(options)  // Setup Embla carousel reference and autoplay plugin
@@ -220,7 +220,7 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
                     currentSlide?.images?.length > 1 &&
                     <NewsSectionMiniCarousel images={currentSlide.images.slice(1)} />
                 }
-                <New slide={currentSlide || {}}/>
+                <New slide={currentSlide || {}} dict={dict} lang={lang}/>
             </div>
         </>
         

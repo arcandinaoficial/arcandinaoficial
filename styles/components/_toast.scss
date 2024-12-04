@@ -20,4 +20,5 @@
     @include bodyFont();
     line-height: 1.2rem;
     margin-top: 5px;
+    user-select: text;
 }

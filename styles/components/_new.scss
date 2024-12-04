@@ -21,7 +21,9 @@
         @include flex-center($direction: column, $align: flex-start)
     }
 
-    &__button{
+    &__footer{
         margin-top: 25px;
+        width: 100%;
+        @include flex-center($justify: flex-start);
     }
 }

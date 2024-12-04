@@ -13,7 +13,8 @@ import {
     Lightbulb,
     House,
     CircleArrowLeft,
-    Download
+    Download,
+    Share2
 } from 'lucide-react';
 import { Toast } from 'primereact/toast';
 
@@ -45,6 +46,7 @@ const Button = ({
         House: <House color={iconColor} size={iconSize} />,
         CircleArrowLeft: <CircleArrowLeft color={iconColor} size={iconSize} />,
         Download: <Download color={iconColor} size={iconSize} />,
+        Share2: <Share2 color={iconColor} size={iconSize} />,
         Rotary: <img style={{width: '18px', height: '18px'}} src="/socials/rotary-icon.svg" alt="Rotary nut icon"/>
     };
 

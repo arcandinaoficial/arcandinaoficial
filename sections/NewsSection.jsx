@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import noticias from '@/data/noticias/news-list.json';
 import NewsSectionCarousel from '@/components/NewsSectionCarousel';
 
-const NewsSection = ({ lang }) => {
+const NewsSection = ({ lang, dict }) => {
     const router = useRouter();
     const sectionRef = useRef();
     const [newId, setNewId] = useState(null);
@@ -60,7 +60,7 @@ const NewsSection = ({ lang }) => {
 
     return (
         <section id="news-section" className="news-section" ref={sectionRef}>
-            <NewsSectionCarousel slides={noticias[lang]} newId={newId} />
+            <NewsSectionCarousel slides={noticias[lang]} newId={newId} dict={dict} lang={lang}/>
         </section>
     );
 };
