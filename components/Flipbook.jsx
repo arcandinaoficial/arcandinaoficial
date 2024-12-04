@@ -58,6 +58,14 @@ const Flipbook = forwardRef(({ pages }, ref) => {
         };
     }, []);
 
+    useEffect(() => {
+        if (visible) {
+            document.documentElement.classList.add('no-scroll');
+        } else {
+            document.documentElement.classList.remove('no-scroll');
+        }
+    }, [visible]);
+
     return (
         <Dialog
             className='flipbook__dialog'
