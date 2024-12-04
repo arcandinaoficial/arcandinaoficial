@@ -54,6 +54,15 @@
         }
     }
 
+    &--transparent{
+        background-color: transparent;
+        color: $primary-color;
+
+        &:hover{
+            background-color: rgba($color: $gray-color, $alpha: 0.1);
+        }
+    }
+
 }
 
 // Keyframes for the ringing bell animation

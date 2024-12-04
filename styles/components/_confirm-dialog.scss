@@ -1,0 +1,35 @@
+.confirm-dialog{
+    width: clamp(200px, 90vw, 600px);
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .p-dialog-header{
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .p-dialog-title{
+        @include titleFont();
+        color: $black-color;
+    }
+
+    .pi-exclamation-circle{
+        color: $primary-color !important;
+        font-weight: 700;
+        margin-top: 10px;
+        font-size: 50px;
+    }
+
+    .p-dialog-footer{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        @include flex-center($justify: flex-end);
+    }
+
+    &__text{
+        box-sizing: border-box;
+        padding: 15px;
+    }
+}

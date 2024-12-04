@@ -2,6 +2,7 @@
 
 import React, {useRef} from 'react'
 import Button from '../Button'
+import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
 import Image from 'next/image'
 import Flipbook from '@/components/Flipbook'
 import revistaPages from '@/data/revista/rotary-revista.json'
@@ -24,10 +25,41 @@ const LandingPageRevista = ({dict}) => {
         link.click();
         document.body.removeChild(link);
     };
+
+    const accept = () => {
+        handleRevistaDownload();
+    };
+
+    const reject = () => {
+        //TODO;
+    };
+
+    const showTemplate = () => {
+        confirmDialog({
+            group: 'templating',
+            header: dict.revistaDownloadTermsTitle,
+            message: (
+                <div className="flex flex-column align-items-center w-full gap-3 border-bottom-1 surface-border">
+                    <i className="pi pi-exclamation-circle"></i>
+                    <span className='confirm-dialog__text'>{dict.revistaDownloadTermsDescription}</span>
+                </div>
+            ),
+            accept,
+            reject
+        });
+    };
     
 
     return (
         <section className="content-displayer__revista">
+            <ConfirmDialog 
+            className='confirm-dialog' 
+            group="templating" 
+            acceptLabel={dict.toasts.revistaDownloadAccept} 
+            rejectLabel={dict.toasts.revistaDownloadReject}
+            acceptClassName={'button button--primary'}
+            rejectClassName={'button button--transparent'}
+            />
             <div className='content-displayer__revista__container'>
                 <div className='content-displayer__revista__info'>
                     <div className='content-displayer__revista__cover'>
@@ -49,13 +81,13 @@ const LandingPageRevista = ({dict}) => {
                             label={dict.revistaButton}
                             icon='BookOpenText'
                         />
-                        {/* <Button 
+                        <Button 
                             actionType='function'
-                            onClick={handleRevistaDownload}
+                            onClick={() => showTemplate()}
                             label={dict.revistaButtonDownload}
                             icon='Download'
                             variable='secondary'
-                        /> */}
+                        />
                     </div>
                 </div>
                 <div className='content-displayer__revista__image'>

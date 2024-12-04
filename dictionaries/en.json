@@ -76,6 +76,10 @@
   "emptyVideoCardDescription": "Don't miss the next episode! Follow us on social media to be the first to know when it's available.",
   "toasts": {
     "donationTitle": "Thank you for your interest!",
-    "donationMessage": "We haven't created a campaign for you to donate yet, but we'll keep you updated through our social media channels."
-  }
+    "donationMessage": "We haven't created a campaign for you to donate yet, but we'll keep you updated through our social media channels.",
+    "revistaDownloadAccept": "I accept the Terms and download",
+    "revistaDownloadReject": "I do not accept the Terms"
+  },
+  "revistaDownloadTermsTitle": "Terms of Use for the Document",
+  "revistaDownloadTermsDescription": "By downloading this document, you agree that its use is strictly limited to educational, research, or personal consultation purposes. Any commercial use, reproduction, distribution, or modification of the content for purposes other than those mentioned is expressly prohibited without prior written authorization from the rights holders. Failure to comply with these provisions may result in legal action in accordance with applicable intellectual property laws. We appreciate your understanding and respect for the rights associated with this publication."
 }
