@@ -71,7 +71,7 @@ const Flipbook = forwardRef(({ pages }, ref) => {
                 <HTMLFlipBook
                     width={flipbookWidth}
                     height={flipbookHeight}
-                    showCover={false}
+                    showCover={true}
                     drawShadow={true}
                     flippingTime={1000}
                     className='flipbook__book'

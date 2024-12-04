@@ -16,6 +16,16 @@ const LandingPageRevista = ({dict}) => {
         }
     };
 
+    const handleRevistaDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/revista/Revista - A Bordo del Arcandina.pdf'; // Path to the PDF in the public folder
+        link.download = 'Revista - A Bordo del Arcandina.pdf'; // Default file name for the download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    
+
     return (
         <section className="content-displayer__revista">
             <div className='content-displayer__revista__container'>
@@ -39,6 +49,13 @@ const LandingPageRevista = ({dict}) => {
                             label={dict.revistaButton}
                             icon='BookOpenText'
                         />
+                        {/* <Button 
+                            actionType='function'
+                            onClick={handleRevistaDownload}
+                            label={dict.revistaButtonDownload}
+                            icon='Download'
+                            variable='secondary'
+                        /> */}
                     </div>
                 </div>
                 <div className='content-displayer__revista__image'>
