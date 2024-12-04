@@ -169,14 +169,20 @@ const NewsSectionCarousel = ({slides, newId = null}) => {
 
     const getButton = (slide) => {
         switch (slide.id) {
-            case 1:
+            case 'minga-fest':
                 return <Button 
                     className='carousel__text__button'
                     actionType='scrollTo'
                     onClick={'new-content'}
                     label={slide.bannerButtonText}
                 />
-            default: return <></>
+            default: 
+                return <Button 
+                    className='carousel__text__button'
+                    actionType='scrollTo'
+                    onClick={'new-content'}
+                    label={slide.bannerButtonText}
+                />
         }
     }
 

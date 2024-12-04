@@ -22,6 +22,52 @@
             ],
             "hasArticleButton": true,
             "articleButtonText": "Inscríbete haciendo click aquí"
+        },
+        {
+            "id": "campaña-educativa-cuidado-del-agua",
+            "className": "",
+            "bannerTitle1": "Arcandina y Rotary:",
+            "bannerTitle2": "Campaña Educativa",
+            "bannerSubtitle": "Concientización sobre el Cuidado del Agua",
+            "hasBannerButton": true,
+            "bannerButtonText": "Conóce más",
+            "images": [
+                "/news/campaña-educativa/img1.webp"
+            ], 
+            "date": "04 de diciembre, 2024",
+            "articleTitle": "Arcandina y Rotary lanzan la campaña educativa sobre el cuidado del agua",
+            "articleParagraphs": [
+                "La situación ambiental y la sequía que vive el país demanda acciones ciudadanas para promover una cultura orientada hacia el buen uso del agua. Frente a esta necesidad, Fundación Arcandina junto con el Club Rotario Los Chillos Milenio, lanzan la campaña: Historias para Cuidar el Agua, que incluye una miniserie con los personajes de Arcandina, con temas para cuidar los ríos, páramos, quebradas y evitar la contaminación del agua.",
+                "La campaña se orienta a fortalecer la conciencia ambiental a través de elementos lúdicos y la educomunicación basada en valores, promoviendo la formación de agentes de cambio. Los mensajes a través de los personajes Arcandina son el vehículo para crear empatía hacia la naturaleza y fortalecer la resiliencia.",
+                "Fundación Arcandina tiene una reconocida experiencia y trayectoria en educación ambiental, desde 1997 ha producido programas de televisión, videos, campañas y material didáctico que han llegado a más de 6 millones de niños en el continente. Ha recibido reconocimientos de la UNESCO, la National Wildlife Federation y el Municipio de Quito, entre otros",
+                "La campaña se implementa en escuelas y redes sociales con el apoyo del Rotary Club los Chillos Milenio y ha beneficiado a más de 2.800 estudiantes.",
+                "Contacto: Pablo Palacios-Arcandina 0963089303",
+                "Alejandra Lozada: Rotary Club 0992567278"
+            ],
+            "hasArticleButton": false,
+            "articleButtonText": ""
+        },
+        {
+            "id": "condecoracion-maria-elena-ordoñez",
+            "className": "",
+            "bannerTitle1": "María Elena Ordóñez:",
+            "bannerTitle2": "Reconocida por su legado educativo",
+            "bannerSubtitle": "Un homenaje a su aporte a la televisión infantil y la conciencia ambiental",
+            "hasBannerButton": true,
+            "bannerButtonText": "Conóce más",
+            "images": [
+                "/news/condecoracion-maria-elena/img1.webp"
+            ], 
+            "date": "06 de diciembre, 2024",
+            "articleTitle": "María Elena Ordóñez es condecorada por el Municipio de Quito por su destacada labor en educación y valores ambientales",
+            "articleParagraphs": [
+                "María Elena Ordóñez, creadora de Arcandina recibe condecoración del  Concejo del Municipio  Quito, en reconocimiento por su aporte a la literatura, la educación y la promoción de la televisión infantil de calidad.",
+                "En 1997, María Elena creó, junto al cineasta y escritor Pablo Palacios, el programa de televisión Arcandina, la serie educativa más trascendental de la televisión ecuatoriana, que superó las fronteras del país, llevando con orgullo la imagen de Ecuador a América Latina y Estados Unidos., en cadenas como Telemundo y Azteca América. Con el tiempo, Arcandina se convirtió en un programa emblemático de la familia quiteña, contribuyendo a la formación de una cultura ambiental en varias generaciones.",
+                "María Elena ha dedicado su vida al servicio de la educación,   la literatura infantil, la escritura y producción de guiones y programas de televisión, a través de una labor pionera e innovadora con la serie Arcandina, que ha logrado transmitir de manera  creativa los valores del cuidado ambiental, sensibilizando a más de 5 millones de niños en Ecuador y otros países de la región.",
+                "Investigaciones sobre el impacto educativo de Arcandina, realizadas por las universidades de Stanford y Johns Hopkins, validaron técnicamente  la alta calidad educativa y artística de la serie y por ello, la Unesco, la National Wildlife Federation  y otras organizaciones reconocieron a Arcandina como el programa de educación ambiental más innovador del continente."
+            ],
+            "hasArticleButton": false,
+            "articleButtonText": ""
         }
     ], 
     "en": 
@@ -47,6 +93,52 @@
             ],
             "hasArticleButton": true,
             "articleButtonText": "Sign up by clicking here"
+        },
+        {
+            "id": "campaña-educativa-cuidado-del-agua",
+            "className": "",
+            "bannerTitle1": "Arcandina and Rotary:",
+            "bannerTitle2": "Educational Campaign",
+            "bannerSubtitle": "Awareness on Water Care",
+            "hasBannerButton": true,
+            "bannerButtonText": "Learn More",
+            "images": [
+                "/news/campaña-educativa/img1.webp"
+            ], 
+            "date": "December 4, 2024",
+            "articleTitle": "Arcandina and Rotary Launch Educational Campaign on Water Care",
+            "articleParagraphs": [
+                "The environmental situation and drought in the country demand citizen actions to promote a culture focused on the responsible use of water. Addressing this need, the Arcandina Foundation, together with the Los Chillos Milenio Rotary Club, launched the campaign: Stories to Care for Water. The initiative includes a miniseries featuring Arcandina characters, highlighting themes about protecting rivers, páramos, creeks, and preventing water pollution.",
+                "The campaign aims to strengthen environmental awareness through playful elements and educommunication based on values, promoting the formation of change agents. The messages delivered through the Arcandina characters serve as a vehicle to foster empathy for nature and build resilience.",
+                "The Arcandina Foundation has recognized expertise and experience in environmental education. Since 1997, it has produced television programs, videos, campaigns, and educational materials that have reached more than 6 million children across the continent. It has received accolades from UNESCO, the National Wildlife Federation, and the Municipality of Quito, among others.",
+                "The campaign is implemented in schools and on social media with the support of the Los Chillos Milenio Rotary Club and has benefited more than 2,800 students.",
+                "Contact: Pablo Palacios-Arcandina 0963089303",
+                "Alejandra Lozada: Rotary Club 0992567278"
+            ],
+            "hasArticleButton": false,
+            "articleButtonText": ""
+        },
+        {
+            "id": "condecoracion-maria-elena-ordoñez",
+            "className": "",
+            "bannerTitle1": "María Elena Ordóñez:",
+            "bannerTitle2": "Recognized for Her Educational Legacy",
+            "bannerSubtitle": "A tribute to her contributions to children's television and environmental awareness",
+            "hasBannerButton": true,
+            "bannerButtonText": "Learn More",
+            "images": [
+                "/news/condecoracion-maria-elena/img1.webp"
+            ], 
+            "date": "December 6, 2024",
+            "articleTitle": "María Elena Ordóñez is Honored by the Municipality of Quito for Her Outstanding Work in Education and Environmental Values",
+            "articleParagraphs": [
+                "María Elena Ordóñez, creator of Arcandina, is honored by the Council of the Municipality of Quito in recognition of her contributions to literature, education, and the promotion of high-quality children's television.",
+                "In 1997, María Elena, together with filmmaker and writer Pablo Palacios, created the television program Arcandina, the most influential educational series in Ecuadorian television history. It transcended national borders, proudly showcasing Ecuador’s image to Latin America and the United States on networks like Telemundo and Azteca América. Over time, Arcandina became an iconic program for Quito families, contributing to the development of an environmental culture across multiple generations.",
+                "María Elena has dedicated her life to education, children’s literature, and the writing and production of television scripts and programs. Through pioneering and innovative work with the Arcandina series, she has creatively conveyed the values of environmental care, raising awareness among over 5 million children in Ecuador and other countries in the region.",
+                "Research on the educational impact of Arcandina, conducted by Stanford and Johns Hopkins universities, validated the series’ high educational and artistic quality. As a result, organizations such as UNESCO, the National Wildlife Federation, and others recognized Arcandina as the most innovative environmental education program on the continent."
+            ],
+            "hasArticleButton": false,
+            "articleButtonText": ""
         }
     ]
 }

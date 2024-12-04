@@ -9,7 +9,7 @@ const New = ({slide}) => {
 
     const getButton = (slide) => {
         switch (slide.id) {
-            case 1:
+            case 'minga-fest':
                 return <Button 
                     className='new__button'
                     actionType='redirect'
