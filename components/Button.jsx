@@ -99,7 +99,7 @@ const Button = ({
 
     return (
         <>
-            <Toast ref={toast} appendTo={document.body} />
+            <Toast ref={toast} appendTo={() => {document.body}}/>
             <button
                 type={type}
                 className={`button button--${variable} ${className}`}
