@@ -68,7 +68,7 @@ const FooterSection = ({dict, params}) => {
                             </a>
                             </li>
                             <li>
-                            <a href="https://www.instagram.com/arcandina_fundacion" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/mundo_arcandina" target="_blank" rel="noopener noreferrer">
                                 <img src="/socials/instagram-icon.svg" alt="Instagram" />
                             </a>
                             </li>
