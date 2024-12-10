@@ -33,7 +33,7 @@ const AboutUsSection = ({dict}) => {
             <div className='aboutus-section__shelf'>
                 <div className='aboutus-section__description aboutus-section__description--reversed'>
                     <div className='aboutus-section__description__overlay'></div>
-                    <img className='aboutus-section__description__image' src='/characters/cori.webp' alt='An image of a travelling suitcase'></img>
+                    <Image className='aboutus-section__description__image' srcWebp='/characters/cori.webp' srcPng='/characters/cori.png' alt='An image of our character Cori'/>
                     <p className='aboutus-section__description__text'>
                         {dict.aboutUsText8}
                         <br></br>  <br></br>
