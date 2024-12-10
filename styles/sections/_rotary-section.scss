@@ -20,7 +20,7 @@
     &__wave{
         height: 150px;
         width: 200%;
-        background-image: url('/wave-img.webp');
+        background-image: url('/wave-img.webp'), url('/wave-img.png');
         background-size: contain;
         background-repeat: repeat-x;
         background-position: top left; 

@@ -1,6 +1,7 @@
 import LinkText from '@/components/LinkText';
 import WindowCarousel from '@/components/WindowCarousel';
 import React from 'react';
+import Image from '@/components/Image';
 
 const AboutUsSection = ({dict}) => {
   return (
@@ -14,15 +15,15 @@ const AboutUsSection = ({dict}) => {
                 <div className='aboutus-section__description'>
                     <div className='aboutus-section__description__overlay'></div>
                     <p className='aboutus-section__description__text'>{dict.aboutUsText3}</p>
-                    <img className='aboutus-section__description__image' src='/suitcase-image.webp' alt='An image of a travelling suitcase'></img>
+                    <Image className='aboutus-section__description__image' srcWebp='/suitcase-image.webp' srcPng='/suitcase-image.png' alt='An image of a travelling suitcase'/>
                 </div>
             </div>
-            <img className='aboutus-section__banderines' src='/banderines-image.webp' alt='An image of some flags on a rope'></img>
-            <img className='aboutus-section__banderines--small' src='/banderines-image-small.webp' alt='An image of some flags on a rope'></img>
+            <Image className='aboutus-section__banderines' srcWebp='/banderines-image.webp' srcPng='/banderines-image.png' alt='An image of some flags on a rope'/>
+            <Image className='aboutus-section__banderines--small' srcWebp='/banderines-image-small.webp' srcPng='/banderines-image-small.png' alt='An image of some flags on a rope'/>
         </div>
         <div className='aboutus-section__logos'>
-            <img className='aboutus-section__logos--arcandina' src='/arcandina-logo-image.webp' alt='Arcandina logo'></img>
-            <img className='aboutus-section__logos--rotary' src='/rotary-logo-image.webp' alt='Rotary logo'></img>
+            <Image className='aboutus-section__logos--arcandina' srcWebp='/arcandina-logo-image.webp' srcPng='/arcandina-logo-image.png' alt='Arcandina logo'/>
+            <Image className='aboutus-section__logos--rotary' srcWebp='/rotary-logo-image.webp' srcPng='/rotary-logo.png' alt='Rotary logo'/>
         </div>
         <h3 className='aboutus-section__title--second'>
             <span>{dict.aboutUsText6}</span>

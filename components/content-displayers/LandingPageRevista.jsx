@@ -3,7 +3,7 @@
 import React, {useRef} from 'react'
 import Button from '../Button'
 import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
-import Image from 'next/image'
+import Image from '@/components/image'
 import Flipbook from '@/components/Flipbook'
 import revistaPages from '@/data/revista/rotary-revista.json'
 
@@ -65,11 +65,11 @@ const LandingPageRevista = ({dict}) => {
                     <div className='content-displayer__revista__cover'>
                         <Image
                             className='content-displayer__revista__cover__image'
-                            src="/revista-cover.webp" 
+                            srcWebp="/revista-cover.webp" 
+                            srcPng="/revista-cover.png" 
                             alt="Portada de la revista A bordo del Arcandina"
                             width={800} 
                             height={800} 
-                            priority 
                         />
                     </div>
                     <div className='content-displayer__revista__text'>
@@ -93,11 +93,11 @@ const LandingPageRevista = ({dict}) => {
                 <div className='content-displayer__revista__image'>
                     <Image
                         className='content-displayer__revista__image__image'
-                        src="/revista-image.webp" 
+                        srcWebp="/revista-image.webp" 
+                        srcPng="/revista-image.png" 
                         alt="Imagen de una parte de la revista A bordo del Arcandina"
                         width={800} 
                         height={800} 
-                        priority 
                     />
                 </div>
             </div>

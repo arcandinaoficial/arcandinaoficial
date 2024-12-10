@@ -1,7 +1,3 @@
-.boat-clip{
-    // TODO
-}
-
 .aboutus-section{
 
     @include flex-center($direction: column, $gap: 20px, $justify: flex-start);
@@ -9,7 +5,7 @@
     z-index: 500;
     height: fit-content;
 
-    background-image: url('/ark-base.webp');
+    background-image: url('/ark-base.webp'), url('/ark-base.jpg');
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
@@ -99,7 +95,7 @@
         z-index: 1;
         box-shadow: 0px 17px 20px 0px rgba($color: #000000, $alpha: 0.6);
 
-        background-image: url('/wood-tables-image.webp');
+        background-image: url('/wood-tables-image.webp'), url('/wood-tables-image.jpg');
         background-size: 100% auto;
         background-repeat: repeat-y;
         background-position: top center;
@@ -130,7 +126,7 @@
         padding-bottom: 0px;
         z-index: 1;
 
-        background-image: url('/wood-tables-image.webp');
+        background-image: url('/wood-tables-image.webp'), url('/wood-tables-image.jpg');
         background-size: 100% auto;
         background-repeat: repeat-y;
         background-position: top center;

@@ -64,7 +64,6 @@ const WindowCarousel = () => {
     }, [lang]); // Sets the corresponding slides according to the language
     useEffect(() => {
         if (emblaApi) {
-            console.log('Re init');
             emblaApi.reInit();
         }
     }, [slides, emblaApi]);

@@ -14,10 +14,10 @@ export default function Image({
   const fallbackSrc = srcJpg || srcPng; 
 
   return (
-    <picture>
-        {srcWebp && <source srcSet={srcWebp} type="image/webp" />}
+    <picture style={{display: 'contents'}}>
+        {srcWebp && <source style={{display: 'contents'}} srcSet={srcWebp} type="image/webp" />}
         
-        {fallbackSrc && <source srcSet={fallbackSrc} type="image/jpeg" />}
+        {fallbackSrc && <source style={{display: 'contents'}} srcSet={fallbackSrc} type="image/jpeg" />}
 
         <img
             src={fallbackSrc} 

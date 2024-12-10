@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from '@/components/image';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import CharacterPin from '@/components/CharacterPin';
 import CharacterMessage from '@/components/CharacterMessage';
@@ -57,11 +57,11 @@ const ArkSection = ({ dict }) => {
           >
             <Image
               className='ark-section__ilustration__image'
-              src="/ark-ilustration.webp"
+              srcWebp="/ark-ilustration.webp"
+              srcPng="/ark-ilustration.png"
               alt="Dibujo del arcandina con sus personajes"
               width={1264}
               height={1071}
-              priority
             />
           </motion.div>
         </div>
@@ -69,11 +69,11 @@ const ArkSection = ({ dict }) => {
         <div className='ark-section__ark'>
           <Image
             className='ark-section__ark__image'
-            src={arkImage}
+            srcWebp={arkImage}
+            srcPng={arkImage === '/ark.webp' ? '/ark.png' : '/ark-rotated.png'}
             alt="Dibujo de un arca"
             width={arkImage === '/ark.webp' ? 1692 : 636}
             height={arkImage === '/ark.webp' ? 636 : 1692}
-            priority
           />
           <CharacterPin characterName={'cori'} action={handlePinClick('cori')}/>
           <CharacterPin characterName={'jagui'} action={handlePinClick('jagui')}/>

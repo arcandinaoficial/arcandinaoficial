@@ -9,7 +9,7 @@
         position: relative;
     
         .p-dialog-header{
-            background-image: url('/ark-base.webp');
+            background-image: url('/ark-base.webp'), url('/ark-base.jpg');
             background-size: 100% 200%;
             background-position: top center;
             border-radius: var(--border-radius) var(--border-radius) 0px 0px;
@@ -20,7 +20,7 @@
         }
 
         .p-dialog-content{
-            background-image: url('/ark-base.webp');
+            background-image: url('/ark-base.webp'), url('/ark-base.jpg');
             background-size: 100% auto;
             background-repeat: repeat-y;
             background-position: top center;
