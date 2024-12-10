@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image';
+import Image from '@/components/Image';
 import React, {useEffect, useState} from 'react';
 
 const CharacterPin = ({characterName, action}) => {
@@ -37,11 +37,11 @@ const CharacterPin = ({characterName, action}) => {
             <div className="character-pin__image" >
                 <Image
                     className='character-pin__character'
-                    src={characterImage} 
+                    srcWebp={characterImage} 
+                    srcPng={characterImage.replace('.webp', '.png')} 
                     alt={`Imagen de ${characterName}`}
                     width={100} 
                     height={100} 
-                    priority 
                 />
             </div>
             <div className='character-pin__pin'>

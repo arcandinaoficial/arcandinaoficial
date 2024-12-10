@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image';
+import Image from '@/components/Image';
 import React, {useEffect, useState} from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -70,11 +70,11 @@ const CharacterMessage = ({characterName, dict, visible}) => {
             <div className="character-message__image" >
                 <Image
                     className='character-message__character'
-                    src={characterImage} 
+                    srcWebp={characterImage} 
+                    srcPng={characterImage.replace('.webp', '.png')} 
                     alt={`Imagen de ${characterName}`}
                     width={100} 
                     height={100} 
-                    priority 
                 />
             </div>
             <div onClick={handleClick} className='character-message__info'>
