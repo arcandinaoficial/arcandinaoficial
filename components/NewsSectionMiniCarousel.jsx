@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Dialog } from 'primereact/dialog'
+import Image from '@/components/Image';
 
 const options = { 
     dragFree: true, 
@@ -22,15 +23,16 @@ const NewsSectionMiniCarousel = ({images}) => {
         <div className="news-section-mini-carousel__container">
           {images.map((img, index) => (
             <div className="news-section-mini-carousel__slide" key={index}>
-                <img 
-                    src={img} 
+                <Image 
+                    srcWebp={img} 
+                    srcJpg={img.replace('.webp', '.jpg')} 
                     alt='News image' 
                     className="news-section-mini-carousel__slide__img"
                     onClick={() => {
                         setSelectedImage(img);
                         setViewDialog(true);
                     }}    
-                ></img>
+                ></Image>
             </div>
           ))}
         </div>
