@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import Image from '@/components/image';
+import Image from '@/components/Image';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import CharacterPin from '@/components/CharacterPin';
 import CharacterMessage from '@/components/CharacterMessage';

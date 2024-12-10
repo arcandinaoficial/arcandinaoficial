@@ -3,7 +3,7 @@
 import React, {useRef} from 'react'
 import Button from '../Button'
 import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
-import Image from '@/components/image'
+import Image from '@/components/Image'
 import Flipbook from '@/components/Flipbook'
 import revistaPages from '@/data/revista/rotary-revista.json'
 
