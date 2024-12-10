@@ -38,7 +38,7 @@ const CharacterPin = ({characterName, action}) => {
                 <Image
                     className='character-pin__character'
                     srcWebp={characterImage} 
-                    srcPng={characterImage.replace('.webp', '.png')} 
+                    srcPng={characterImage?.replace('.webp', '.png')} 
                     alt={`Imagen de ${characterName}`}
                     width={100} 
                     height={100} 

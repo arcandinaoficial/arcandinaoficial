@@ -146,7 +146,7 @@ const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
                         <Image
                             className="news-section-carousel__slide__img news-section-carousel__parallax__img"
                             srcWebp={slide.images[0]}
-                            srcJpg={slide.images[0].replace('.webp', '.jpg')}
+                            srcJpg={slide.images[0]?.replace('.webp', '.jpg')}
                             alt={`Imagen de ${slide.articleTitle}`}
                             width={800}
                             height={600} 

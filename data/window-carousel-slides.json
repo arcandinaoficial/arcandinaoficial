@@ -1,31 +1,31 @@
 {
     "es": [
         {
-            "src": "/window-carousel/carousel-img-1.png",
+            "src": "/window-carousel/carousel-img-1.webp",
             "title": "Historias para Cuidar el Agua",
             "description": "Historias para Cuidar el Agua es un proyecto realizado gracias al apoyo de Rotary Internacional, que busca enseñar a chicos y grandes, cómo proteger nuestro recurso más valioso: el agua.  La contaminación mata la vida de ríos y mares, pero juntos podemos hacer la diferencia. A través de videos, podcasts y nuestra revista, aprenderás consejos prácticos y fáciles para cuidar el agua desde casa y proteger los ríos.",
             "message": "¡Con tu ayuda, podemos salvar el agua y la vida que depende de ella!"
         },
         {
-            "src": "/window-carousel/carousel-img-2.png",
+            "src": "/window-carousel/carousel-img-2.webp",
             "title": "Videos para Cuidar el Agua",
             "description": "Acompaña a Cori en esta serie de videos donde exploramos los desafíos que enfrentan nuestras fuentes de agua. Descubra la importancia de los páramos, las quebradas, y cómo la contaminación por plásticos, aceites, detergentes y textiles afecta nuestros ríos y mares.",
             "message": "Porque somos agua, somos bosque, somos vida."
         },
         {
-            "src": "/window-carousel/carousel-img-3.png",
+            "src": "/window-carousel/carousel-img-3.webp",
             "title": "Podcasts para Cuidar el Agua",
             "description": "A través de nuestros podcasts, Cori nos da consejos prácticos para evitar la contaminación de ríos y mares desde casa. Aprende cómo tus acciones pueden hacer la diferencia. Además, te invitamos a escribir tus propios cuentos e historias sobre el cuidado del agua y compartir tu creatividad con el mundo.",
             "message": "Porque somos agua, somos bosque, somos vida."
         },
         {
-            "src": "/window-carousel/carousel-img-4.png",
+            "src": "/window-carousel/carousel-img-4.webp",
             "title": "Revista: A bordo del Arcandina",
             "description": "En la revista de Arcandina encontrarás juegos, consejos prácticos y actividades para aprender cómo cuidar nuestros ríos, fuentes de agua y mares. Además, te compartimos enlaces donde podrás profundizar en lo que cada uno de nosotros puede hacer para proteger estos recursos vitales. ¡Únete a Cori y vive la aventura de aprender y actuar para cuidar el agua!",
             "message": "Porque somos agua, somos bosque, somos vida."
         },
         {
-            "src": "/window-carousel/carousel-img-5.png",
+            "src": "/window-carousel/carousel-img-5.webp",
             "title": "Bitácora del Arcandina",
             "description": "Transforma pequeñas acciones en grandes cambios. Esta guía está diseñada para inspirarte a cuidar el agua desde tu hogar y tu aula, con proyectos sencillos, divertidos y llenos de impacto positivo. Descubra cómo ahorrar agua, reducir desechos y proteger este recurso vital para todos.",
             "message": "¡Tú puedes ser el cambio!"
@@ -33,31 +33,31 @@
     ],
     "en": [
         {
-            "src": "/window-carousel/carousel-img-1.png",
+            "src": "/window-carousel/carousel-img-1.webp",
             "title": "Stories to Protect Water",
             "description": "Stories to Protect Water is a project made possible thanks to the support of Rotary International, aimed at teaching kids and adults how to safeguard our most valuable resource: water. Pollution kills the life in rivers and oceans, but together we can make a difference. Through videos, podcasts, and our magazine, you'll learn practical and easy tips to protect water at home and preserve rivers.",
             "message": "With your help, we can save water and the life that depends on it!"
         },
         {
-            "src": "/window-carousel/carousel-img-2.png",
+            "src": "/window-carousel/carousel-img-2.webp",
             "title": "Videos to Protect Water",
             "description": "Join Cori in this video series where we explore the challenges facing our water sources. Discover the importance of wetlands, streams, and how pollution from plastics, oils, detergents, and textiles affects our rivers and oceans.",
             "message": "Because we are water, we are forest, we are life."
         },
         {
-            "src": "/window-carousel/carousel-img-3.png",
+            "src": "/window-carousel/carousel-img-3.webp",
             "title": "Podcasts to Protect Water",
             "description": "Through our podcasts, Cori shares practical tips to prevent pollution of rivers and oceans from home. Learn how your actions can make a difference. Plus, we invite you to write your own stories about water conservation and share your creativity with the world.",
             "message": "Because we are water, we are forest, we are life."
         },
         {
-            "src": "/window-carousel/carousel-img-4.png",
+            "src": "/window-carousel/carousel-img-4.webp",
             "title": "Magazine: Aboard the Arcandina",
             "description": "In the Arcandina magazine, you'll find games, practical tips, and activities to learn how to care for our rivers, water sources, and oceans. We also share links where you can dive deeper into what each of us can do to protect these vital resources. Join Cori and experience the adventure of learning and acting to protect water!",
             "message": "Because we are water, we are forest, we are life."
         },
         {
-            "src": "/window-carousel/carousel-img-5.png",
+            "src": "/window-carousel/carousel-img-5.webp",
             "title": "Arcandina's Journal",
             "description": "Turn small actions into big changes. This guide is designed to inspire you to protect water from your home and classroom with simple, fun, and impactful projects. Discover how to save water, reduce waste, and protect this vital resource for everyone.",
             "message": "You can be the change!"

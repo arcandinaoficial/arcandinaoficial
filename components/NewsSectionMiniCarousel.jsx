@@ -25,7 +25,7 @@ const NewsSectionMiniCarousel = ({images}) => {
             <div className="news-section-mini-carousel__slide" key={index}>
                 <Image 
                     srcWebp={img} 
-                    srcJpg={img.replace('.webp', '.jpg')} 
+                    srcJpg={img?.replace('.webp', '.jpg')} 
                     alt='News image' 
                     className="news-section-mini-carousel__slide__img"
                     onClick={() => {

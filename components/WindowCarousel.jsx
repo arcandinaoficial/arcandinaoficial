@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import {PrevButton,NextButton,usePrevNextButtons} from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import Image from 'next/image';
+import Image from '@/components/Image';
 import carouselData from '@/data/window-carousel-slides.json';
 import { Dialog } from 'primereact/dialog';
 
@@ -166,21 +166,21 @@ const WindowCarousel = () => {
                 <div className="carousel__slide" key={`placeholder-${index}`}>
                     <Image
                         className='carousel__slide__window'
-                        src={'/window-carousel/boat-window.webp'}
+                        srcWebp={'/window-carousel/boat-window.webp'}
+                        srcPng={'/window-carousel/boat-window.png'}
                         alt={'Marco de imagen con forma de ventana de bote'}
                         width={450}
                         height={450}
-                        priority 
                     />
                     <div className="carousel__parallax">
                         <div className="carousel__parallax__layer">
                             <Image
                                 className='carousel__slide__img carousel__parallax__img'
-                                src={'/window-carousel/placeholder-img.webp'}
+                                srcWebp={'/window-carousel/placeholder-img.webp'}
+                                srcPng={'/window-carousel/placeholder-img.png'}
                                 alt={'Marcador de posición de Arcandina'}
                                 width={500}
                                 height={500}
-                                priority 
                             />
                         </div>
                     </div>
@@ -192,22 +192,22 @@ const WindowCarousel = () => {
             <div className="carousel__slide" key={index}>
                 <Image
                     className='carousel__slide__window'
-                    src={'/window-carousel/boat-window.webp'}
+                    srcWebp={'/window-carousel/boat-window.webp'}
+                    srcPng={'/window-carousel/boat-window.png'}
                     alt={'Marco de imagen con forma de ventana de bote'}
                     width={450}
                     height={450}
-                    priority 
                     onClick={() => {setCurrentSlide(slide); setVisible(true)}}
                 />
                 <div className="carousel__parallax">
                     <div className="carousel__parallax__layer">
                         <Image
                             className="carousel__slide__img carousel__parallax__img"
-                            src={slide.src}  
+                            srcWebp={slide.src}  
+                            srcPng={slide.src?.replace('.webp', '.png')}  
                             alt={slide.title} 
                             width={450}
                             height={450}
-                            priority={true}
                         />
                     </div>
                 </div>
@@ -266,7 +266,8 @@ const WindowCarousel = () => {
                 
                 <Image
                     className='carousel__slide__dialog__image'
-                    src={currentSlide?.src}
+                    srcWebp={currentSlide?.src}
+                    srcPng={currentSlide?.src?.replace('.webp', '.png')}
                     alt={currentSlide?.title}
                     width={450}
                     height={450}
