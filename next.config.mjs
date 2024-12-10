@@ -4,7 +4,13 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['i.ytimg.com'], 
+        remotePatterns: [
+            {
+              protocol: 'https', 
+              hostname: 'i.ytimg.com', 
+              pathname: '**', 
+            },
+        ],
         unoptimized: true, 
     },
     assetPrefix: '',
