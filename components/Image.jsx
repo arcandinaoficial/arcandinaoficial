@@ -11,20 +11,23 @@ export default function Image({
   height, // Image height
   ...props // Any additional props
 }) {
+  const fallbackSrc = srcJpg || srcPng; 
+
   return (
-    <img
-        src={srcJpg || srcPng} // Fallback to JPG or PNG
-        srcSet={`
-            ${srcWebp ? `${srcWebp} 1x, ` : ''}
-            ${srcJpg ? `${srcJpg} 1x, ` : ''}
-            ${srcPng ? `${srcPng} 1x` : ''}
-        `.trim()}
-        alt={alt}
-        className={className}
-        style={style}
-        width={width}
-        height={height}
-        {...props}
-    />
+    <picture>
+        {srcWebp && <source srcSet={srcWebp} type="image/webp" />}
+        
+        {fallbackSrc && <source srcSet={fallbackSrc} type="image/jpeg" />}
+
+        <img
+            src={fallbackSrc} 
+            alt={alt}
+            className={className}
+            style={style}
+            width={width}
+            height={height}
+            {...props}
+        />
+    </picture>
   );
 }

@@ -8,6 +8,10 @@ body {
   font-size: 14px;
 }
 
+picture {
+  display: contents; /* Makes the <picture> element invisible in the layout */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
