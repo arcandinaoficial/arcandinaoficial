@@ -56,7 +56,11 @@
             "hasBannerButton": true,
             "bannerButtonText": "Conóce más",
             "images": [
-                "/news/condecoracion-maria-elena/img1.webp"
+                "/news/condecoracion-maria-elena/img1.webp",
+                "/news/condecoracion-maria-elena/img2.webp",
+                "/news/condecoracion-maria-elena/img3.webp",
+                "/news/condecoracion-maria-elena/img4.webp",
+                "/news/condecoracion-maria-elena/img5.webp"
             ], 
             "date": "06 de diciembre, 2024",
             "articleTitle": "María Elena Ordóñez es condecorada por el Municipio de Quito por su destacada labor en educación y valores ambientales",
@@ -127,7 +131,11 @@
             "hasBannerButton": true,
             "bannerButtonText": "Learn More",
             "images": [
-                "/news/condecoracion-maria-elena/img1.webp"
+                "/news/condecoracion-maria-elena/img1.webp",
+                "/news/condecoracion-maria-elena/img2.webp",
+                "/news/condecoracion-maria-elena/img3.webp",
+                "/news/condecoracion-maria-elena/img4.webp",
+                "/news/condecoracion-maria-elena/img5.webp"
             ], 
             "date": "December 6, 2024",
             "articleTitle": "María Elena Ordóñez is Honored by the Municipality of Quito for Her Outstanding Work in Education and Environmental Values",
