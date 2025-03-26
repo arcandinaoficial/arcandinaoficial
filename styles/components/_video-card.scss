@@ -1,5 +1,5 @@
 .video-card{
-    @include flex-center($direction: column, $justify: start, $gap: 5px);
+    @include flex-center($direction: column, $justify: flex-start, $gap: 5px);
     height: 100%;
     width: calc(100% - 10px);
     background-color: $white-color;
