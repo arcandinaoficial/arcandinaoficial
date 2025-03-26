@@ -60,7 +60,11 @@
             flex-direction: column;
             display: flex !important;
             align-items: flex-start;
-            gap: 30px !important;
+            gap: 20px !important;
+
+            li{
+                height: fit-content;
+            }
         }
     }
 
@@ -143,7 +147,7 @@
         }
 
         &__footer{
-            @include flex-center($direction: column);
+            @include flex-center($direction: column, $align: flex-start);
 
             hr{
                 width: 100%;
@@ -151,6 +155,7 @@
 
             &__buttons{
                 @include flex-center($direction: row);
+                padding-left: 10px;
             }
         }
     }

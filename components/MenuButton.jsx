@@ -96,13 +96,13 @@ const MenuButton = ({navbarItems, dict, params}) => {
                             actionType='navigate'
                             onClick={`/${params.lang}/arcandina`}
                         />
-                        <Button 
+                        {/* <Button 
                             label={dict.navbarButtonDona} 
                             variable='secondary' 
                             icon={'HeartHandshake'} 
                             onClick={{ severity: 'success', summary: dict.toasts.donationTitle, detail: dict.toasts.donationMessage }}
                             actionType="toast"
-                        />
+                        /> */}
                     </div>
                 </div>
             </Dialog>
