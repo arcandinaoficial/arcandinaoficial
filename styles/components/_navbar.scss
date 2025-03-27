@@ -79,6 +79,19 @@
     &__buttons{
         @include flex-center($direction: row, $gap: 10px);
         margin-left: auto;
+
+        &--language{
+            @include flex-center($direction: row, $gap: 8px);
+
+            button{
+                all: unset;
+                height: 80%;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     &__burger-menu{
@@ -154,8 +167,9 @@
             }
 
             &__buttons{
-                @include flex-center($direction: row);
-                padding-left: 10px;
+                @include flex-center($direction: row, $justify: space-between);
+                padding: 0px 10px;
+                width: 100%;
             }
         }
     }
