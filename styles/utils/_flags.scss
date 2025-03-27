@@ -1,0 +1,27 @@
+span.flag {
+    width: 44px;
+    height: 30px;
+    display: inline-block;
+}
+
+img.flag {
+    width: 30px
+}
+
+.flag {
+    background: url(https://primefaces.org/cdn/primereact/images/flag/flags_responsive.png) no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.flag-es {
+    background-position: 0 26.859504%
+}
+
+.flag-us {
+    background-position: 0 93.38843%
+}
+
+.flag-gb, .flag-uk {
+    background-position: 0 92.561983%
+}

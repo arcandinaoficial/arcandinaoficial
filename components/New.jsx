@@ -18,7 +18,7 @@ const New = ({slide, dict, lang}) => {
                 return <Button 
                     className='new__button'
                     actionType='redirect'
-                    onClick={'https://docs.google.com/forms/d/1BCe7EdGSuZnTsXjJp6jropPXvnc-44QwMJZSDTnXF0s/edit?ts=673681ba'}
+                    onClick={'https://mingamundialporelambiente.com/form/'}
                     label={slide.articleButtonText}
                 />
             default: return <></>

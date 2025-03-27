@@ -1,6 +1,7 @@
 // Utils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/flags";
 
 // Global
 @import "./global/main";
@@ -38,6 +39,7 @@
 @import "./components/toast";
 @import "./components/flipbook";
 @import "./components/confirm-dialog";
+@import "./components/tooltip";
 
 // TEMPORAL: NOTICIAS
 @import "./news-temp/minga-fest";

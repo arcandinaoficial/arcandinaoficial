@@ -60,7 +60,11 @@
             flex-direction: column;
             display: flex !important;
             align-items: flex-start;
-            gap: 30px !important;
+            gap: 20px !important;
+
+            li{
+                height: fit-content;
+            }
         }
     }
 
@@ -75,6 +79,19 @@
     &__buttons{
         @include flex-center($direction: row, $gap: 10px);
         margin-left: auto;
+
+        &--language{
+            @include flex-center($direction: row, $gap: 8px);
+
+            button{
+                all: unset;
+                height: 80%;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     &__burger-menu{
@@ -143,14 +160,16 @@
         }
 
         &__footer{
-            @include flex-center($direction: column);
+            @include flex-center($direction: column, $align: flex-start);
 
             hr{
                 width: 100%;
             }
 
             &__buttons{
-                @include flex-center($direction: row);
+                @include flex-center($direction: row, $justify: space-between);
+                padding: 0px 10px;
+                width: 100%;
             }
         }
     }

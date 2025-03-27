@@ -10,7 +10,7 @@
   "navbarButtonDona": "Donate here",
   "navbarButtonHistorias": "Water tales",
   "navbarItem1": "Home",
-  "navbarItem2": "Journal",
+  "navbarItem2": "News",
   "navbarItem3": "Explore",
   "bannerText1": "Our mission is to",
   "bannerText2": "Protect our Water",
@@ -86,5 +86,7 @@
   },
   "revistaDownloadTermsTitle": "Terms of Use for the Document",
   "revistaDownloadTermsDescription": "By downloading this document, you agree that its use is strictly limited to educational, research, or personal consultation purposes. Any commercial use, reproduction, distribution, or modification of the content for purposes other than those mentioned is expressly prohibited without prior written authorization from the rights holders. Failure to comply with these provisions may result in legal action in accordance with applicable intellectual property laws. We appreciate your understanding and respect for the rights associated with this publication.",
-  "shareNewButton": "Share this entry"
+  "shareNewButton": "Share this entry",
+  "changeToSpanish": "Change to spanish",
+  "changeToEnglish": "Change to english"
 }

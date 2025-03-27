@@ -18,7 +18,7 @@ const FooterSection = ({dict, params}) => {
         <footer className='footer'>
             <div className='footer__content'>
                 <div className='footer__content__group'>
-                    <div className='footer__content__list footer__content__list--contact'>
+                    {/* <div className='footer__content__list footer__content__list--contact'>
                         <h6>{dict.footerTitle5}</h6>
                         <ul>
                             <li>
@@ -27,7 +27,7 @@ const FooterSection = ({dict, params}) => {
                                 </ClickableItem>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className='footer__content__list'>
                         <h6>{dict.footerTitle1}</h6>
                         <ul>

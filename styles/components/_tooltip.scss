@@ -1,0 +1,14 @@
+.p-tooltip{
+    z-index: 500000 !important;
+
+    &-arrow{
+        display: none;
+    }
+
+    &-text{
+        padding: 10px;
+        @include bodyFont();
+        background-color: rgba($color: $black-color, $alpha: 0.8);
+        border-radius: 10px;
+    }
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { Dialog } from 'primereact/dialog';
@@ -10,6 +10,7 @@ import {
     Droplets,
     Compass 
 } from 'lucide-react';
+import NavbarLanguageButtons from './NavbarLanguageButtons';
 
 const MenuButton = ({navbarItems, dict, params}) => {
 
@@ -96,13 +97,14 @@ const MenuButton = ({navbarItems, dict, params}) => {
                             actionType='navigate'
                             onClick={`/${params.lang}/arcandina`}
                         />
-                        <Button 
+                        {/* <Button 
                             label={dict.navbarButtonDona} 
                             variable='secondary' 
                             icon={'HeartHandshake'} 
                             onClick={{ severity: 'success', summary: dict.toasts.donationTitle, detail: dict.toasts.donationMessage }}
                             actionType="toast"
-                        />
+                        /> */}
+                        <NavbarLanguageButtons dict={dict} params={params} />
                     </div>
                 </div>
             </Dialog>
