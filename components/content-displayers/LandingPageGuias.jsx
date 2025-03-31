@@ -3,11 +3,10 @@ import {
   PrevButton,
   NextButton,
   usePrevNextButtons
-} from '../EmblaCarouselArrowButtons'
-import VideoCard from '../VideoCard';
+} from '../EmblaCarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react'
 import slides from '@/data/guias/rotary-guides.json';
-import VideoCardEmpty from '../VideoCardEmpty';
+import GuideCard from '../GuideCard';
 
 const options = { align: 'start', loop: true }
 
@@ -30,10 +29,7 @@ const LandingPageGuias = ({dict}) => {
             <div className="content-displayer__videos__container">
                 {slidesToRender.map((slide, index) => (
                     <div className="content-displayer__videos__slide" key={index}>
-                        {slide.src === 'contentcut' ? 
-                          <VideoCardEmpty dict={dict} /> :
-                          <VideoCard video={slide} />
-                        }
+                        <GuideCard guide={slide} />
                     </div>  
                 ))}
             </div>

@@ -176,8 +176,8 @@ const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
             case 'minga-fest':
                 return <Button 
                     className='carousel__text__button'
-                    actionType='scrollTo'
-                    onClick={'new-content'}
+                    actionType='redirect'
+                    onClick={'https://mingamundialporelambiente.com/'}
                     label={slide.bannerButtonText}
                 />
             default: 
