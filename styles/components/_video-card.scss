@@ -1,4 +1,5 @@
 .video-card{
+    all: unset;
     @include flex-center($direction: column, $justify: flex-start, $gap: 5px);
     height: 100%;
     width: calc(100% - 10px);
@@ -166,5 +167,12 @@
     .video-card__thumbnail::after {
         mask: url('/headphones.svg') no-repeat center / 70% 70%;
         -webkit-mask: url('/headphones.svg') no-repeat center / 70% 70%;
+    }
+}
+
+.guide-video-card {
+    .video-card__thumbnail::after {
+        mask: url('/file-search.svg') no-repeat center / 70% 70%;
+        -webkit-mask: url('/file-search.svg') no-repeat center / 70% 70%;
     }
 }

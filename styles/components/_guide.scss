@@ -1,0 +1,90 @@
+.guide{
+    background-color: white;
+    border-radius: 5px;
+    @include bodyFont();
+    @include flex-center($direction: column, $justify: flex-start, $gap: 0px);
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: clamp(10px, 10%, 50px);
+    user-select: text;
+    max-width: calc(900px + 2 * clamp(10px, 10%, 50px));
+
+    &__dialog{
+        .p-dialog-content{
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo{
+        align-self: center;
+        width: clamp(80px, 30%, 100px);
+        height: auto;
+        margin-bottom: 15px;
+        user-select: none;
+    }
+
+    &__duration{
+        margin-top: 20px;
+    }
+
+    a{
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: auto;
+            aspect-ratio: 1/1;
+            height: 1.5rem;
+            background: url('/mouse-pointer-click-orange.svg') no-repeat center;
+            background-size: contain;
+            -webkit-mask: url('/mouse-pointer-click-orange.svg') no-repeat center;
+            -webkit-mask-size: contain;
+            mask: url('/mouse-pointer-click-orange.svg') no-repeat center;
+            mask-size: contain;
+            margin-left: 5px;
+        }
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+
+    h1{
+        @include titleFont();
+        align-self: center;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: $primary-color-dk;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    ul{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    h3 + ul {
+        padding-left: 40px;
+    }
+}

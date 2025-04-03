@@ -4,7 +4,7 @@
 
     &__date{
         @include bodyFont($weight: SemiBold);
-        color: $gray-color;
+        color: $gray-color;        
     }
 
     &__title{
@@ -12,13 +12,15 @@
         font-size: 2rem;
         line-height: 2rem;
         margin-bottom: 20px;
+        user-select: text !important;
     }
 
     &__content{
         @include bodyFont();
         font-size: 1.2rem;
         line-height: 1.5;
-        @include flex-center($direction: column, $align: flex-start)
+        @include flex-center($direction: column, $align: flex-start);
+        user-select: text !important;
     }
 
     &__footer{

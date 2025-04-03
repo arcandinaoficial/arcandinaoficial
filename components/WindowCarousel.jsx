@@ -253,6 +253,7 @@ const WindowCarousel = () => {
                 draggable={false} 
                 onHide={() => setVisible(false)} 
                 resizable={false}
+                dismissableMask
             >
                 <div className='carousel__slide__dialog__lights'>
                     {

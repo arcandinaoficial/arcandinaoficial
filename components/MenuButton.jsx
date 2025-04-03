@@ -72,6 +72,7 @@ const MenuButton = ({navbarItems, dict, params}) => {
                 draggable={false} 
                 onHide={() => setVisible(false)} 
                 resizable={false}
+                dismissableMask
             >
                 <ul className='navbar__items navbar__items--dialog'>
                     {navbarItems.map((item, index) => (

@@ -1,5 +1,44 @@
 [
     {
-        "src": "contentcut"
+        "thumbnailJpg": "/guides/thumbnails/es/menos_plastico_mas_vida.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/menos_plastico_mas_vida.webp",
+        "title": "Menos plástico, más vida",
+        "description": "Explora cómo reducir el uso de plásticos y proteger ríos y océanos desde la escuela y el hogar.",
+        "guideSource": "/guides/menos_plastico_mas_vida.html"
+    },
+    {
+        "thumbnailJpg": "/guides/thumbnails/es/cuidemos_las_quebradas.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/cuidemos_las_quebradas.webp",
+        "title": "Cuidemos las Quebradas",
+        "description": "Aprende sobre la importancia de las quebradas y cómo cuidarlas con actividades educativas y comunitarias.",
+        "guideSource": "/guides/cuidemos_las_quebradas.html"
+    },
+    {
+        "thumbnailJpg": "/guides/thumbnails/es/cuidamos_los_paramos.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/cuidamos_los_paramos.webp",
+        "title": "Cuidamos los Páramos",
+        "description": "Conoce los ecosistemas de páramo y su rol vital en la provisión de agua, mientras aprendes a protegerlos.",
+        "guideSource": "/guides/cuidamos_los_paramos.html"
+    },
+    {
+        "thumbnailJpg": "/guides/thumbnails/es/no_contaminamos_con_aceite.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/no_contaminamos_con_aceite.webp",
+        "title": "No contaminamos con aceite",
+        "description": "Descubre cómo evitar que el aceite usado contamine el agua y aprende buenas prácticas de recolección.",
+        "guideSource": "/guides/no_contaminamos_con_aceite.html"
+    },
+    {
+        "thumbnailJpg": "/guides/thumbnails/es/no_contaminamos_con_detergentes.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/no_contaminamos_con_detergentes.webp",
+        "title": "No contaminamos con detergentes",
+        "description": "Explora los efectos de los detergentes en los ríos y aprende a elegir productos y hábitos sostenibles.",
+        "guideSource": "/guides/no_contaminamos_con_detergentes.html"
+    },
+    {
+        "thumbnailJpg": "/guides/thumbnails/es/moda_que_no_contamina.jpg",
+        "thumbnailWebp": "/guides/thumbnails/es/moda_que_no_contamina.webp",
+        "title": "Moda que no contamina",
+        "description": "Reflexiona sobre el impacto de la moda rápida y aprende cómo vestir de forma sostenible y creativa.",
+        "guideSource": "/guides/moda_que_no_contamina.html"
     }
 ]

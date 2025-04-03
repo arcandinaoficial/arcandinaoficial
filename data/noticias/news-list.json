@@ -4,16 +4,16 @@
         {
             "id": "minga-fest",
             "className": "minga-fest",
-            "bannerTitle1": "Minga - Fest",
-            "bannerTitle2": "por el Planeta",
-            "bannerSubtitle": " “Somos Agua, Somos Bosques, Somos Vida” ",
+            "bannerTitle1": "Minga Mundial",
+            "bannerTitle2": "por el Ambiente",
+            "bannerSubtitle": "El llamado de la vida",
             "hasBannerButton": true,
             "bannerButtonText": "Conóce más",
             "images": [
-                "/news/minga-fest/img1.webp"
+                "/news/minga-fest/img1.png"
             ], 
-            "date": "30 de noviembre, 2024",
-            "articleTitle": "Minga - Fest por el Planeta",
+            "date": "26 de abril, 2025",
+            "articleTitle": "Minga Mundial por el Ambiente",
             "articleParagraphs": [
                 "El planeta está atravesando una crisis ambiental que pone en grave riesgo las fuentes de agua, la biodiversidad, los bosques y la vida en la Tierra. Ante esta situación crítica, es imprescindible promover acciones masivas de educación y concientización para resaltar la importancia de cuidar las fuentes de agua, reforestar con especies nativas, reciclar plásticos y otros materiales que contaminan ríos y mares, y reducir los niveles de emisiones.",
                 "Minga - Fest 2025",
@@ -79,16 +79,16 @@
         {
             "id": "minga-fest",
             "className": "minga-fest",
-            "bannerTitle1": "Minga - Fest",
-            "bannerTitle2": "for the Planet",
-            "bannerSubtitle": "“We Are Water, We Are Forests, We Are Life”",
+            "bannerTitle1": "Global Minga",
+            "bannerTitle2": "for the Environment",
+            "bannerSubtitle": "The Call of Life",
             "hasBannerButton": true,
             "bannerButtonText": "Learn More",
             "images": [
-                "/news/minga-fest/img1.webp"
+                "/news/minga-fest/img1.png"
             ], 
-            "date": "November 30, 2024",
-            "articleTitle": "Minga - Fest for the Planet",
+            "date": "April 26, 2025",
+            "articleTitle": "Global Minga for the Environment",
             "articleParagraphs": [
                 "The planet is facing an environmental crisis that seriously endangers water sources, biodiversity, forests, and life on Earth. In response to this critical situation, it is essential to promote massive education and awareness campaigns to highlight the importance of protecting water sources, reforesting with native species, recycling plastics and other materials that pollute rivers and oceans, and reducing emission levels.",
                 "Minga - Fest 2025",
