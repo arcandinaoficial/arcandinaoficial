@@ -2,6 +2,31 @@
     "es": 
     [
         {
+            "id": "cuento-infinito",
+            "className": "cuento-infinito",
+            "bannerTitle1": "Lanzamiento",
+            "bannerTitle2": "del Cuento Infinito",
+            "bannerSubtitle": "Por la Minga Mundial por el Ambiente y el Día de la Tierra",
+            "hasBannerButton": true,
+            "bannerButtonText": "Regístrate aquí",
+            "images": [
+                "/news/cuento-infinito/img1.png"
+            ],
+            "date": "25 de abril, 2025",
+            "articleTitle": "Lanzamiento del Cuento Infinito ✨",
+            "articleParagraphs": [
+                "En Arcandina estamos convencidos de que los sueños de niñas y niños tienen el poder de inspirar al mundo. Por eso, en el marco de la Minga Mundial por el Ambiente, lanzamos con muchísima alegría el Cuento Infinito, Arcandina El Llamado de la Vida.",
+                "💫 Un cuento colectivo, sin final, que nace inspirado en las historias de Arcandina y que continúa con las historias creadas por niños, niñas y familias de todo el mundo que quieren contar cómo cuidan la naturaleza, siembran agua, y defienden la vida.",
+                "Para celebrar el Día de la Tierra, abrimos una semana entera de inscripciones gratuitas.",
+                "Porque escribir un cuento también es una forma de sembrar futuro, y responder al llamado de la Vida.",
+                "📝 Inscripciones libres durante toda la semana del Día de la Tierra",
+                "🎉 ¡Es tu oportunidad de ser parte del Cuento Infinito!",
+                "Porque somos agua, somos bosque, somos vida."
+            ],
+            "hasArticleButton": true,
+            "articleButtonText": "Regístrate aquí"
+        },
+        {
             "id": "minga-fest",
             "className": "minga-fest",
             "bannerTitle1": "Minga Mundial",
@@ -76,6 +101,31 @@
     ], 
     "en": 
     [
+        {
+            "id": "cuento-infinito",
+            "className": "cuento-infinito",
+            "bannerTitle1": "Debut of the",
+            "bannerTitle2": "Infinite Story",
+            "bannerSubtitle": "For the Global Minga for the Environment and Earth Day",
+            "hasBannerButton": true,
+            "bannerButtonText": "Sign up here",
+            "images": [
+                "/news/cuento-infinito/img1.png"
+            ],
+            "date": "April 25, 2025",
+            "articleTitle": "Debut of the Infinite Story ✨",
+            "articleParagraphs": [
+                "At Arcandina, we believe that the dreams of children have the power to inspire the world. Therefore, in the framework of the Global Minga for the Environment, we are excited to launch the Infinite Story, Arcandina The Call of Life.",
+                "💫 A collective story, without an ending, inspired by the stories of Arcandina and continued by stories created by children and families from around the world who want to share how they care for nature, plant water, and defend life.",
+                "To celebrate Earth Day, we open a whole week of free registrations.",
+                "Because writing a story is also a way to plant a future and respond to the call of Life.",
+                "📝 Free registrations during the entire week of Earth Day",
+                "🎉 This is your chance to be part of the Infinite Story!",
+                "Because we are water, we are forest, we are life."
+            ],
+            "hasArticleButton": true,
+            "articleButtonText": "Sign up here"
+        },
         {
             "id": "minga-fest",
             "className": "minga-fest",

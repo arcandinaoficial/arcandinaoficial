@@ -180,6 +180,13 @@ const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
                     onClick={'https://mingamundialporelambiente.com/'}
                     label={slide.bannerButtonText}
                 />
+            case 'cuento-infinito':
+                return <Button 
+                    className='new__button'
+                    actionType='redirect'
+                    onClick={'https://forms.gle/gRsQhUVX9bE7BiWu8'}
+                    label={slide.bannerButtonText}
+                />
             default: 
                 return <Button 
                     className='carousel__text__button'
