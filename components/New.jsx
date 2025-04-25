@@ -21,6 +21,13 @@ const New = ({slide, dict, lang}) => {
                     onClick={'https://mingamundialporelambiente.com/form/'}
                     label={slide.articleButtonText}
                 />
+            case 'cuento-infinito':
+                return <Button 
+                    className='new__button'
+                    actionType='redirect'
+                    onClick={'https://forms.gle/gRsQhUVX9bE7BiWu8'}
+                    label={slide.articleButtonText}
+                />
             default: return <></>
         }
     }
