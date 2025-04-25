@@ -6,10 +6,10 @@ import Image from '@/components/Image';
 const AboutUsSection = ({dict}) => {
   return (
     <section className='aboutus-section'>
-        <h2 className='aboutus-section__title' id='AboutUsSection'>
+        <div className='aboutus-section__title' id='AboutUsSection'>
             <span>{dict.aboutUsText1}</span>
-            <span>{dict.aboutUsText2}</span>
-        </h2>
+            <h1>{dict.aboutUsText2}</h1>
+        </div>
         <div className='aboutus-section__text'>
             <div className='aboutus-section__shelf'>
                 <div className='aboutus-section__description'>

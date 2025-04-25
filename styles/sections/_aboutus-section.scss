@@ -33,7 +33,7 @@
             text-align: center;
         }
 
-        span:nth-child(1){
+        span{
             @include fancyFont($weight: Regular);
             color: $primary-color;
             font-size: 3rem;
@@ -43,7 +43,7 @@
             transform: rotate(-10deg) translateX(-50%) translateY(-20%);
         }
 
-        span:nth-child(2){
+        h1{
             @include titleFont();
             color: $white-color;
             font-size: 4rem;

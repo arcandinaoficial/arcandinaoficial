@@ -1,7 +1,8 @@
 {
   "name": "Arcandina Oficial",
   "short_name": "Arcandina",
-  "description": "Web oficial de Arcandina",
+  "description": "Web oficial de Arcandina, educación ambiental para niños.",
+  "lang": "es",
   "icons": [
     {
       "src": "/apple-touch-icon.png",
@@ -19,7 +20,8 @@
       "sizes": "120x120"
     }
   ],
-  "start_url": "/",
+  "start_url": "/es/",
+  "scope": "/",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "display": "standalone"
