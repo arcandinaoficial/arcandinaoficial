@@ -96,27 +96,6 @@
       ],
       "hasArticleButton": false,
       "articleButtonText": ""
-    },
-    {
-      "id": "test",
-      "className": "test",
-      "bannerTitle1": "Noticia de test",
-      "bannerTitle2": "Esta es una noticia de test",
-      "bannerSubtitle": "Subtitulo testing",
-      "hasBannerButton": false,
-      "bannerButtonText": "",
-      "bannerButtonLink": "",
-      "images": [
-        "/news/test/images.jpg"
-      ],
-      "date": "14 de febrero",
-      "articleTitle": "Noticia de prueba",
-      "articleParagraphs": [
-        "Esta es una noticia de prueba"
-      ],
-      "hasArticleButton": false,
-      "articleButtonText": "",
-      "articleButtonLink": ""
     }
   ],
   "en": [
@@ -216,27 +195,6 @@
       ],
       "hasArticleButton": false,
       "articleButtonText": ""
-    },
-    {
-      "id": "test",
-      "className": "test",
-      "bannerTitle1": "Test News",
-      "bannerTitle2": "This is test news",
-      "bannerSubtitle": "Testing subtitle",
-      "hasBannerButton": false,
-      "bannerButtonText": "",
-      "bannerButtonLink": "",
-      "images": [
-        "/news/test/images.jpg"
-      ],
-      "date": "14/ 2",
-      "articleTitle": "Test News",
-      "articleParagraphs": [
-        "This is a test news"
-      ],
-      "hasArticleButton": false,
-      "articleButtonText": "",
-      "articleButtonLink": ""
     }
   ]
 }
