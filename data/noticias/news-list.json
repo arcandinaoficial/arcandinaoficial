@@ -1,6 +1,31 @@
 {
   "es": [
     {
+      "id": "test23",
+      "className": "test23",
+      "bannerTitle1": "asd",
+      "bannerTitle2": "sdfdfasdf",
+      "bannerSubtitle": "asdf",
+      "hasBannerButton": true,
+      "bannerButtonText": "Google",
+      "bannerButtonLink": "https://www.google.com",
+      "images": [
+        "/news/test23/Captura-de-pantalla-2025-09-24-090709.png",
+        "/news/test23/Captura-de-pantalla-2025-09-24-090349.png",
+        "/news/test23/Captura-de-pantalla-2025-09-24-090430.png"
+      ],
+      "date": "25 asd asd",
+      "articleTitle": "Aasd",
+      "articleParagraphs": [
+        "asdadadada",
+        "asd",
+        "asddda"
+      ],
+      "hasArticleButton": true,
+      "articleButtonText": "Apple",
+      "articleButtonLink": "https://www.apple.com"
+    },
+    {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
       "bannerTitle1": "Lanzamiento",
@@ -101,6 +126,31 @@
     }
   ],
   "en": [
+    {
+      "id": "test23",
+      "className": "test23",
+      "bannerTitle1": "asd",
+      "bannerTitle2": "sdfdfasdf",
+      "bannerSubtitle": "- Eine Liste von Benutzernamen und Passwörtern: • admin; root; server; asdfgh; asdf; !@; $%^& !@; $%^; !@; $%; !@; $; 654321; 123456; 12345; 1234; 123; 111; Ens",
+      "hasBannerButton": true,
+      "bannerButtonText": "Google",
+      "bannerButtonLink": "https://www.google.com",
+      "images": [
+        "/news/test23/Captura-de-pantalla-2025-09-24-090709.png",
+        "/news/test23/Captura-de-pantalla-2025-09-24-090349.png",
+        "/news/test23/Captura-de-pantalla-2025-09-24-090430.png"
+      ],
+      "date": "25 asd asd",
+      "articleTitle": "Aasd",
+      "articleParagraphs": [
+        "asdadadada",
+        "asd",
+        "asddda"
+      ],
+      "hasArticleButton": true,
+      "articleButtonText": "Apple",
+      "articleButtonLink": "https://www.apple.com"
+    },
     {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
