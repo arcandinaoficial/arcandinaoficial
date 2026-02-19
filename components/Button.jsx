@@ -79,13 +79,41 @@ const Button = ({
         requestAnimationFrame(scrollAnimation);
     };
 
+    const normalizeLink = (value) => {
+        const link = (value || '').trim();
+        if (!link) return '';
+
+        if (
+            link.startsWith('http://') ||
+            link.startsWith('https://') ||
+            link.startsWith('mailto:') ||
+            link.startsWith('tel:') ||
+            link.startsWith('/') ||
+            link.startsWith('#')
+        ) {
+            return link;
+        }
+
+        if (link.startsWith('//')) {
+            return `https:${link}`;
+        }
+
+        return `https://${link}`;
+    };
+
     // ------------------ Functions -----------------------
 
     const handleButtonClick = () => {
         if (actionType === 'redirect' && typeof onClick === 'string') {
-            window.open(onClick, '_blank');
+            const target = normalizeLink(onClick);
+            if (target) {
+                window.open(target, '_blank', 'noopener,noreferrer');
+            }
         } else if (actionType === 'navigate' && typeof onClick === 'string') {
-            window.location.href = onClick; // Navigate in the same tab
+            const target = normalizeLink(onClick);
+            if (target) {
+                window.location.href = target; // Navigate in the same tab
+            }
         } else if (actionType === 'scrollTo' && typeof onClick === 'string') {
             handleScroll(onClick); // Scroll in the same tab
         } else if (actionType === 'toast') {

@@ -11,7 +11,7 @@ const options = {
     loop: false
 }
 
-const NewsSectionMiniCarousel = ({images}) => {
+const NewsSectionMiniCarousel = ({images, onRemoveImage}) => {
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay: 1500})])
   const [viewDialog, setViewDialog] = useState(false);
@@ -23,6 +23,20 @@ const NewsSectionMiniCarousel = ({images}) => {
         <div className="news-section-mini-carousel__container">
           {images.map((img, index) => (
             <div className="news-section-mini-carousel__slide" key={index}>
+                {typeof onRemoveImage === 'function' ? (
+                  <button
+                    type="button"
+                    className="news-section-mini-carousel__remove-btn"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      onRemoveImage(index);
+                    }}
+                    aria-label="Eliminar imagen"
+                    title="Eliminar imagen"
+                  >
+                    ×
+                  </button>
+                ) : null}
                 <Image 
                     srcWebp={img} 
                     srcJpg={img?.replace('.webp', '.jpg')} 

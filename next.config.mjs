@@ -1,4 +1,12 @@
 const isProd = process.env.NODE_ENV === 'production';
+const configuredBasePath = isProd
+    ? (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/+$/, '')
+    : '';
+const basePath = configuredBasePath
+    ? configuredBasePath.startsWith('/')
+        ? configuredBasePath
+        : `/${configuredBasePath}`
+    : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,8 +21,8 @@ const nextConfig = {
         ],
         unoptimized: true, 
     },
-    assetPrefix: '',
-    basePath: '',
+    assetPrefix: basePath,
+    basePath,
     output: isProd ? 'export' : undefined,
 };
 

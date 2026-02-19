@@ -40,6 +40,28 @@
         max-height: var(--max-height);
     }
 
+    &__remove-btn{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 3;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: none;
+        background-color: #c62828;
+        color: $white-color;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1;
+        @include flex-center($gap: 0px);
+        box-shadow: 0 2px 6px rgba($black-color, 0.25);
+
+        &:hover{
+            background-color: #b71c1c;
+        }
+    }
+
     &__slide__img{
         display: block;
         height: var(--slide-height);

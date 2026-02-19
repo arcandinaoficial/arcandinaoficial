@@ -2,12 +2,14 @@
 
 import { getDictionary } from '@/dictionaries/dictionaries.js';
 import { usePathname } from 'next/navigation'; 
+import { useEffect, useState } from 'react';
 import Button from "@/components/Button";
 import {HeartCrack} from 'lucide-react';
 
-export default async function NotFound() {
+export default function NotFound() {
 
   const pathname = usePathname();
+  const [dict, setDict] = useState(null);
 
   let lang;
   if (pathname.startsWith('/es')) {
@@ -18,7 +20,26 @@ export default async function NotFound() {
     lang = 'en';
   }
 
-  const dict = await getDictionary(lang);
+  useEffect(() => {
+    let active = true;
+
+    const loadDictionary = async () => {
+      const loadedDict = await getDictionary(lang);
+      if (active) {
+        setDict(loadedDict);
+      }
+    };
+
+    loadDictionary();
+
+    return () => {
+      active = false;
+    };
+  }, [lang]);
+
+  if (!dict) {
+    return null;
+  }
 
   return (
     <div className='working-screen loading-screen not-found-page'>

@@ -161,41 +161,19 @@ const NewsSectionCarousel = ({slides, newId = null, dict, lang}) => {
                         <span>{slide.bannerTitle2}</span>
                     </h4>
                     <p className='news-section-carousel__text__description'>{slide.bannerSubtitle}</p>
-                    {
-                        slide.hasBannerButton && getButton(slide)
-                    }
+                    {slide.hasBannerButton && (
+                        <Button 
+                            className='carousel__text__button'
+                            actionType='redirect'
+                            onClick={slide.bannerButtonLink}
+                            label={slide.bannerButtonText}
+                            disabled={!slide.bannerButtonLink}
+                        />
+                    )}
                 </div>
             </div>
         ));
     }; // Renders actual slides or placeholders depending on slides state
-    
-    // ------------------------ Personalizable para cada noticia ----------------------------------------------
-
-    const getButton = (slide) => {
-        switch (slide.id) {
-            case 'minga-fest':
-                return <Button 
-                    className='carousel__text__button'
-                    actionType='redirect'
-                    onClick={'https://mingamundialporelambiente.com/'}
-                    label={slide.bannerButtonText}
-                />
-            case 'cuento-infinito':
-                return <Button 
-                    className='new__button'
-                    actionType='redirect'
-                    onClick={'https://forms.gle/gRsQhUVX9bE7BiWu8'}
-                    label={slide.bannerButtonText}
-                />
-            default: 
-                return <Button 
-                    className='carousel__text__button'
-                    actionType='scrollTo'
-                    onClick={'new-content'}
-                    label={slide.bannerButtonText}
-                />
-        }
-    }
 
     return (
         <>

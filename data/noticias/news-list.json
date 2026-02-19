@@ -1,6 +1,5 @@
 {
-    "es": 
-    [
+    "es": [
         {
             "id": "cuento-infinito",
             "className": "cuento-infinito",
@@ -24,7 +23,9 @@
                 "Porque somos agua, somos bosque, somos vida."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Regístrate aquí"
+            "articleButtonText": "Regístrate aquí",
+            "bannerButtonLink": "https://forms.gle/gRsQhUVX9bE7BiWu8",
+            "articleButtonLink": "https://forms.gle/gRsQhUVX9bE7BiWu8"
         },
         {
             "id": "minga-fest",
@@ -36,7 +37,7 @@
             "bannerButtonText": "Conóce más",
             "images": [
                 "/news/minga-fest/img1.png"
-            ], 
+            ],
             "date": "26 de abril, 2025",
             "articleTitle": "Minga Mundial por el Ambiente",
             "articleParagraphs": [
@@ -46,7 +47,9 @@
                 "El evento rescata el concepto de la minga, una práctica ancestral de los pueblos indígenas que simboliza la acción comunitaria en beneficio del bien colectivo. A través de estas acciones, se busca fomentar una conciencia ambiental global y una relación más respetuosa y sostenible con nuestro entorno natural."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Inscríbete haciendo click aquí"
+            "articleButtonText": "Inscríbete haciendo click aquí",
+            "bannerButtonLink": "https://mingamundialporelambiente.com/",
+            "articleButtonLink": "https://mingamundialporelambiente.com/form/"
         },
         {
             "id": "campaña-educativa-cuidado-del-agua",
@@ -54,11 +57,11 @@
             "bannerTitle1": "Arcandina y Rotary:",
             "bannerTitle2": "Campaña Educativa",
             "bannerSubtitle": "Concientización sobre el Cuidado del Agua",
-            "hasBannerButton": true,
-            "bannerButtonText": "Conóce más",
+            "hasBannerButton": false,
+            "bannerButtonText": "",
             "images": [
                 "/news/campaña-educativa/img1.webp"
-            ], 
+            ],
             "date": "04 de diciembre, 2024",
             "articleTitle": "Arcandina y Rotary lanzan la campaña educativa sobre el cuidado del agua",
             "articleParagraphs": [
@@ -70,7 +73,9 @@
                 "Alejandra Lozada: Rotary Club 0992567278"
             ],
             "hasArticleButton": false,
-            "articleButtonText": ""
+            "articleButtonText": "",
+            "bannerButtonLink": "",
+            "articleButtonLink": ""
         },
         {
             "id": "condecoracion-maria-elena-ordoñez",
@@ -78,15 +83,15 @@
             "bannerTitle1": "María Elena Ordóñez:",
             "bannerTitle2": "Reconocida por su legado educativo",
             "bannerSubtitle": "Un homenaje a su aporte a la televisión infantil y la conciencia ambiental",
-            "hasBannerButton": true,
-            "bannerButtonText": "Conóce más",
+            "hasBannerButton": false,
+            "bannerButtonText": "",
             "images": [
                 "/news/condecoracion-maria-elena/img1.webp",
                 "/news/condecoracion-maria-elena/img2.webp",
                 "/news/condecoracion-maria-elena/img3.webp",
                 "/news/condecoracion-maria-elena/img4.webp",
                 "/news/condecoracion-maria-elena/img5.webp"
-            ], 
+            ],
             "date": "06 de diciembre, 2024",
             "articleTitle": "María Elena Ordóñez es condecorada por el Municipio de Quito por su destacada labor en educación y valores ambientales",
             "articleParagraphs": [
@@ -96,11 +101,12 @@
                 "Investigaciones sobre el impacto educativo de Arcandina, realizadas por las universidades de Stanford y Johns Hopkins, validaron técnicamente  la alta calidad educativa y artística de la serie y por ello, la Unesco, la National Wildlife Federation  y otras organizaciones reconocieron a Arcandina como el programa de educación ambiental más innovador del continente."
             ],
             "hasArticleButton": false,
-            "articleButtonText": ""
+            "articleButtonText": "",
+            "bannerButtonLink": "",
+            "articleButtonLink": ""
         }
-    ], 
-    "en": 
-    [
+    ],
+    "en": [
         {
             "id": "cuento-infinito",
             "className": "cuento-infinito",
@@ -124,7 +130,9 @@
                 "Because we are water, we are forest, we are life."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Sign up here"
+            "articleButtonText": "Sign up here",
+            "bannerButtonLink": "https://forms.gle/gRsQhUVX9bE7BiWu8",
+            "articleButtonLink": "https://forms.gle/gRsQhUVX9bE7BiWu8"
         },
         {
             "id": "minga-fest",
@@ -136,7 +144,7 @@
             "bannerButtonText": "Learn More",
             "images": [
                 "/news/minga-fest/img1.png"
-            ], 
+            ],
             "date": "April 26, 2025",
             "articleTitle": "Global Minga for the Environment",
             "articleParagraphs": [
@@ -146,7 +154,9 @@
                 "The event embraces the concept of the 'minga,' an ancestral practice of indigenous peoples that represents community action for the collective good. Through these actions, the aim is to foster global environmental awareness and a more respectful and sustainable relationship with our natural environment."
             ],
             "hasArticleButton": true,
-            "articleButtonText": "Sign up by clicking here"
+            "articleButtonText": "Sign up by clicking here",
+            "bannerButtonLink": "https://mingamundialporelambiente.com/",
+            "articleButtonLink": "https://mingamundialporelambiente.com/form/"
         },
         {
             "id": "campaña-educativa-cuidado-del-agua",
@@ -154,11 +164,11 @@
             "bannerTitle1": "Arcandina and Rotary:",
             "bannerTitle2": "Educational Campaign",
             "bannerSubtitle": "Awareness on Water Care",
-            "hasBannerButton": true,
-            "bannerButtonText": "Learn More",
+            "hasBannerButton": false,
+            "bannerButtonText": "",
             "images": [
                 "/news/campaña-educativa/img1.webp"
-            ], 
+            ],
             "date": "December 4, 2024",
             "articleTitle": "Arcandina and Rotary Launch Educational Campaign on Water Care",
             "articleParagraphs": [
@@ -170,7 +180,9 @@
                 "Alejandra Lozada: Rotary Club 0992567278"
             ],
             "hasArticleButton": false,
-            "articleButtonText": ""
+            "articleButtonText": "",
+            "bannerButtonLink": "",
+            "articleButtonLink": ""
         },
         {
             "id": "condecoracion-maria-elena-ordoñez",
@@ -178,15 +190,15 @@
             "bannerTitle1": "María Elena Ordóñez:",
             "bannerTitle2": "Recognized for Her Educational Legacy",
             "bannerSubtitle": "A tribute to her contributions to children's television and environmental awareness",
-            "hasBannerButton": true,
-            "bannerButtonText": "Learn More",
+            "hasBannerButton": false,
+            "bannerButtonText": "",
             "images": [
                 "/news/condecoracion-maria-elena/img1.webp",
                 "/news/condecoracion-maria-elena/img2.webp",
                 "/news/condecoracion-maria-elena/img3.webp",
                 "/news/condecoracion-maria-elena/img4.webp",
                 "/news/condecoracion-maria-elena/img5.webp"
-            ], 
+            ],
             "date": "December 6, 2024",
             "articleTitle": "María Elena Ordóñez is Honored by the Municipality of Quito for Her Outstanding Work in Education and Environmental Values",
             "articleParagraphs": [
@@ -196,7 +208,9 @@
                 "Research on the educational impact of Arcandina, conducted by Stanford and Johns Hopkins universities, validated the series’ high educational and artistic quality. As a result, organizations such as UNESCO, the National Wildlife Federation, and others recognized Arcandina as the most innovative environmental education program on the continent."
             ],
             "hasArticleButton": false,
-            "articleButtonText": ""
+            "articleButtonText": "",
+            "bannerButtonLink": "",
+            "articleButtonLink": ""
         }
     ]
 }

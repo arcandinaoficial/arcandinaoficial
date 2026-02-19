@@ -10,28 +10,6 @@ const New = ({slide, dict, lang}) => {
 
     const toast = useRef(null);
 
-    // ------------------------ Personalizable para cada noticia ----------------------------------------------
-
-    const getButton = (slide) => {
-        switch (slide.id) {
-            case 'minga-fest':
-                return <Button 
-                    className='new__button'
-                    actionType='redirect'
-                    onClick={'https://mingamundialporelambiente.com/form/'}
-                    label={slide.articleButtonText}
-                />
-            case 'cuento-infinito':
-                return <Button 
-                    className='new__button'
-                    actionType='redirect'
-                    onClick={'https://forms.gle/gRsQhUVX9bE7BiWu8'}
-                    label={slide.articleButtonText}
-                />
-            default: return <></>
-        }
-    }
-
     const handleCopyToClipboardLink = () => {
         const url = `https://arcandinaoficial.org/${lang}?new=${slide.id}`;
 
@@ -69,7 +47,15 @@ const New = ({slide, dict, lang}) => {
             </p>
             <div className='new__footer'>
                 {
-                    slide.hasArticleButton && getButton(slide)
+                    slide.hasArticleButton && (
+                        <Button 
+                            className='new__button'
+                            actionType='redirect'
+                            onClick={slide.articleButtonLink}
+                            label={slide.articleButtonText}
+                            disabled={!slide.articleButtonLink}
+                        />
+                    )
                 }
                 <Button 
                     variable={slide.hasArticleButton ? 'transparent' : 'primary'}
