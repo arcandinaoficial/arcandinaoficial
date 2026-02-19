@@ -1,6 +1,31 @@
 {
   "es": [
     {
+      "id": "test",
+      "className": "test",
+      "bannerTitle1": "Viaje",
+      "bannerTitle2": "A ibarra",
+      "bannerSubtitle": "Nuestro viaje en el cafetal",
+      "hasBannerButton": true,
+      "bannerButtonText": "Google",
+      "bannerButtonLink": "https://Www.google.com",
+      "images": [
+        "/news/test/IMG_4075.jpeg",
+        "/news/test/IMG_4068.jpeg",
+        "/news/test/IMG_4067.jpeg"
+      ],
+      "date": "25 de febrero 2026",
+      "articleTitle": "Nuestro viaje a ibarra",
+      "articleParagraphs": [
+        "A dos horas de Ibarra",
+        "Se encuentra el cafetal",
+        "💕💕"
+      ],
+      "hasArticleButton": true,
+      "articleButtonText": "Ve a Apple",
+      "articleButtonLink": "https://Www.apple.com"
+    },
+    {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
       "bannerTitle1": "Lanzamiento",
@@ -101,6 +126,31 @@
     }
   ],
   "en": [
+    {
+      "id": "test",
+      "className": "test",
+      "bannerTitle1": "Travel",
+      "bannerTitle2": "In ibarra",
+      "bannerSubtitle": "Our journey in the coffee grove",
+      "hasBannerButton": true,
+      "bannerButtonText": "Google",
+      "bannerButtonLink": "https://Www.google.com",
+      "images": [
+        "/news/test/IMG_4075.jpeg",
+        "/news/test/IMG_4068.jpeg",
+        "/news/test/IMG_4067.jpeg"
+      ],
+      "date": "25 FEBRUARY",
+      "articleTitle": "Our trip to ibarra",
+      "articleParagraphs": [
+        "Two hours from Ibarra",
+        "The coffee plantation is found",
+        "💕💕"
+      ],
+      "hasArticleButton": true,
+      "articleButtonText": "Go Apple.",
+      "articleButtonLink": "https://Www.apple.com"
+    },
     {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
