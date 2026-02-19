@@ -48,13 +48,14 @@
       "articleButtonText": "Inscríbete haciendo click aquí"
     },
     {
-      "id": "campaña-educativa-cuidado-del-agua",
-      "className": "",
+      "id": "campana-educativa-cuidado-del-agua",
+      "className": "campana-educativa-cuidado-del-agua",
       "bannerTitle1": "Arcandina y Rotary:",
       "bannerTitle2": "Campaña Educativa",
       "bannerSubtitle": "Concientización sobre el Cuidado del Agua",
-      "hasBannerButton": true,
-      "bannerButtonText": "Conóce más",
+      "hasBannerButton": false,
+      "bannerButtonText": "",
+      "bannerButtonLink": "",
       "images": [
         "/news/campaña-educativa/img1.webp"
       ],
@@ -65,11 +66,11 @@
         "La campaña se orienta a fortalecer la conciencia ambiental a través de elementos lúdicos y la educomunicación basada en valores, promoviendo la formación de agentes de cambio. Los mensajes a través de los personajes Arcandina son el vehículo para crear empatía hacia la naturaleza y fortalecer la resiliencia.",
         "Fundación Arcandina tiene una reconocida experiencia y trayectoria en educación ambiental, desde 1997 ha producido programas de televisión, videos, campañas y material didáctico que han llegado a más de 6 millones de niños en el continente. Ha recibido reconocimientos de la UNESCO, la National Wildlife Federation y el Municipio de Quito, entre otros",
         "La campaña se implementa en escuelas y redes sociales con el apoyo del Rotary Club los Chillos Milenio y ha beneficiado a más de 2.800 estudiantes.",
-        "Contacto: Pablo Palacios-Arcandina 0963089303",
-        "Alejandra Lozada: Rotary Club 0992567278"
+        "Contacto: Pablo Palacios-Arcandina 0963089303"
       ],
       "hasArticleButton": false,
-      "articleButtonText": ""
+      "articleButtonText": "",
+      "articleButtonLink": ""
     },
     {
       "id": "condecoracion-maria-elena-ordoñez",
@@ -147,13 +148,14 @@
       "articleButtonText": "Sign up by clicking here"
     },
     {
-      "id": "campaña-educativa-cuidado-del-agua",
-      "className": "",
+      "id": "campana-educativa-cuidado-del-agua",
+      "className": "campana-educativa-cuidado-del-agua",
       "bannerTitle1": "Arcandina and Rotary:",
       "bannerTitle2": "Educational Campaign",
       "bannerSubtitle": "Awareness on Water Care",
-      "hasBannerButton": true,
-      "bannerButtonText": "Learn More",
+      "hasBannerButton": false,
+      "bannerButtonText": "",
+      "bannerButtonLink": "",
       "images": [
         "/news/campaña-educativa/img1.webp"
       ],
@@ -168,7 +170,8 @@
         "Alejandra Lozada: Rotary Club 0992567278"
       ],
       "hasArticleButton": false,
-      "articleButtonText": ""
+      "articleButtonText": "",
+      "articleButtonLink": ""
     },
     {
       "id": "condecoracion-maria-elena-ordoñez",
