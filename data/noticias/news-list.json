@@ -1,31 +1,6 @@
 {
   "es": [
     {
-      "id": "test",
-      "className": "test",
-      "bannerTitle1": "Titulo test",
-      "bannerTitle2": "titulo 2 test",
-      "bannerSubtitle": "subtitulo test",
-      "hasBannerButton": true,
-      "bannerButtonText": "Prueba a google",
-      "bannerButtonLink": "https://www.google.com",
-      "images": [
-        "/news/test/Captura-de-pantalla-2025-09-24-090709.png",
-        "/news/test/Captura-de-pantalla-2025-09-24-090349.png",
-        "/news/test/Captura-de-pantalla-2025-09-24-090430.png"
-      ],
-      "date": "18 febrero 2025",
-      "articleTitle": "Titulo test",
-      "articleParagraphs": [
-        "Párrafo 1",
-        "Párrafo 2",
-        "Párrafo 3"
-      ],
-      "hasArticleButton": true,
-      "articleButtonText": "Prueba Apple",
-      "articleButtonLink": "https://www.apple.com"
-    },
-    {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
       "bannerTitle1": "Lanzamiento",
@@ -126,31 +101,6 @@
     }
   ],
   "en": [
-    {
-      "id": "test",
-      "className": "test",
-      "bannerTitle1": "Test title",
-      "bannerTitle2": "title 2 test",
-      "bannerSubtitle": "subtitle test",
-      "hasBannerButton": true,
-      "bannerButtonText": "Try google",
-      "bannerButtonLink": "https://www.google.com",
-      "images": [
-        "/news/test/Captura-de-pantalla-2025-09-24-090709.png",
-        "/news/test/Captura-de-pantalla-2025-09-24-090349.png",
-        "/news/test/Captura-de-pantalla-2025-09-24-090430.png"
-      ],
-      "date": "February 18, 2025",
-      "articleTitle": "Test title",
-      "articleParagraphs": [
-        "Paragraph (1)",
-        "Paragraph (2)",
-        "Paragraph (3)"
-      ],
-      "hasArticleButton": true,
-      "articleButtonText": "Apple Test",
-      "articleButtonLink": "https://www.apple.com"
-    },
     {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
