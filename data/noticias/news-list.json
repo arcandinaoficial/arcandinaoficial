@@ -1,36 +1,6 @@
 {
   "es": [
     {
-      "id": "carros-nuevos-venta",
-      "className": "carros-nuevos-venta",
-      "bannerTitle1": "Carros nuevos",
-      "bannerTitle2": "A la venta",
-      "bannerSubtitle": "Vendemos carros nuevos a bajo precio",
-      "hasBannerButton": true,
-      "bannerButtonText": "Visitanos",
-      "bannerButtonLink": "https://www.patiotuerca.com",
-      "images": [
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-24-090709.png",
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-23-163241.png",
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-24-090349.png"
-      ],
-      "date": "20 de febrero del 2026",
-      "articleTitle": "¡Gran Feria de Autos Nuevos a Bajo Precio en Quito!",
-      "articleParagraphs": [
-        "🚘 Modelos disponibles",
-        "La feria incluye vehículos pensados para distintos estilos de vida:",
-        "🔹 Sedán Compacto 1.5L – Desde $14.990",
-        "Ideal para ciudad, bajo consumo de combustible (hasta 55 km/galón), aire acondicionado, pantalla táctil y cámara de reversa.",
-        "🔹 Hatchback Urbano 1.3L – Desde $12.990",
-        "Perfecto para quienes buscan economía y practicidad. Diseño moderno, dirección asistida y excelente rendimiento.",
-        "🔹 SUV Familiar 1.8L – Desde $21.990",
-        "Espaciosa, segura y versátil. Incluye frenos ABS, control de estabilidad, 6 airbags y amplio maletero para viajes."
-      ],
-      "hasArticleButton": true,
-      "articleButtonText": "Visitanos",
-      "articleButtonLink": "https://www.google.com"
-    },
-    {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
       "bannerTitle1": "Lanzamiento",
@@ -131,36 +101,6 @@
     }
   ],
   "en": [
-    {
-      "id": "carros-nuevos-venta",
-      "className": "carros-nuevos-venta",
-      "bannerTitle1": "New cars",
-      "bannerTitle2": "For Sale",
-      "bannerSubtitle": "We sell new cars at a low price",
-      "hasBannerButton": true,
-      "bannerButtonText": "See Us",
-      "bannerButtonLink": "https://www.patiotuerca.com",
-      "images": [
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-24-090709.png",
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-23-163241.png",
-        "/news/carros-nuevos-venta/Captura-de-pantalla-2025-09-24-090349.png"
-      ],
-      "date": "February 20, 2026",
-      "articleTitle": "Great New Car Fair at a Cheap Price in Quito!",
-      "articleParagraphs": [
-        "AVAILABLE MODELS",
-        "The fair includes vehicles designed for different lifestyles:",
-        "Compact 🔹 Sedan 1.5L – From $14,990",
-        "Ideal for city use, low fuel consumption (up to 55 km/gallon), air conditioning, touch screen and reverse camera.",
-        "Urban 🔹 Hatchback 1.3L – From $12,990",
-        "Perfect for those looking for economy and practicality. Modern design, power steering and excellent performance.",
-        "Family 🔹 SUV 1.8L – From $21,990",
-        "Spacious, safe and versatile. Includes ABS brakes, stability control, 6 airbags and ample luggage compartment for travel."
-      ],
-      "hasArticleButton": true,
-      "articleButtonText": "See Us",
-      "articleButtonLink": "https://www.google.com"
-    },
     {
       "id": "cuento-infinito",
       "className": "cuento-infinito",
